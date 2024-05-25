@@ -1,0 +1,49 @@
+.st-button {
+	// == Button default styles
+	border-radius: $radius__xs;
+	width: fit-content;
+	overflow: hidden;
+
+	a {
+		display: flex;
+		padding: 10px 18px;
+		font-family: $font__primary;
+		text-decoration: none;
+		font-weight: 700;
+		font-size: $font__xs;
+		position: relative;
+	}
+
+	// == Button color variations
+	&.dark {
+		background: $color__dark;
+
+		a {
+			color: $color__white;
+		}
+	}
+
+	&.primary {
+		background: $color__primary;
+
+		a {
+			color: $color__white;
+		}
+	}
+
+	&.light {
+		background: $color__light;
+
+		a {
+			color: $color__dark;
+		}
+	}
+
+	&.white {
+		background: $color__white;
+
+		a {
+			color: $color__dark;
+		}
+	}
+}

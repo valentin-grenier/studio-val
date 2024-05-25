@@ -1,0 +1,226 @@
+@font-face {
+  font-family: "Poppins";
+  src: url(/wp-content/themes/studio-val/assets/fonts/Poppins-Regular.ttf) format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url(/wp-content/themes/studio-val/assets/fonts/Poppins-SemiBold.ttf) format("truetype");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url(/wp-content/themes/studio-val/assets/fonts/Poppins-Bold.ttf) format("truetype");
+  font-weight: 700;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 1.25rem;
+  text-wrap: balance;
+}
+
+p,
+ul,
+ol,
+span {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+}
+p a,
+ul a,
+ol a,
+span a {
+  text-decoration: none;
+  color: inherit;
+  outline: none;
+}
+
+p {
+  line-height: 1.75rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.st-button {
+  border-radius: 8px;
+  width: fit-content;
+  overflow: hidden;
+}
+.st-button a {
+  display: flex;
+  padding: 10px 18px;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  position: relative;
+}
+.st-button.dark {
+  background: #232a43;
+}
+.st-button.dark a {
+  color: #ffffff;
+}
+.st-button.primary {
+  background: #4d65c7;
+}
+.st-button.primary a {
+  color: #ffffff;
+}
+.st-button.light {
+  background: #f4f4f9;
+}
+.st-button.light a {
+  color: #232a43;
+}
+.st-button.white {
+  background: #ffffff;
+}
+.st-button.white a {
+  color: #232a43;
+}
+
+.st-footer {
+  background: #232a43;
+  position: relative;
+}
+.st-footer__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 4rem;
+  max-width: 1200px;
+  margin: auto;
+  padding: 6rem 0 4rem;
+}
+.st-footer__container:before {
+  content: "";
+  background: #f4f4f9;
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 0 0 20px 20px;
+}
+.st-footer__container > * {
+  color: #f4f4f9;
+}
+.st-footer__container p a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.st-footer__info {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: calc(60% - 2rem);
+}
+.st-footer__info img {
+  width: 10rem;
+}
+.st-footer__links {
+  width: calc(40% - 2rem);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.st-footer__menu span {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.st-footer__menu ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.st-header {
+  position: fixed;
+  top: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
+}
+.st-header__navigation {
+  background: #232a43;
+  border-radius: 12px;
+  z-index: 999;
+}
+.st-header__navigation ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.st-header__navigation ul.menu {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 2rem;
+  padding: 0 8px 0 18px;
+}
+.st-header__navigation ul.menu li a {
+  text-wrap: nowrap;
+  font-weight: 600;
+  font-size: 14px;
+}
+.st-header__navigation ul.menu li:not(.st-button) a {
+  color: #ffffff;
+  padding: 8px 0;
+}
+.st-header__navigation ul.menu li.st-button {
+  margin: 8px 0;
+}
+.st-header__navigation ul.menu li.menu-item-has-children:hover .sub-menu {
+  visibility: visible;
+}
+.st-header__navigation ul.sub-menu {
+  position: absolute;
+  display: flex;
+  gap: 1.5rem;
+  height: 0px;
+  overflow: hidden;
+}
+
+#wpadminbar {
+  position: relative;
+}
+
+html {
+  margin-top: 0 !important;
+}
+html body {
+  background: #f4f4f9;
+}
+
+.st-page {
+  position: relative;
+  margin-top: 8rem;
+}
+
+.st-page {
+  position: relative;
+  margin-top: 8rem;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+/*# sourceMappingURL=style.css.map */

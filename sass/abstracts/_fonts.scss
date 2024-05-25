@@ -1,0 +1,64 @@
+@font-face {
+	font-family: 'Poppins';
+	src: url(/wp-content/themes/studio-val/assets/fonts/Poppins-Regular.ttf)
+		format('truetype');
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: 'Poppins';
+	src: url(/wp-content/themes/studio-val/assets/fonts/Poppins-SemiBold.ttf)
+		format('truetype');
+	font-weight: 600;
+}
+
+@font-face {
+	font-family: 'Poppins';
+	src: url(/wp-content/themes/studio-val/assets/fonts/Poppins-Bold.ttf)
+		format('truetype');
+	font-weight: 700;
+}
+
+// === Variables
+$font__primary: 'Poppins', sans-serif;
+
+$font__xl: 64px;
+$font__lg: 28px;
+$font__md: 24px;
+$font__sm: 16px;
+$font__xs: 14px;
+
+// === Headings
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $font__primary;
+}
+
+h2 {
+	font-size: $font__lg;
+	margin-bottom: 1.25rem;
+	text-wrap: balance;
+}
+
+// === Text elements
+p,
+ul,
+ol,
+span {
+	font-family: $font__primary;
+	font-size: $font__xs;
+
+	a {
+		text-decoration: none;
+		color: inherit;
+		outline: none;
+	}
+}
+
+p {
+	line-height: 1.75rem;
+}
