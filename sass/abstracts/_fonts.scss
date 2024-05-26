@@ -36,6 +36,7 @@ h4,
 h5,
 h6 {
 	font-family: $font__primary;
+	color: $color__dark;
 }
 
 h1 {
@@ -57,6 +58,7 @@ ol,
 span {
 	font-family: $font__primary;
 	font-size: $font__xs;
+	color: $color__dark;
 
 	a {
 		text-decoration: none;
@@ -67,4 +69,8 @@ span {
 
 p {
 	line-height: 1.75rem;
+}
+
+b {
+	color: $color__primary;
 }
