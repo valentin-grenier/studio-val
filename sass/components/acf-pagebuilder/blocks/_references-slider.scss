@@ -1,0 +1,23 @@
+.st-references-slider {
+	.swiper-slide {
+		width: 100%;
+		overflow: hidden;
+		background-position: top;
+		background-size: cover;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		img {
+			height: 100%;
+			object-fit: contain;
+			filter: grayscale(1);
+		}
+	}
+
+	.swiper-wrapper {
+		-webkit-transition-timing-function: linear !important;
+		-o-transition-timing-function: linear !important;
+		transition-timing-function: linear !important;
+	}
+}

@@ -16,7 +16,7 @@ $blocks = [
 
 ?>
 
-<section class="st-site-title">
+<div class="st-site-title">
   <div class="st-site-title__animated-title">
     <p>
       <?php echo $animated_title['title']; ?>
@@ -37,4 +37,4 @@ $blocks = [
   </div>
 
   <?php echo studio_generate_graphic_blocks($blocks); ?>
-</section>
+</div>
