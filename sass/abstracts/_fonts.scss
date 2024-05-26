@@ -22,7 +22,7 @@
 // === Variables
 $font__primary: 'Poppins', sans-serif;
 
-$font__xl: 64px;
+$font__xl: 56px;
 $font__lg: 28px;
 $font__md: 24px;
 $font__sm: 16px;
@@ -36,6 +36,12 @@ h4,
 h5,
 h6 {
 	font-family: $font__primary;
+}
+
+h1 {
+	font-size: $font__xl;
+	margin-bottom: 2rem;
+	text-wrap: balance;
 }
 
 h2 {

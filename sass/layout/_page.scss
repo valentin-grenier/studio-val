@@ -1,4 +1,9 @@
 .st-page {
-	position: relative;
-	margin-top: 8rem;
+	max-width: 750px;
+	margin: auto;
+
+	h1 {
+		text-align: center;
+		margin-bottom: 2rem;
+	}
 }

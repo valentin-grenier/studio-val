@@ -22,6 +22,12 @@ h6 {
   font-family: "Poppins", sans-serif;
 }
 
+h1 {
+  font-size: 56px;
+  margin-bottom: 2rem;
+  text-wrap: balance;
+}
+
 h2 {
   font-size: 28px;
   margin-bottom: 1.25rem;
@@ -206,15 +212,28 @@ html {
 html body {
   background: #f4f4f9;
 }
-
-.st-page {
+html .st-main {
   position: relative;
-  margin-top: 8rem;
+  max-width: 1200px;
+  margin: 10rem auto 0;
 }
 
 .st-page {
-  position: relative;
-  margin-top: 8rem;
+  max-width: 750px;
+  margin: auto;
+}
+.st-page h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.st-page {
+  max-width: 750px;
+  margin: auto;
+}
+.st-page h1 {
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
 img {

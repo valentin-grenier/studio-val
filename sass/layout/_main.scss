@@ -4,4 +4,10 @@ html {
 	body {
 		background: $color__light;
 	}
+
+	.st-main {
+		position: relative;
+		max-width: $container__desktop;
+		margin: 10rem auto 0;
+	}
 }
