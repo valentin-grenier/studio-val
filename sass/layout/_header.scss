@@ -5,6 +5,10 @@
 	transform: translateX(-50%);
 	z-index: 999;
 
+	&.logged-in {
+		top: 3rem;
+	}
+
 	&__navigation {
 		background: $color__dark;
 		border-radius: $radius__sm;
@@ -59,8 +63,4 @@
 			}
 		}
 	}
-}
-
-#wpadminbar {
-	position: relative;
 }

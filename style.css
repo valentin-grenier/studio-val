@@ -157,6 +157,9 @@ p {
   transform: translateX(-50%);
   z-index: 999;
 }
+.st-header.logged-in {
+  top: 3rem;
+}
 .st-header__navigation {
   background: #232a43;
   border-radius: 12px;
@@ -195,10 +198,6 @@ p {
   gap: 1.5rem;
   height: 0px;
   overflow: hidden;
-}
-
-#wpadminbar {
-  position: relative;
 }
 
 html {
