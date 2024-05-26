@@ -16,23 +16,12 @@
 get_header();
 ?>
 
-<main id="content" class="st-page">
+<main id="content" class="st-main">
 
-	<?php
-	if (have_rows('acf-pagebuilder')) :
-		while (have_rows('acf-pagebuilder')) : the_row();
-
-			include 'components/' . get_row_layout() . '.php';
-
-		endwhile;
-	else : ?>
-		<section class="st-page">
-			<h1><?= the_title() ?></h1>
-			<?= the_content() ?>
-		</section>
-	<?php
-	endif;
-	?>
+	<section class="st-page">
+		<h1><?= the_title() ?></h1>
+		<?= the_content() ?>
+	</section>
 
 </main>
 
