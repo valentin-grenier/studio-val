@@ -22,11 +22,9 @@
 			border-radius: 0 0 $radius__md $radius__md;
 		}
 
-		> * {
-			color: $color__light;
-		}
-
 		p {
+			color: $color__light;
+
 			a {
 				text-decoration: underline;
 				text-underline-offset: 3px;
@@ -40,6 +38,10 @@
 		gap: 2rem;
 		width: calc(60% - 2rem);
 
+		* {
+			color: $color__light;
+		}
+
 		img {
 			width: 10rem;
 		}
@@ -50,6 +52,10 @@
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
+
+		* {
+			color: $color__light;
+		}
 	}
 
 	&__menu {
