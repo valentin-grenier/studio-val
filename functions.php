@@ -97,10 +97,13 @@ function get_custom_button($buttonArray)
 	return $button;
 }
 
-// == Allow Gutenberg editor on posts but not on pages
+// == Allow Gutenberg editor on posts but not on pages, only if ACF page template is selected
 function mgc_gutenberg_filter($use_block_editor, $post_type)
 {
-	if ('page' === $post_type) {
+	// = Get current page template
+	$template = basename(get_page_template());
+
+	if ('page' === $post_type && $template === "template-acf.php") {
 		return false;
 	}
 	return $use_block_editor;
