@@ -17,7 +17,7 @@ get_header();
   if (have_rows('acf-pagebuilder')) {
     while (have_rows('acf-pagebuilder')) {
       the_row();
-      include 'components/' . get_row_layout() . '.php';
+      include 'template-parts/acf/' . get_row_layout() . '.php';
     }
   }
   ?>
