@@ -1,0 +1,60 @@
+.st-graphic-blocks {
+	.st-block {
+		// == Block sizes
+		&.large {
+			width: 5rem;
+			height: 5rem;
+			border-radius: 14px;
+		}
+
+		&.medium {
+			width: 4rem;
+			height: 4rem;
+			border-radius: 12px;
+		}
+
+		&.small {
+			width: 2.5rem;
+			height: 2.5rem;
+			border-radius: 8px;
+		}
+
+		// == Block colors
+		&.primary {
+			background: $color__primary;
+			opacity: 0.25;
+		}
+
+		&.dark {
+			background: $color__primary-alt;
+			opacity: 0.5;
+		}
+
+		// == Block positions
+		position: absolute;
+
+		&:nth-child(1) {
+			top: 0;
+			left: 0;
+			transform: rotate(15deg);
+		}
+
+		&:nth-child(2) {
+			top: 0;
+			right: 0;
+			transform: rotate(-20deg);
+		}
+
+		&:nth-child(3) {
+			bottom: 0;
+			left: 0;
+			transform: rotate(-15deg);
+		}
+
+		&:nth-child(4) {
+			bottom: 0;
+			right: 0;
+			transform: rotate(10deg);
+		}
+	}
+}

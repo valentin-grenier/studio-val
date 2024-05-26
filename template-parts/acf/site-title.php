@@ -5,6 +5,15 @@ $highlighted_words = explode(" ", $animated_title['words']);
 $main_title = get_sub_field('main_title');
 $button_1 = get_sub_field('button_1');
 $button_2 = get_sub_field('button_2');
+
+// === Graphic blocks definition
+$blocks = [
+  studio_define_graphic_block('primary', 'large'),
+  studio_define_graphic_block('dark', 'large'),
+  studio_define_graphic_block('dark', 'medium'),
+  studio_define_graphic_block('primary', 'medium'),
+];
+
 ?>
 
 <section class="st-site-title">
@@ -26,4 +35,6 @@ $button_2 = get_sub_field('button_2');
     <?php echo get_custom_button($button_1); ?>
     <?php echo get_custom_button($button_2); ?>
   </div>
+
+  <?php echo studio_generate_graphic_blocks($blocks); ?>
 </section>

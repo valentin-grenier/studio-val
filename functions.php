@@ -97,6 +97,7 @@ function get_custom_button($buttonArray)
 	return $button;
 }
 
+
 // == Allow Gutenberg editor on posts but not on pages, only if ACF page template is selected
 function disable_block_editor($use_block_editor, $post_type)
 {
@@ -109,3 +110,41 @@ function disable_block_editor($use_block_editor, $post_type)
 	return $use_block_editor;
 }
 add_filter('use_block_editor_for_post_type', 'disable_block_editor', 10, 2);
+
+
+// == Define graphic blocks
+function studio_define_graphic_block($color, $size)
+{
+	// Allowed colors and sizes
+	$allowed_colors = ['dark', 'primary'];
+	$allowed_sizes = ['large', 'medium', 'small'];
+
+	// Validate color and size
+	if (!in_array($color, $allowed_colors) || !in_array($size, $allowed_sizes)) {
+		return "Error: Invalid color or size specified for a block.";
+	}
+
+	// Return block properties as an array
+	return [
+		'color' => $color, 'size' => $size
+	];
+}
+// == Generate graphic blocks
+function studio_generate_graphic_blocks($blocks)
+{
+	// Ensure there are at least 2 blocks
+	if (count($blocks) < 2) {
+		return "Error: There must be at least 2 blocks.";
+	}
+
+	// Start generating blocks
+	$output = '<div class="st-graphic-blocks">';
+
+	foreach ($blocks as $block) {
+		$output .= '<div class="st-block ' . $block['color'] . ' ' . $block['size'] . '"></div>';
+	}
+
+	$output .= '</div>';
+
+	return $output;
+}
