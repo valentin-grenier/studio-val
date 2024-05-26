@@ -20,6 +20,7 @@ h4,
 h5,
 h6 {
   font-family: "Poppins", sans-serif;
+  color: #232a43;
 }
 
 h1 {
@@ -40,6 +41,7 @@ ol,
 span {
   font-family: "Poppins", sans-serif;
   font-size: 14px;
+  color: #232a43;
 }
 p a,
 ul a,
@@ -54,10 +56,56 @@ p {
   line-height: 1.75rem;
 }
 
+b {
+  color: #4d65c7;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.st-site-title {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 4rem 0;
+}
+.st-site-title__animated-title p {
+  font-size: 56px;
+  font-weight: 700;
+  color: #232a43;
+  line-height: 4rem;
+  text-align: center;
+  text-wrap: balance;
+  max-width: 900px;
+  margin: auto;
+}
+.st-site-title__animated-title span {
+  font-size: 56px;
+  font-weight: 700;
+  color: #4d65c7;
+}
+.st-site-title__animated-title span:not(:first-of-type) {
+  display: none;
+}
+.st-site-title__main-title {
+  text-align: center;
+}
+.st-site-title__main-title h1 {
+  font-weight: 400;
+  line-height: 2.5rem;
+  font-size: 16px;
+}
+.st-site-title__main-title h1 strong {
+  font-size: 24px;
+}
+.st-site-title__buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
 }
 
 .st-button {
@@ -70,7 +118,7 @@ p {
   padding: 10px 18px;
   font-family: "Poppins", sans-serif;
   text-decoration: none;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 14px;
   position: relative;
 }

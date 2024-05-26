@@ -1,0 +1,50 @@
+.st-site-title {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	padding: 4rem 0;
+
+	&__animated-title {
+		p {
+			font-size: $font__xl;
+			font-weight: 700;
+			color: $color__dark;
+			line-height: 4rem;
+			text-align: center;
+			text-wrap: balance;
+			max-width: 900px;
+			margin: auto;
+		}
+
+		span {
+			font-size: $font__xl;
+			font-weight: 700;
+			color: $color__primary;
+
+			&:not(:first-of-type) {
+				display: none;
+			}
+		}
+	}
+
+	&__main-title {
+		text-align: center;
+
+		h1 {
+			font-weight: 400;
+			line-height: 2.5rem;
+			font-size: $font__sm;
+
+			strong {
+				font-size: $font__md;
+			}
+		}
+	}
+
+	&__buttons {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 1.5rem;
+	}
+}
