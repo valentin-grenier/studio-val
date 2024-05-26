@@ -14,7 +14,7 @@ if (!defined('_S_VERSION')) {
 }
 
 // === Theme setup ===
-function studio_val_setup()
+function studio_setup()
 {
 	// == Add default posts and comments RSS feed links to head.
 	add_theme_support('automatic-feed-links');
@@ -60,24 +60,25 @@ function studio_val_setup()
 		)
 	);
 }
-add_action('after_setup_theme', 'studio_val_setup');
+add_action('after_setup_theme', 'studio_setup');
 
 
 // === Enqueue styles and scripts ===
-function studio_val_scripts()
+function studio_scripts()
 {
 	// == CSS
 	wp_enqueue_style('studio-val-style', get_stylesheet_uri(), array(), _S_VERSION);
 
 	// == JS
-	wp_enqueue_script('studio-val-navigation', get_template_directory_uri() . '/js/app.js', array(), _S_VERSION, true);
+	wp_enqueue_script('studio-navigation', get_template_directory_uri() . '/js/app.js', array(), _S_VERSION, true);
+	wp_enqueue_script('studio-references-slider', get_template_directory_uri() . '/js/references-slider.js', array(), _S_VERSION, true);
 
 	// == Comments
 	if (is_singular() && comments_open() && get_option('thread_comments')) {
 		wp_enqueue_script('comment-reply');
 	}
 }
-add_action('wp_enqueue_scripts', 'studio_val_scripts');
+add_action('wp_enqueue_scripts', 'studio_scripts');
 
 
 // === Custom theme functions ===
@@ -99,7 +100,7 @@ function get_custom_button($buttonArray)
 
 
 // == Allow Gutenberg editor on posts but not on pages, only if ACF page template is selected
-function disable_block_editor($use_block_editor, $post_type)
+function studio_disable_block_editor($use_block_editor, $post_type)
 {
 	// = Get current page template
 	$template = basename(get_page_template());
@@ -109,7 +110,7 @@ function disable_block_editor($use_block_editor, $post_type)
 	}
 	return $use_block_editor;
 }
-add_filter('use_block_editor_for_post_type', 'disable_block_editor', 10, 2);
+add_filter('use_block_editor_for_post_type', 'studio_disable_block_editor', 10, 2);
 
 
 // == Define graphic blocks
