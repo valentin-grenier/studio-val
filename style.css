@@ -212,7 +212,7 @@ html {
 html body {
   background: #f4f4f9;
 }
-html .st-main {
+html main {
   position: relative;
   max-width: 1200px;
   margin: 10rem auto 0;
