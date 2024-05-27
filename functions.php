@@ -84,6 +84,10 @@ add_action('wp_enqueue_scripts', 'studio_scripts');
 // === Custom theme functions ===
 
 
+// == Load autoload.php for dependencies
+require_once get_template_directory() . '/vendor/autoload.php';
+
+
 // == Allow Gutenberg editor on posts but not on pages, only if ACF page template is selected
 function studio_disable_block_editor($use_block_editor, $post_type)
 {
