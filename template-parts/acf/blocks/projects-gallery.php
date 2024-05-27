@@ -47,7 +47,8 @@ $projects_query = new WP_Query($projects_args);
     <?php if ($projects_query->have_posts()) : ?>
       <?php while ($projects_query->have_posts()) : $projects_query->the_post(); ?>
         <?php get_template_part('template-parts/card', 'project'); ?>
-      <?php endwhile; ?>
+      <?php wp_reset_postdata();
+      endwhile; ?>
     <?php endif; ?>
   </div>
 
