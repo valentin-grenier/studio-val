@@ -1,0 +1,67 @@
+.st-card {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1.5rem;
+	padding: 1.5rem;
+	border-radius: $radius__md;
+	background: $color__white;
+	height: fit-content;
+	text-decoration: none;
+
+	&.dark {
+		background: $color__dark;
+		height: 100%;
+		justify-content: center;
+
+		* {
+			color: $color__white;
+		}
+
+		p {
+			text-wrap: balance;
+		}
+	}
+
+	&__dashicon {
+		background: $color__primary;
+		border-radius: $radius__full;
+		width: fit-content;
+		padding: 0.75rem;
+		margin: 0 auto;
+
+		span {
+			display: block;
+			width: 2.5rem;
+			height: 2.5rem;
+
+			&:before {
+				font-size: 2.5rem;
+				color: $color__light;
+			}
+		}
+	}
+
+	&__text {
+		h3 {
+			margin-bottom: 1rem;
+			line-height: 1rem;
+		}
+
+		p {
+			text-wrap: pretty;
+		}
+	}
+
+	&__button {
+		margin: auto;
+	}
+
+	&__link-icon {
+		position: absolute;
+		top: 1rem;
+		right: 1rem;
+		transform: rotate(-45deg);
+	}
+}
