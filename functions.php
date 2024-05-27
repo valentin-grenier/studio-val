@@ -73,6 +73,7 @@ function studio_scripts()
 	wp_enqueue_script('studio-navigation', get_template_directory_uri() . '/js/app.js', array(), _S_VERSION, true);
 	wp_enqueue_script('studio-references-slider', get_template_directory_uri() . '/js/references-slider.js', array(), _S_VERSION, true);
 	wp_enqueue_script('studio-reviews-list', get_template_directory_uri() . '/js/reviews-list.js', array(), _S_VERSION, true);
+	wp_enqueue_script('studio-reviews-blog-posts-slider', get_template_directory_uri() . '/js/blog-posts-slider.js', array(), _S_VERSION, true);
 
 	// == Comments
 	if (is_singular() && comments_open() && get_option('thread_comments')) {
@@ -156,3 +157,11 @@ function get_the_post_thumbnail_alt($thumbnail_id)
 
 	return $alt;
 }
+
+
+// == Custom excerpt length
+function mytheme_custom_excerpt_length($length)
+{
+	return 20;
+}
+add_filter('excerpt_length', 'mytheme_custom_excerpt_length', 999);

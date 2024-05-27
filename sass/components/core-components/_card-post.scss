@@ -1,0 +1,43 @@
+.st-card-post {
+	background: $color__white;
+	border-radius: $radius__md;
+	overflow: hidden;
+
+	&__image {
+		position: relative;
+		border-radius: $radius__md;
+		height: 275px;
+		overflow: hidden;
+
+		img {
+			position: absolute;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+
+	&__category {
+		position: absolute;
+		bottom: 0.75rem;
+		right: 0.75rem;
+		background: $color__white;
+		border-radius: $radius__xs;
+		padding: 0.25rem 0.5rem;
+		font-weight: 600;
+		font-size: $font__xxs;
+	}
+
+	&__content {
+		padding: 1rem;
+
+		h3 {
+			font-size: $font__xs;
+			line-height: 1.25rem;
+			margin-bottom: 0.75rem;
+		}
+
+		p {
+			line-height: 1.5rem;
+		}
+	}
+}
