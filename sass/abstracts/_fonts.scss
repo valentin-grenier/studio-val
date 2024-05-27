@@ -23,7 +23,7 @@
 $font__primary: 'Poppins', sans-serif;
 
 $font__xl: 56px;
-$font__lg: 28px;
+$font__lg: 32px;
 $font__md: 24px;
 $font__sm: 16px;
 $font__xs: 14px;
@@ -37,6 +37,10 @@ h5,
 h6 {
 	font-family: $font__primary;
 	color: $color__dark;
+
+	strong {
+		color: $color__primary;
+	}
 }
 
 h1 {
@@ -47,6 +51,7 @@ h1 {
 
 h2 {
 	font-size: $font__lg;
+	line-height: 1.5rem;
 	margin-bottom: 1.25rem;
 	text-wrap: balance;
 }

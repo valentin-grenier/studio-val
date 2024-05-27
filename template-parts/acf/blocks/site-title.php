@@ -14,6 +14,11 @@ $blocks = [
   studio_define_graphic_block('primary', 'medium'),
 ];
 
+$buttons = [
+  $button_1,
+  $button_2
+];
+
 ?>
 
 <div class="st-site-title">
@@ -32,8 +37,9 @@ $blocks = [
   </div>
 
   <div class="st-site-title__buttons">
-    <?php echo get_custom_button($button_1); ?>
-    <?php echo get_custom_button($button_2); ?>
+    <?php foreach ($buttons as $button_data) : ?>
+      <?php echo get_template_part('template-parts/button', null, $button_data); ?>
+    <?php endforeach; ?>
   </div>
 
   <?php echo studio_generate_graphic_blocks($blocks); ?>

@@ -8,3 +8,9 @@ $color__white: #ffffff;
 
 $color__green: #00c49a;
 $color__red: #bf211e;
+
+$gradient__transparent: linear-gradient(
+	to left,
+	rgba($color__background, 1),
+	rgba($color__background, 0)
+);
