@@ -1,0 +1,14 @@
+.st-title-text {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 4rem;
+
+	&__title {
+		flex: 1.25;
+	}
+
+	&__text {
+		flex: 1;
+	}
+}
