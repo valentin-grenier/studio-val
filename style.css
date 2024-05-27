@@ -246,6 +246,27 @@ b {
   text-wrap: balance;
 }
 
+.st-callout-block {
+  background: #232a43;
+  padding: 4rem;
+  border-radius: 20px;
+  max-width: 750px;
+  margin: auto;
+}
+.st-callout-block__content {
+  max-width: 75%;
+  margin: 0 auto 2rem;
+}
+.st-callout-block__content * {
+  color: #ffffff;
+}
+.st-callout-block__buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
 .st-button {
   border-radius: 8px;
   width: fit-content;
