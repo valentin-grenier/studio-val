@@ -147,8 +147,6 @@ b {
   right: 5rem;
 }
 
-<<<<<<< HEAD
-=======
 .st-references-slider::before, .st-references-slider::after {
   content: "";
   height: 100%;
@@ -166,7 +164,6 @@ b {
   right: 0;
   background: linear-gradient(to left, #f7f7f9, rgba(247, 247, 249, 0));
 }
->>>>>>> c8be46f (Various edits)
 .st-references-slider .swiper-slide {
   width: 100%;
   overflow: hidden;
@@ -187,8 +184,6 @@ b {
   transition-timing-function: linear !important;
 }
 
-<<<<<<< HEAD
-=======
 .st-cards-list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -199,7 +194,6 @@ b {
   padding: 1rem 0 1.5rem;
 }
 
->>>>>>> c8be46f (Various edits)
 .st-button {
   border-radius: 8px;
   width: fit-content;
