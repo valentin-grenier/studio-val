@@ -72,6 +72,7 @@ function studio_scripts()
 	// == JS
 	wp_enqueue_script('studio-navigation', get_template_directory_uri() . '/js/app.js', array(), _S_VERSION, true);
 	wp_enqueue_script('studio-references-slider', get_template_directory_uri() . '/js/references-slider.js', array(), _S_VERSION, true);
+	wp_enqueue_script('studio-reviews-list', get_template_directory_uri() . '/js/reviews-list.js', array(), _S_VERSION, true);
 
 	// == Comments
 	if (is_singular() && comments_open() && get_option('thread_comments')) {

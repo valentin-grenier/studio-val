@@ -1,0 +1,19 @@
+.st-card-review {
+	padding: 1.5rem;
+	min-height: 200px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 1.5rem;
+
+	&__content {
+	}
+
+	&__author {
+		font-weight: 600;
+
+		&--name {
+			color: $color__primary;
+		}
+	}
+}
