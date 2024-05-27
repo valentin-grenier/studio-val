@@ -1,0 +1,29 @@
+.st-cards-numbers {
+	display: flex;
+	justify-content: space-between;
+	align-items: start;
+	gap: 4rem;
+	padding: $block__padding;
+
+	&__card {
+		background: $color__white;
+		padding: 1rem;
+		border-radius: $radius__sm;
+		text-align: center;
+		font-weight: 600;
+
+		span {
+			display: block;
+			color: $color__primary;
+			font-weight: 700;
+			font-size: $font__lg;
+			margin-bottom: 0.5rem;
+			line-height: 100%;
+		}
+
+		p {
+			line-height: 1.25rem;
+			text-wrap: balance;
+		}
+	}
+}
