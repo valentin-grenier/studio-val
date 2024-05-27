@@ -194,6 +194,29 @@ b {
   padding: 1rem 0 1.5rem;
 }
 
+.st-text-image {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+  align-items: center;
+}
+.st-text-image.text-image {
+  flex-direction: row-reverse;
+}
+.st-text-image__image {
+  flex: 1;
+  position: relative;
+}
+.st-text-image__image img {
+  height: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.st-text-image__text {
+  flex: 1.5;
+}
+
 .st-button {
   border-radius: 8px;
   width: fit-content;
