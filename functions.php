@@ -146,3 +146,12 @@ function studio_enqueue_dashicons()
 	wp_enqueue_style('dashicons');
 }
 add_action('wp_enqueue_scripts', 'studio_enqueue_dashicons');
+
+
+// == Get post thumbnail alt
+function get_the_post_thumbnail_alt($thumbnail_id)
+{
+	$alt = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
+
+	return $alt;
+}

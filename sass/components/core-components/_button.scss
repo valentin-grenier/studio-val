@@ -1,8 +1,8 @@
+// == Button link
 .st-button {
 	// == Button default styles
 	border-radius: $radius__xs;
 	width: fit-content;
-	overflow: hidden;
 
 	a {
 		display: flex;
@@ -45,5 +45,26 @@
 		a {
 			color: $color__dark;
 		}
+	}
+}
+
+// == Button HTML element
+button {
+	padding: 10px 18px;
+	border: none;
+	border-radius: $radius__xs;
+	font-family: $font__primary;
+	font-weight: 600;
+	font-size: $font__xs;
+	text-decoration: none;
+	background: $color__grey;
+	color: $color__dark;
+	opacity: 0.25;
+	cursor: pointer;
+
+	&.active {
+		background: $color__dark;
+		color: $color__light;
+		opacity: 1;
 	}
 }

@@ -1,0 +1,42 @@
+.st-card-project {
+	position: relative;
+	border-radius: $radius__md;
+	text-decoration: none;
+	height: 350px;
+	border-radius: $radius__md;
+	overflow: hidden;
+	background: $color__grey;
+
+	&__content {
+		position: absolute;
+		bottom: 0rem;
+		background: $color__white;
+		padding: 0.75rem 3.5rem 0.75rem 1rem;
+		margin: 0 0.5rem 0.5rem;
+		border-radius: $radius__md;
+
+		h3 {
+			font-size: $font__sm;
+		}
+
+		p {
+			font-size: $font__xxs;
+			line-height: 1.25rem;
+			margin-top: 0.5rem;
+		}
+
+		svg {
+			position: absolute;
+			top: 50%;
+			right: 1rem;
+			transform: translateY(-50%) rotate(-45deg);
+		}
+	}
+
+	img {
+		position: absolute;
+		height: 100%;
+		object-fit: cover;
+		z-index: -1;
+	}
+}
