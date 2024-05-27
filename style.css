@@ -76,14 +76,14 @@ b {
 }
 
 .st-section {
-  padding: 4rem 0;
+  padding: 2.5rem 0;
 }
 .st-section.full-width {
   max-width: 100%;
 }
 .st-section.boxed {
   max-width: 1200px;
-  padding: 4rem 0;
+  padding: 2.5rem 0;
   margin: auto;
 }
 .st-section.no-padding {
