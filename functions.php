@@ -83,21 +83,6 @@ add_action('wp_enqueue_scripts', 'studio_scripts');
 
 // === Custom theme functions ===
 
-// == Custom button
-function get_custom_button($buttonArray)
-{
-	$text = $buttonArray['text'] ?? "";
-	$link = $buttonArray['link']['url'] ?? "#";
-	$link_target = $buttonArray['link']['target'] ?? "_self";
-	$color = $buttonArray['color'] ?? "dark";
-
-	$button = '<div class="st-button ' . $color . '">';
-	$button .= '<a href="' . $link . '" target="' . $link_target . '">' . $text . '</a>';
-	$button .= '</div>';
-
-	return $button;
-}
-
 
 // == Allow Gutenberg editor on posts but not on pages, only if ACF page template is selected
 function studio_disable_block_editor($use_block_editor, $post_type)
@@ -149,3 +134,11 @@ function studio_generate_graphic_blocks($blocks)
 
 	return $output;
 }
+
+
+// == Include dashicons library
+function studio_enqueue_dashicons()
+{
+	wp_enqueue_style('dashicons');
+}
+add_action('wp_enqueue_scripts', 'studio_enqueue_dashicons');

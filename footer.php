@@ -35,7 +35,7 @@ $bottom = get_field('footer-bottom', 'options');
         <?php echo $text; ?>
       </div>
 
-      <?php echo get_custom_button($button); ?>
+      <?php echo get_template_part('template-parts/button', null, $button) ?>
 
       <div>
         <?php echo $email; ?>
