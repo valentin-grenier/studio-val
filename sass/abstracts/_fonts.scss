@@ -22,7 +22,7 @@
 // === Variables
 $font__primary: 'Poppins', sans-serif;
 
-$font__xl: 56px;
+$font__xl: 48px;
 $font__lg: 32px;
 $font__md: 24px;
 $font__sm: 16px;
@@ -75,6 +75,10 @@ span {
 
 p {
 	line-height: 1.75rem;
+
+	strong {
+		color: $color__primary;
+	}
 }
 
 b {
