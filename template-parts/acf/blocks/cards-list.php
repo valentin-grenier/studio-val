@@ -12,6 +12,7 @@ $cards_list = get_sub_field('cards_list');
       $card_data = [
         'has_image' => $data['card']['has_image'],
         'image_type' => $data['card']['image_type'],
+        'image_or_icon' => $data['card']['image_or_icon'],
         'image' => $data['card']['image'],
         'dashicons' => $data['card']['dashicons'],
         'text' => $data['card']['text'],
