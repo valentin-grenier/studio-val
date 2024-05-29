@@ -1,0 +1,48 @@
+.st-page-title {
+	margin-bottom: 1.5rem;
+
+	&__title {
+		h1 {
+			font-size: $font__xl;
+			line-height: 3.5rem;
+		}
+	}
+
+	&__title-subtitle {
+		h1,
+		p {
+			text-align: center;
+		}
+
+		h1 {
+			font-size: $font__md;
+			margin-bottom: 1rem;
+			color: $color__primary;
+		}
+
+		p {
+			font-size: $font__lg;
+			font-weight: 700;
+		}
+	}
+
+	.st-graphic-blocks {
+		.st-block {
+			&:nth-child(1) {
+				top: -1rem;
+				left: 16rem;
+			}
+
+			&:nth-child(2) {
+				top: 50%;
+				right: 10rem;
+				transform: rotate(20deg) translateY(-50%);
+			}
+
+			&:nth-child(3) {
+				left: 6rem;
+				bottom: 4rem;
+			}
+		}
+	}
+}
