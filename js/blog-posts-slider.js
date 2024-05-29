@@ -5,8 +5,27 @@ document.addEventListener('DOMContentLoaded', () => {
 		slidesPerView: 3.5,
 		centeredSlides: true,
 		autoplay: {
-			delay: 1000,
+			delay: 1500,
+			disableOnInteraction: false,
 		},
 		speed: 750,
 	});
+
+	swiper.el.addEventListener(
+		'mouseenter',
+		function (event) {
+			swiper.autoplay.stop();
+		},
+		false
+	);
+
+	swiper.el.addEventListener(
+		'mouseleave',
+		function (event) {
+			swiper.autoplay.start();
+		},
+		false
+	);
 });
+
+// Add event listener for mouseenter to stop autoplay
