@@ -2,11 +2,12 @@
 	background: $color__white;
 	border-radius: $radius__md;
 	overflow: hidden;
+	text-decoration: none;
 
 	&__image {
 		position: relative;
 		border-radius: $radius__md;
-		height: 275px;
+		height: 225px;
 		overflow: hidden;
 
 		img {
@@ -31,7 +32,7 @@
 		padding: 1rem;
 
 		h3 {
-			font-size: $font__xs;
+			font-size: $font__sm;
 			line-height: 1.25rem;
 			margin-bottom: 0.75rem;
 		}

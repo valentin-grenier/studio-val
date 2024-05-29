@@ -520,11 +520,12 @@ button.active {
   background: #ffffff;
   border-radius: 20px;
   overflow: hidden;
+  text-decoration: none;
 }
 .st-card-post__image {
   position: relative;
   border-radius: 20px;
-  height: 275px;
+  height: 225px;
   overflow: hidden;
 }
 .st-card-post__image img {
@@ -546,7 +547,7 @@ button.active {
   padding: 1rem;
 }
 .st-card-post__content h3 {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.25rem;
   margin-bottom: 0.75rem;
 }
