@@ -9,7 +9,6 @@ if ($number_of_buttons > 1) {
   $button_2 = get_sub_field('button_2');
   $buttons[] = $button_2;
 }
-
 ?>
 
 <div class="st-callout-block">
@@ -19,13 +18,15 @@ if ($number_of_buttons > 1) {
     </div>
   <?php endif; ?>
 
-  <div class="st-callout-block__buttons">
-    <?php if ($buttons) : ?>
+  <?php if ($buttons && $number_of_buttons > 0) : ?>
+    <div class="st-callout-block__buttons">
+
       <?php foreach ($buttons as $button) : ?>
         <?php if ($button !== null) : ?>
           <?php get_template_part('template-parts/button', null, $button); ?>
         <?php endif; ?>
       <?php endforeach; ?>
-    <?php endif; ?>
-  </div>
+    </div>
+  <?php endif; ?>
+
 </div>
