@@ -5,6 +5,8 @@ $number_of_projects = get_sub_field('number_of_projects');
 $has_button = get_sub_field('has_button');
 $button = get_sub_field('button');
 $filter_icon = file_get_contents(get_template_directory_uri() . '/assets/svg/filter.svg');
+$filter_by_taxonomy = get_sub_field('filter_by_taxonomy');
+$taxonomy = get_sub_field('selected_taxonomy');
 
 // === Retrieve post type taxonomies
 $terms = get_terms(array(
@@ -15,12 +17,23 @@ $terms = get_terms(array(
 
 // === Retrieve projects
 $projects_args = array(
-  'post_type' => 'reference',
+  'post_type'      => 'reference',
   'posts_per_page' => $number_of_projects,
-  'post_status' => 'published',
-  'orderby' => 'date',
-  'order' => 'DESC',
+  'post_status'    => 'publish', // 'published' is incorrect, use 'publish'
+  'orderby'        => 'date',
+  'order'          => 'DESC',
 );
+
+// === Add tax_query conditionally
+if ($filter_by_taxonomy) {
+  $projects_args['tax_query'] = array(
+    array(
+      'taxonomy' => 'service-type',
+      'field'    => 'slug',
+      'terms'    => $taxonomy->slug,
+    ),
+  );
+}
 
 $projects_query = new WP_Query($projects_args);
 
