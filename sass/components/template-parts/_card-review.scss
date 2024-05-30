@@ -1,13 +1,11 @@
 .st-card-review {
-	padding: 1.5rem;
-	min-height: 200px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	gap: 1.5rem;
-
-	&__content {
-	}
+	padding: 1.5rem;
+	background: $color__white;
+	border-radius: $radius__md;
 
 	&__author {
 		font-weight: 600;
