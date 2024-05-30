@@ -21,9 +21,11 @@ $references_query = new WP_Query($references_args);
       <?php while ($references_query->have_posts()) : ?>
         <?php $references_query->the_post(); ?>
         <?php $logo = get_field('logo'); ?>
-        <div class="st-references-slider__slide swiper-slide">
-          <img src="<?php echo esc_url($logo['url']); ?>" alt="<?php echo esc_html($logo['alt']); ?>">
-        </div>
+        <?php if ($logo) : ?>
+          <div class="st-references-slider__slide swiper-slide">
+            <img src="<?php echo esc_url($logo['url']); ?>" alt="<?php echo esc_html($logo['alt']); ?>">
+          </div>
+        <?php endif; ?>
       <?php endwhile; ?>
       <?php wp_reset_postdata(); ?>
     <?php endif; ?>
