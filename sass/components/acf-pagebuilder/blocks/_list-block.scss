@@ -1,0 +1,27 @@
+.st-list-block {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 4rem;
+
+	&__list {
+		display: flex;
+		flex-direction: column;
+		gap: 1.5rem;
+
+		&--item {
+			display: flex;
+			align-items: center;
+			gap: 1.5rem;
+		}
+	}
+
+	&__image {
+		height: 100%;
+
+		img {
+			height: 100%;
+			object-fit: cover;
+			border-radius: $radius__md;
+		}
+	}
+}
