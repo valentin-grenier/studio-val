@@ -64,8 +64,17 @@ span a {
 p {
   line-height: 1.75rem;
 }
+p:not(:last-of-type) {
+  margin-bottom: 1.25rem;
+}
 p strong {
   color: #4d65c7;
+}
+p a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  color: #4d65c7;
+  font-weight: 600;
 }
 
 b {
@@ -406,6 +415,13 @@ b {
   margin: 1.5rem auto 0;
 }
 
+.st-steps-block {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+  place-content: center;
+}
+
 .st-button {
   border-radius: 8px;
   width: fit-content;
@@ -618,6 +634,25 @@ button.active {
 }
 .st-card-post__content p {
   line-height: 1.5rem;
+}
+
+.st-card-step__number {
+  display: block;
+  margin: 0 0 1rem;
+  width: fit-content;
+}
+.st-card-step__number span {
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  color: #232a43;
+  background: #ffffff;
+  padding: 0.25rem 1rem;
+  border-radius: 8px;
+}
+.st-card-step__title {
+  font-size: 24px;
+  margin-bottom: 1rem;
 }
 
 .st-graphic-blocks .st-block {

@@ -1,0 +1,24 @@
+.st-card-step {
+	&__number {
+		display: block;
+
+		margin: 0 0 1rem;
+		width: fit-content;
+
+		span {
+			display: block;
+			font-size: $font__xs;
+			font-weight: 700;
+			color: $color__dark;
+			background: $color__white;
+			padding: 0.25rem 1rem;
+			border-radius: $radius__xs;
+		}
+	}
+
+	&__title {
+		// text-align: center;
+		font-size: $font__md;
+		margin-bottom: 1rem;
+	}
+}
