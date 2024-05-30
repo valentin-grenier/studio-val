@@ -80,10 +80,6 @@ p {
 		margin-bottom: 1.25rem;
 	}
 
-	strong {
-		color: $color__primary;
-	}
-
 	a {
 		text-decoration: underline;
 		text-underline-offset: 3px;
@@ -92,6 +88,7 @@ p {
 	}
 }
 
-b {
+b,
+strong {
 	color: $color__primary;
 }
