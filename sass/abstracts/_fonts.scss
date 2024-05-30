@@ -76,8 +76,19 @@ span {
 p {
 	line-height: 1.75rem;
 
+	&:not(:last-of-type) {
+		margin-bottom: 1.25rem;
+	}
+
 	strong {
 		color: $color__primary;
+	}
+
+	a {
+		text-decoration: underline;
+		text-underline-offset: 3px;
+		color: $color__primary;
+		font-weight: 600;
 	}
 }
 
