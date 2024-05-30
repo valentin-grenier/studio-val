@@ -814,4 +814,28 @@ img {
   height: auto;
 }
 
+.padding-large {
+  padding: 3rem 0;
+}
+.padding-medium {
+  padding: 2rem 0;
+}
+.padding-small {
+  padding: 1rem 0;
+}
+
+.align {
+  display: flex;
+  align-items: center;
+}
+.align-left {
+  justify-content: start;
+}
+.align-center {
+  justify-content: center;
+}
+.align-right {
+  justify-content: end;
+}
+
 /*# sourceMappingURL=style.css.map */
