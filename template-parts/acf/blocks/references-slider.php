@@ -54,14 +54,31 @@ if ($filter_by_taxonomy) {
 $references_query = new WP_Query($references_args);
 ?>
 
-<div class="st-references-slider swiper <?php echo $remove_margins ? "no-margins" : "has-margins"; ?>">
-  <div class="st-references-slider__container swiper-wrapper">
+<?php if ($references_query->post_count >= 9) : ?>
+  <div class="st-references-slider swiper <?php echo $remove_margins ? "no-margins" : "has-margins"; ?>">
+    <div class="st-references-slider__container swiper-wrapper">
+      <?php if ($references_query->have_posts()) : ?>
+        <?php while ($references_query->have_posts()) : ?>
+          <?php $references_query->the_post(); ?>
+          <?php $logo = get_field('logo'); ?>
+          <?php if ($logo) : ?>
+            <div class="st-references-slider__slide swiper-slide">
+              <img src="<?php echo esc_url($logo['url']); ?>" alt="<?php echo esc_html($logo['alt']); ?>">
+            </div>
+          <?php endif; ?>
+        <?php endwhile; ?>
+        <?php wp_reset_postdata(); ?>
+      <?php endif; ?>
+    </div>
+  </div>
+<?php else : ?>
+  <div class="st-references-slider grid <?php echo $remove_margins ? "no-margins" : "has-margins"; ?>">
     <?php if ($references_query->have_posts()) : ?>
       <?php while ($references_query->have_posts()) : ?>
         <?php $references_query->the_post(); ?>
         <?php $logo = get_field('logo'); ?>
         <?php if ($logo) : ?>
-          <div class="st-references-slider__slide swiper-slide">
+          <div class="st-references-slider__item">
             <img src="<?php echo esc_url($logo['url']); ?>" alt="<?php echo esc_html($logo['alt']); ?>">
           </div>
         <?php endif; ?>
@@ -69,4 +86,4 @@ $references_query = new WP_Query($references_args);
       <?php wp_reset_postdata(); ?>
     <?php endif; ?>
   </div>
-</div>
+<?php endif; ?>
