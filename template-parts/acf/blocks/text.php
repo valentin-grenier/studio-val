@@ -2,6 +2,7 @@
 // === ACF Data
 $text = get_sub_field('text_content');
 $text_width = get_sub_field('text_width');
+$alignment = get_sub_field('alignment');
 
 switch ($text_width) {
   case "100":
@@ -19,6 +20,6 @@ switch ($text_width) {
 }
 ?>
 
-<div class="st-text <?php echo esc_attr($width); ?>">
+<div class="st-text <?php echo esc_attr($width) . ' align align-' . esc_attr($alignment); ?>">
   <?php echo $text; ?>
 </div>

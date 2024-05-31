@@ -14,7 +14,7 @@
 
 .align {
 	display: flex;
-	align-items: center;
+	flex-direction: column;
 
 	&-left {
 		justify-content: start;
@@ -22,6 +22,7 @@
 
 	&-center {
 		justify-content: center;
+		margin: auto;
 	}
 
 	&-right {

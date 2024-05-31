@@ -257,7 +257,6 @@ strong {
 
 .st-text {
   padding: 1rem 0 1.5rem;
-  margin: auto;
 }
 .st-text.width-100 {
   width: 100%;
@@ -954,13 +953,14 @@ img {
 
 .align {
   display: flex;
-  align-items: center;
+  flex-direction: column;
 }
 .align-left {
   justify-content: start;
 }
 .align-center {
   justify-content: center;
+  margin: auto;
 }
 .align-right {
   justify-content: end;
