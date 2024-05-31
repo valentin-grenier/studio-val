@@ -13,13 +13,14 @@ $terms = get_terms(array(
   'taxonomy' => 'service-type',
   'hide_empty' => true,
   'orderby' => 'menu_order',
+  'parent' => 0
 ));
 
 // === Retrieve projects
 $projects_args = array(
   'post_type'      => 'reference',
-  'posts_per_page' => $number_of_projects,
-  'post_status'    => 'publish', // 'published' is incorrect, use 'publish'
+  'posts_per_page' => $number_of_projects !== "" ? $number_of_projects : -1,
+  'post_status'    => 'publish',
   'orderby'        => 'date',
   'order'          => 'DESC',
 );
