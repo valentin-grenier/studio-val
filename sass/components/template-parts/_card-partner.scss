@@ -1,0 +1,39 @@
+.st-card-partner {
+	position: relative;
+	background: $color__white;
+	padding: 1.5rem;
+	border-radius: $radius__md;
+	text-decoration: none;
+
+	&__image {
+		width: 6rem;
+		height: 6rem;
+		margin: 0 auto 1rem;
+
+		img {
+			object-fit: cover;
+			border-radius: $radius__full;
+		}
+	}
+
+	&__content {
+		text-align: center;
+
+		h3 {
+			font-size: $font__sm;
+			color: $color__primary;
+			margin-bottom: 0.5rem;
+		}
+
+		span {
+			font-weight: 600;
+		}
+	}
+
+	&__link-icon {
+		position: absolute;
+		top: 1rem;
+		right: 1rem;
+		transform: rotate(-45deg);
+	}
+}

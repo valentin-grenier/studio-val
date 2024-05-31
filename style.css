@@ -514,6 +514,19 @@ strong {
   margin-bottom: 0;
 }
 
+.st-partners-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+.st-partners-list.freelance .st-card-partner {
+  flex: 1;
+}
+.st-partners-list .st-card-partner {
+  min-width: 275px;
+}
+
 .st-button {
   border-radius: 8px;
   width: fit-content;
@@ -745,6 +758,40 @@ button.active {
 .st-card-step__title {
   font-size: 24px;
   margin-bottom: 1rem;
+}
+
+.st-card-partner {
+  position: relative;
+  background: #ffffff;
+  padding: 1.5rem;
+  border-radius: 20px;
+  text-decoration: none;
+}
+.st-card-partner__image {
+  width: 6rem;
+  height: 6rem;
+  margin: 0 auto 1rem;
+}
+.st-card-partner__image img {
+  object-fit: cover;
+  border-radius: 9999px;
+}
+.st-card-partner__content {
+  text-align: center;
+}
+.st-card-partner__content h3 {
+  font-size: 16px;
+  color: #4d65c7;
+  margin-bottom: 0.5rem;
+}
+.st-card-partner__content span {
+  font-weight: 600;
+}
+.st-card-partner__link-icon {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  transform: rotate(-45deg);
 }
 
 .st-graphic-blocks .st-block {

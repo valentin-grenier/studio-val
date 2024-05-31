@@ -1,0 +1,16 @@
+.st-partners-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 2rem;
+
+	&.freelance {
+		.st-card-partner {
+			flex: 1;
+		}
+	}
+
+	.st-card-partner {
+		min-width: 275px;
+	}
+}
