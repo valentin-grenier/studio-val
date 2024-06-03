@@ -96,7 +96,7 @@ function studio_disable_block_editor($use_block_editor, $post_type)
 	// = Get current page template
 	$template = basename(get_page_template());
 
-	if ('page' === $post_type && $template === "template-acf.php") {
+	if ('page' === $post_type && ($template === "template-acf.php" || $template === "template-maintenance-form.php")) {
 		return false;
 	}
 	return $use_block_editor;
