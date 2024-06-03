@@ -376,6 +376,9 @@ strong {
   margin: 1.5rem auto 0;
 }
 
+.st-reviews-list {
+  max-width: 600px;
+}
 .st-reviews-list__slider {
   width: 600px;
 }
@@ -388,14 +391,14 @@ strong {
 .st-reviews-list__slider .swiper-slide-visible {
   opacity: 1;
 }
-.st-reviews-list__slider .swiper-buttons {
+.st-reviews-list .swiper-buttons {
   display: flex;
   justify-content: center;
   gap: 1.5rem;
   margin-top: 1rem;
 }
-.st-reviews-list__slider .swiper-buttons .swiper-button-prev,
-.st-reviews-list__slider .swiper-buttons .swiper-button-next {
+.st-reviews-list .swiper-buttons .swiper-button-prev,
+.st-reviews-list .swiper-buttons .swiper-button-next {
   position: relative;
   inset: unset;
   margin-top: 0;
@@ -403,15 +406,15 @@ strong {
   width: unset;
   transition: all 300ms ease;
 }
-.st-reviews-list__slider .swiper-buttons .swiper-button-prev:after,
-.st-reviews-list__slider .swiper-buttons .swiper-button-next:after {
+.st-reviews-list .swiper-buttons .swiper-button-prev:after,
+.st-reviews-list .swiper-buttons .swiper-button-next:after {
   font-family: "Poppins", sans-serif;
   font-size: 2rem;
   line-height: normal;
   content: url(/wp-content/themes/studio-val/assets/svg/arrow-rounded.svg);
   height: 2rem;
 }
-.st-reviews-list__slider .swiper-buttons .swiper-button-prev:after {
+.st-reviews-list .swiper-buttons .swiper-button-prev:after {
   transform: scale(-1, 1);
 }
 .st-reviews-list__grid {

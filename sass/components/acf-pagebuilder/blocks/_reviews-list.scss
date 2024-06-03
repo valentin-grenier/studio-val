@@ -1,4 +1,6 @@
 .st-reviews-list {
+	max-width: 600px;
+
 	&__slider {
 		width: 600px;
 
@@ -12,35 +14,35 @@
 				opacity: 1;
 			}
 		}
+	}
 
-		.swiper-buttons {
-			display: flex;
-			justify-content: center;
-			gap: 1.5rem;
-			margin-top: 1rem;
+	.swiper-buttons {
+		display: flex;
+		justify-content: center;
+		gap: 1.5rem;
+		margin-top: 1rem;
 
-			.swiper-button-prev,
-			.swiper-button-next {
-				position: relative;
-				inset: unset;
-				margin-top: 0;
-				color: $color__dark;
-				width: unset;
-				transition: all 300ms ease;
+		.swiper-button-prev,
+		.swiper-button-next {
+			position: relative;
+			inset: unset;
+			margin-top: 0;
+			color: $color__dark;
+			width: unset;
+			transition: all 300ms ease;
 
-				&:after {
-					font-family: $font__primary;
-					font-size: 2rem;
-					line-height: normal;
-					content: url(/wp-content/themes/studio-val/assets/svg/arrow-rounded.svg);
-					height: 2rem;
-				}
+			&:after {
+				font-family: $font__primary;
+				font-size: 2rem;
+				line-height: normal;
+				content: url(/wp-content/themes/studio-val/assets/svg/arrow-rounded.svg);
+				height: 2rem;
 			}
+		}
 
-			.swiper-button-prev {
-				&:after {
-					transform: scale(-1, 1);
-				}
+		.swiper-button-prev {
+			&:after {
+				transform: scale(-1, 1);
 			}
 		}
 	}
