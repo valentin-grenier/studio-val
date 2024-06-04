@@ -13,13 +13,16 @@
   src: url(/wp-content/themes/studio-val/assets/fonts/Poppins-Bold.ttf) format("truetype");
   font-weight: 700;
 }
+body {
+  font-family: "Poppins", sans-serif;
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: "Poppins", sans-serif;
   color: #232a43;
 }
 h1 strong,
@@ -48,7 +51,6 @@ p,
 ul,
 ol,
 span {
-  font-family: "Poppins", sans-serif;
   font-size: 14px;
   color: #232a43;
 }
