@@ -1,9 +1,9 @@
 <?php
-// === ACF Data
-$list_items = get_sub_field('list_items');
-$has_image = get_sub_field('has_image');
-$image = get_sub_field('image');
+$list_items = $args['list_items'] ?? null;
+$has_image = $args['has_image'] ?? null;
+$image = $args['image'] ?? null;
 $checkmark_icon = file_get_contents(get_template_directory_uri() . '/assets/svg/checkmark.svg');
+
 ?>
 
 <div class="st-list-block">

@@ -1,0 +1,57 @@
+.st-single-reference {
+	&__header {
+		position: relative;
+
+		&--content {
+			width: 700px;
+
+			h1 {
+				margin-bottom: 0.5rem;
+			}
+
+			span {
+				font-size: 1.15rem;
+				font-weight: 600;
+			}
+		}
+
+		.st-graphic-blocks {
+			.st-block {
+				inset: unset;
+
+				&:nth-child(1) {
+					right: 10rem;
+					top: 4rem;
+				}
+
+				&:nth-child(2) {
+					right: 4rem;
+					bottom: 4rem;
+				}
+			}
+		}
+	}
+
+	&__gallery {
+		position: relative;
+		background: $color__white;
+		border-radius: $radius__lg;
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+
+		&.st-section.boxed {
+			padding: 2rem;
+		}
+
+		&--item {
+			width: 800px;
+
+			img {
+				border-radius: $radius__md;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+	}
+}

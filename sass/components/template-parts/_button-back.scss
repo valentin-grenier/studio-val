@@ -1,0 +1,16 @@
+.st-button-back {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	width: fit-content;
+	color: inherit;
+	font-weight: 600;
+	text-decoration: none;
+	margin-bottom: 1rem;
+
+	&:before {
+		content: url(/wp-content/themes/studio-val/assets/svg/arrow.svg);
+		width: 1.5rem;
+		height: 1.5rem;
+	}
+}
