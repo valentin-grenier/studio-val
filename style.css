@@ -984,9 +984,13 @@ html main {
 
 .st-single-reference__header {
   position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0 8rem;
 }
 .st-single-reference__header--content {
-  width: 700px;
+  flex: 1;
 }
 .st-single-reference__header--content h1 {
   margin-bottom: 0.5rem;
@@ -995,16 +999,46 @@ html main {
   font-size: 1.15rem;
   font-weight: 600;
 }
+.st-single-reference__header--logo {
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  height: 22rem;
+  border-radius: 30px;
+}
+.st-single-reference__header--logo img {
+  object-fit: cover;
+  height: 100%;
+  border-radius: 30px;
+}
+.st-single-reference__header--logo .st-button {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.st-single-reference__header .st-graphic-blocks {
+  width: 100%;
+  height: 0;
+}
 .st-single-reference__header .st-graphic-blocks .st-block {
   inset: unset;
+  z-index: -1;
 }
 .st-single-reference__header .st-graphic-blocks .st-block:nth-child(1) {
-  right: 10rem;
-  top: 4rem;
+  left: -6rem;
+  top: -3rem;
 }
 .st-single-reference__header .st-graphic-blocks .st-block:nth-child(2) {
-  right: 4rem;
-  bottom: 4rem;
+  right: 1rem;
+  top: 0rem;
+}
+.st-single-reference__header .st-graphic-blocks .st-block:nth-child(3) {
+  bottom: -4rem;
+  left: -2rem;
 }
 .st-single-reference__gallery {
   position: relative;
@@ -1012,10 +1046,13 @@ html main {
   border-radius: 30px;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
 }
 .st-single-reference__gallery.st-section.boxed {
   padding: 2rem;
+  margin-bottom: 2rem;
+}
+.st-single-reference__gallery .swiper-pagination {
+  margin-top: 1rem;
 }
 .st-single-reference__gallery--item {
   width: 800px;
@@ -1024,6 +1061,36 @@ html main {
   border-radius: 20px;
   height: 100%;
   object-fit: cover;
+}
+.st-single-reference__details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+}
+.st-single-reference__details--list {
+  display: block;
+}
+.st-single-reference__details--list .st-list-block {
+  display: block;
+}
+.st-single-reference__details--technologies ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.st-single-reference__details--technologies ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 1rem;
+}
+.st-single-reference__details--technologies ul li img {
+  width: 4rem;
+  aspect-ratio: 1/1;
 }
 
 img {
@@ -1121,6 +1188,10 @@ form fieldset small {
   margin-bottom: 0.5rem;
 }
 
+.swiper .swiper-pagination {
+  position: relative;
+  height: 0.5rem;
+}
 .swiper .swiper-pagination span.swiper-pagination-bullet {
   background: #232a43;
 }
@@ -1131,6 +1202,18 @@ form fieldset small {
   display: flex;
   justify-content: center;
   gap: 1.5rem;
+}
+.swiper .swiper-buttons.absolute .swiper-button-prev,
+.swiper .swiper-buttons.absolute .swiper-button-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.swiper .swiper-buttons.absolute .swiper-button-prev {
+  left: 1rem;
+}
+.swiper .swiper-buttons.absolute .swiper-button-next {
+  right: 1rem;
 }
 .swiper .swiper-buttons .swiper-button-prev,
 .swiper .swiper-buttons .swiper-button-next {
