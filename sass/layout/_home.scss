@@ -1,0 +1,76 @@
+.st-home {
+	&__header {
+		h1 {
+			text-align: center;
+			line-height: 4rem;
+
+			span {
+				font-size: 2.5rem;
+				color: $color__primary;
+			}
+		}
+
+		p {
+			text-align: center;
+			font-weight: 700;
+			font-size: 1.15rem;
+			margin-bottom: 4rem;
+		}
+
+		.st-graphic-blocks {
+			.st-block {
+				&:nth-child(3) {
+					left: 8rem;
+					bottom: -1rem;
+				}
+			}
+		}
+	}
+
+	&__posts {
+		h2 {
+			text-align: center;
+		}
+
+		&-list {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 2rem;
+		}
+	}
+
+	&__categories {
+		h2 {
+			text-align: center;
+			margin-bottom: 2rem;
+		}
+
+		&--list {
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+			gap: 1rem;
+
+			.st-card {
+				img {
+					width: 4rem;
+					height: 4rem;
+					margin: auto;
+					background: $color__primary;
+					border-radius: $radius__full;
+				}
+
+				&__text {
+					font-size: 1.15rem;
+					font-weight: 700;
+				}
+			}
+		}
+	}
+
+	&__cta {
+		.st-callout-block__content {
+			max-width: 100%;
+			text-align: center;
+		}
+	}
+}
