@@ -1,5 +1,5 @@
 <?php
-$is_slider = $args['is-slider'];
+$is_slider = $args['is-slider'] ?? null;
 $title = get_the_title();
 $excerpt = get_the_excerpt();
 $category = get_the_category(get_the_ID());

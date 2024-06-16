@@ -973,13 +973,56 @@ html main {
   margin-bottom: 2rem;
 }
 
-.st-page {
-  max-width: 750px;
-  margin: auto;
+.st-home__header h1 {
+  text-align: center;
+  line-height: 4rem;
 }
-.st-page h1 {
+.st-home__header h1 span {
+  font-size: 2.5rem;
+  color: #4d65c7;
+}
+.st-home__header p {
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.15rem;
+  margin-bottom: 4rem;
+}
+.st-home__header .st-graphic-blocks .st-block:nth-child(3) {
+  left: 8rem;
+  bottom: -1rem;
+}
+.st-home__posts h2 {
+  text-align: center;
+}
+.st-home__posts-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.st-home__categories h2 {
   text-align: center;
   margin-bottom: 2rem;
+}
+.st-home__categories--list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+.st-home__categories--list .st-card img {
+  width: 4rem;
+  height: 4rem;
+  margin: auto;
+  padding: 0.5rem;
+  background: #4d65c7;
+  border-radius: 9999px;
+}
+.st-home__categories--list .st-card__text {
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+.st-home__cta .st-callout-block__content {
+  max-width: 100%;
+  text-align: center;
 }
 
 .st-single-reference__header {
@@ -1186,54 +1229,6 @@ form fieldset small {
   color: #232a43;
   font-size: 1.15rem;
   margin-bottom: 0.5rem;
-}
-
-.swiper .swiper-pagination {
-  position: relative;
-  height: 0.5rem;
-}
-.swiper .swiper-pagination span.swiper-pagination-bullet {
-  background: #232a43;
-}
-.swiper .swiper-pagination span.swiper-pagination-bullet-active {
-  background: #4d65c7;
-}
-.swiper .swiper-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-}
-.swiper .swiper-buttons.absolute .swiper-button-prev,
-.swiper .swiper-buttons.absolute .swiper-button-next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-.swiper .swiper-buttons.absolute .swiper-button-prev {
-  left: 1rem;
-}
-.swiper .swiper-buttons.absolute .swiper-button-next {
-  right: 1rem;
-}
-.swiper .swiper-buttons .swiper-button-prev,
-.swiper .swiper-buttons .swiper-button-next {
-  position: relative;
-  inset: unset;
-  margin-top: 0;
-  color: #232a43;
-  width: unset;
-  transition: all 300ms ease;
-}
-.swiper .swiper-buttons .swiper-button-prev:after,
-.swiper .swiper-buttons .swiper-button-next:after {
-  font-family: "Poppins", sans-serif;
-  font-size: 2rem;
-  line-height: normal;
-  content: url(/wp-content/themes/studio-val/assets/svg/arrow-rounded.svg);
-  height: 2rem;
-}
-.swiper .swiper-buttons .swiper-button-prev:after {
-  transform: scale(-1, 1);
 }
 
 /*# sourceMappingURL=style.css.map */

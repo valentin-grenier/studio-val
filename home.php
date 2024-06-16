@@ -88,8 +88,8 @@ $cta = array(
           ?>
 
           <a class="st-card" href="/blog/<?php echo esc_url($category->slug); ?>">
-            <?php if (get_field('image_type') === "image") : ?>
-              <img src="" alt="">
+            <?php if ($image) : ?>
+              <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>">
             <?php else : ?>
               <div class="st-card__dashicon">
                 <span class="dashicons dashicons-<?php echo esc_attr($dashicon); ?>"></span>
