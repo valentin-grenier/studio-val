@@ -1,0 +1,55 @@
+.st-single__content {
+	&.st-section {
+		padding-top: 0;
+	}
+
+	&--container {
+		position: relative;
+		background: $color__white;
+		width: calc(100% - 4rem);
+		margin: auto;
+		padding: 4rem 8rem;
+		border-radius: $radius__lg;
+	}
+
+	&--header {
+		margin-bottom: 2rem;
+		h1 {
+			font-size: $font__lg;
+			text-wrap: pretty;
+			line-height: 2.5rem;
+		}
+	}
+
+	&--tags {
+		margin-bottom: 1.5rem;
+
+		span {
+			font-weight: 600;
+			color: $color__primary;
+			margin-right: 1.5rem;
+		}
+
+		time {
+			color: $color__dark;
+			opacity: 0.75;
+		}
+	}
+
+	.wp-block-image {
+		width: 90%;
+		margin: 2rem auto;
+		border-radius: $radius__md;
+		overflow: hidden;
+	}
+
+	.wp-block-code {
+		background: #181818;
+		color: $color__white;
+		font-family: monospace;
+		font-size: $font__sm;
+		padding: 1.5rem;
+		margin: 2rem auto;
+		border-radius: $radius__sm;
+	}
+}

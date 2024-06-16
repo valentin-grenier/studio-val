@@ -1,0 +1,77 @@
+.st-single__signature {
+	margin-top: 3rem;
+	display: flex;
+	gap: 1.5rem;
+	border-top: solid 1px $color__grey;
+	padding-top: 2rem;
+
+	&--image {
+		width: 8rem;
+
+		img {
+			border-radius: $radius__md;
+		}
+	}
+
+	&--author {
+		max-width: 600px;
+
+		span {
+			display: block;
+			font-weight: 700;
+
+			&.name {
+				font-size: $font__md;
+				font-weight: 700;
+			}
+
+			&.company {
+				color: $color__primary;
+				font-size: $font__sm;
+			}
+		}
+
+		p {
+			margin-top: 0.5rem;
+		}
+
+		.st-button {
+			margin-top: 1rem;
+		}
+	}
+
+	&--socials {
+		display: flex;
+		gap: 0.5rem;
+		margin: 1rem 0;
+
+		a {
+			display: flex;
+			background: $color__dark;
+			width: fit-content;
+			padding: 0.5rem;
+			border-radius: $radius__full;
+
+			img {
+				width: 1rem;
+				filter: invert(1);
+			}
+
+			// &.has-linkedin {
+			// 	content: url(/wp-content/themes/studio-val/assets/svg/socials/logo-linkedin.svg);
+			// }
+
+			// &.has-x {
+			// 	content: url(/wp-content/themes/studio-val/assets/svg/socials/logo-x.svg);
+			// }
+
+			// &.has-threads {
+			// 	content: url(/wp-content/themes/studio-val/assets/svg/socials/logo-threads.svg);
+			// }
+
+			// &.has-link {
+			// 	content: url(/wp-content/themes/studio-val/assets/svg/socials/logo-link.svg);
+			// }
+		}
+	}
+}

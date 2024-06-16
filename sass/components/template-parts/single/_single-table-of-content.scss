@@ -1,0 +1,37 @@
+.st-single__table-of-content {
+	background: $color__light;
+	padding: 1.5rem;
+	border-radius: $radius__md;
+	margin: 2rem 0;
+
+	span {
+		display: block;
+		color: $color__primary;
+		font-weight: 700;
+		margin-bottom: 1rem;
+	}
+
+	ol {
+		list-style: none;
+		counter-reset: roman-counter;
+
+		li {
+			counter-increment: roman-counter;
+
+			&.h2 {
+				font-weight: 700;
+				margin-bottom: 0.5rem;
+
+				&:before {
+					content: counter(roman-counter, upper-roman) ' - ';
+					font-weight: 700;
+					margin-right: 0rem;
+				}
+			}
+
+			&.h3 {
+				padding-left: 0.5rem;
+			}
+		}
+	}
+}

@@ -1,0 +1,32 @@
+.st-single__sidebar {
+	position: absolute;
+	top: 4rem;
+	left: 0;
+	height: calc(100% - 8rem);
+	width: 8rem;
+
+	ul {
+		position: sticky;
+		top: 8rem;
+		list-style: none;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		gap: 1rem;
+
+		li {
+			a {
+				display: flex;
+				width: fit-content;
+				background: $color__dark;
+				padding: 0.5rem;
+				border-radius: $radius__full;
+
+				img {
+					filter: invert(1);
+					width: 1.25rem;
+				}
+			}
+		}
+	}
+}

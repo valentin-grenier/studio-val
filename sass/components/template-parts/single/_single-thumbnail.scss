@@ -1,0 +1,15 @@
+.st-single__thumbnail {
+	height: 600px;
+	overflow: hidden;
+
+	&.st-section {
+		padding-bottom: 0;
+		margin-bottom: -8rem;
+	}
+
+	img {
+		height: 100%;
+		object-fit: cover;
+		border-radius: $radius__lg;
+	}
+}
