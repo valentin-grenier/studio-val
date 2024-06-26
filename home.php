@@ -53,9 +53,9 @@ $cta = array(
 );
 ?>
 
-<main id="content" class="st-home">
+<main id="content" class="st-blog">
 
-  <section class="st-section boxed st-home__header">
+  <section class="st-section boxed st-blog__header">
     <h1><span>Studio Val</span><br /> <?php _e('Le blog du développement WordPress', 'studio-val'); ?></h1>
     <p><?php _e('Par un développeur WordPress, pour les développeurs WordPress !', 'studio-val'); ?></p>
 
@@ -64,9 +64,9 @@ $cta = array(
     <?php echo studio_generate_graphic_blocks($blocks); ?>
   </section>
 
-  <section class="st-section boxed st-home__posts">
+  <section class="st-section boxed st-blog__posts">
     <h2><?php _e('Les dernières <strong>publications</strong>', 'studio-val'); ?></h2>
-    <div class="st-home__posts-list">
+    <div class="st-blog__posts-list">
       <?php if ($posts_query->have_posts()) : ?>
         <?php while ($posts_query->have_posts()) : $posts_query->the_post(); ?>
           <?php get_template_part('template-parts/card', 'post'); ?>
@@ -76,10 +76,10 @@ $cta = array(
     </div>
   </section>
 
-  <section class="st-section boxed st-home__categories">
+  <section class="st-section boxed st-blog__categories">
     <h2><?php _e('Sur ce blog, j\'écris à propos de <strong>ces sujets</strong>', 'studio-val'); ?></h2>
     <?php if (!empty($categories)) : ?>
-      <div class="st-home__categories--list">
+      <div class="st-blog__categories--list">
         <?php foreach ($categories as $category) : ?>
           <?php
           $image_type = get_field('image_type', 'category_', $category->term_id);
@@ -103,7 +103,7 @@ $cta = array(
     <?php endif; ?>
   </section>
 
-  <section class="st-section boxed st-home__cta">
+  <section class="st-section boxed st-blog__cta">
     <div class="st-callout-block">
       <div class="st-callout-block__content">
         <h2><?php echo $cta['title']; ?></h2>

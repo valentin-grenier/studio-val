@@ -1,0 +1,14 @@
+.st-single {
+	.st-graphic-blocks {
+		.st-block {
+			&:nth-child(1) {
+				left: 4rem;
+			}
+
+			&:nth-child(2) {
+				right: 3rem;
+				top: -1rem;
+			}
+		}
+	}
+}

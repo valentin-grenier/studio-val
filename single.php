@@ -10,6 +10,12 @@
 
 get_header();
 
+// === Graphic blocks definition
+$blocks = [
+	studio_define_graphic_block('primary', 'large'),
+	studio_define_graphic_block('dark', 'medium'),
+];
+
 ?>
 
 <main id="content" class="st-single">
@@ -18,10 +24,10 @@ get_header();
 	while (have_posts()) :
 		the_post();
 
+		echo studio_generate_graphic_blocks($blocks);
+
 		get_template_part('template-parts/single/single', 'thumbnail');
-
 		get_template_part('template-parts/single/single', 'content');
-
 		get_template_part('template-parts/single/single', 'related-posts');
 
 

@@ -230,3 +230,6 @@ function save_extra_information_fields($user_id)
 	update_user_meta($user_id, 'company', sanitize_text_field($_POST['company']));
 	update_user_meta($user_id, 'position', sanitize_text_field($_POST['position']));
 }
+
+// === Remove WordPress auto-redirect
+remove_action('template_redirect', 'redirect_canonical');

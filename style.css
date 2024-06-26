@@ -571,6 +571,19 @@ button.active {
   opacity: 1;
 }
 
+input[type=submit] {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: none;
+  background: #232a43;
+  color: #ffffff;
+  cursor: pointer;
+}
+
 .st-button-back {
   display: flex;
   align-items: center;
@@ -710,6 +723,7 @@ button.active {
   border-radius: 20px;
   overflow: hidden;
   text-decoration: none;
+  height: fit-content;
 }
 .st-card-post__image {
   position: relative;
@@ -795,6 +809,38 @@ button.active {
   top: 1rem;
   right: 1rem;
   transform: rotate(-45deg);
+}
+
+.st-form-search {
+  max-width: 1000px;
+  margin: 1.5rem auto;
+}
+.st-form-search form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.st-form-search form input[type=search] {
+  width: 500px;
+  border-radius: 12px;
+}
+
+input:not(input[type=submit]) {
+  background: #ffffff;
+  border: solid 1px rgba(35, 42, 67, 0.1882352941);
+  border-radius: 8px;
+  padding: 0.75rem 0 0.75rem 0.75rem;
+  font-family: "Poppins", sans-serif;
+}
+input:not(input[type=submit])::placeholder {
+  color: rgba(35, 42, 67, 0.1882352941);
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+input:not(input[type=submit]):active, input:not(input[type=submit]):focus {
+  outline-width: 1px;
+  outline-color: #4d65c7;
 }
 
 .st-single__thumbnail {
@@ -1162,42 +1208,42 @@ html main {
   margin-bottom: 2rem;
 }
 
-.st-home__header h1 {
+.st-blog__header h1 {
   text-align: center;
   line-height: 4rem;
 }
-.st-home__header h1 span {
+.st-blog__header h1 span {
   font-size: 2.5rem;
   color: #4d65c7;
 }
-.st-home__header p {
+.st-blog__header p {
   text-align: center;
-  font-weight: 700;
-  font-size: 1.15rem;
+  font-size: 1rem;
   margin-bottom: 4rem;
 }
-.st-home__header .st-graphic-blocks .st-block:nth-child(3) {
+.st-blog__header .st-graphic-blocks .st-block:nth-child(3) {
   left: 8rem;
   bottom: -1rem;
 }
-.st-home__posts h2 {
+.st-blog__posts h2 {
   text-align: center;
+  margin-bottom: 2rem;
 }
-.st-home__posts-list {
+.st-blog__posts-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
 }
-.st-home__categories h2 {
+.st-blog__categories h2 {
   text-align: center;
   margin-bottom: 2rem;
 }
-.st-home__categories--list {
+.st-blog__categories--list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
 }
-.st-home__categories--list .st-card img {
+.st-blog__categories--list .st-card img {
   width: 4rem;
   height: 4rem;
   margin: auto;
@@ -1205,13 +1251,28 @@ html main {
   background: #4d65c7;
   border-radius: 9999px;
 }
-.st-home__categories--list .st-card__text {
+.st-blog__categories--list .st-card__text {
   font-size: 1.15rem;
   font-weight: 700;
 }
-.st-home__cta .st-callout-block__content {
+.st-blog__cta .st-callout-block__content {
   max-width: 100%;
   text-align: center;
+}
+.st-blog.category .st-blog__header p {
+  font-weight: 400;
+  font-size: 16px;
+  max-width: 1000px;
+  margin: auto;
+  text-wrap: balance;
+}
+
+.st-single .st-graphic-blocks .st-block:nth-child(1) {
+  left: 4rem;
+}
+.st-single .st-graphic-blocks .st-block:nth-child(2) {
+  right: 3rem;
+  top: -1rem;
 }
 
 .st-single-reference__header {

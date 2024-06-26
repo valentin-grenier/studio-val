@@ -68,3 +68,17 @@ button {
 		opacity: 1;
 	}
 }
+
+// == Form submit button
+input[type='submit'] {
+	padding: 10px 18px;
+	border: none;
+	border-radius: $radius__xs;
+	font-family: $font__primary;
+	font-weight: 600;
+	font-size: $font__xs;
+	text-decoration: none;
+	background: $color__dark;
+	color: $color__white;
+	cursor: pointer;
+}

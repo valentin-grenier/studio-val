@@ -1,0 +1,23 @@
+input {
+	&:not(&[type='submit']) {
+		background: $color__white;
+		border: solid 1px $color__grey;
+		border-radius: $radius__xs;
+		padding: 0.75rem 0 0.75rem 0.75rem;
+		font-family: $font__primary;
+
+		&::placeholder {
+			color: $color__grey;
+			font-family: $font__primary;
+			font-weight: 600;
+		}
+
+		&:active,
+		&:focus {
+			outline-width: 1px;
+			outline-color: $color__primary;
+		}
+	}
+
+	// * === input[type="submit"] styles are available in ./_button.scss
+}
