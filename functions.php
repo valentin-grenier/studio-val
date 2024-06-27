@@ -233,3 +233,12 @@ function save_extra_information_fields($user_id)
 
 // === Remove WordPress auto-redirect
 remove_action('template_redirect', 'redirect_canonical');
+
+
+// == Save ACF fields in acf-json folder
+function studio_acf_export_json($path)
+{
+	$path = get_stylesheet_directory() . '/acf-json';
+	return $path;
+}
+add_filter('acf/settings/save_json', 'studio_acf_export_json');
