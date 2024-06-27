@@ -110,7 +110,7 @@
                 "class": "",
                 "id": ""
             },
-            "layout": "block",
+            "layout": "row",
             "sub_fields": [
                 {
                     "key": "field_667dc5f767359",
@@ -235,7 +235,7 @@
                 "class": "",
                 "id": ""
             },
-            "layout": "block",
+            "layout": "row",
             "sub_fields": [
                 {
                     "key": "field_667dc6296735c",
@@ -322,5 +322,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1719519040
+    "modified": 1719519104
 }
