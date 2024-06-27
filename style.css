@@ -1161,14 +1161,19 @@ input:not(input[type=submit]):active, input:not(input[type=submit]):focus {
 .st-header__navigation ul.menu {
   display: flex;
   justify-content: center;
-  align-items: baseline;
+  align-items: center;
   gap: 2rem;
   padding: 0 8px 0 18px;
 }
 .st-header__navigation ul.menu li a {
+  display: flex;
   text-wrap: nowrap;
   font-weight: 600;
   font-size: 14px;
+}
+.st-header__navigation ul.menu li a img {
+  display: flex;
+  width: 6rem;
 }
 .st-header__navigation ul.menu li:not(.st-button) a {
   color: #ffffff;

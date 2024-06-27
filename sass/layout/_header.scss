@@ -22,15 +22,21 @@
 			&.menu {
 				display: flex;
 				justify-content: center;
-				align-items: baseline;
+				align-items: center;
 				gap: 2rem;
 				padding: 0 8px 0 18px;
 
 				li {
 					a {
+						display: flex;
 						text-wrap: nowrap;
 						font-weight: 600;
 						font-size: $font__xs;
+
+						img {
+							display: flex;
+							width: 6rem;
+						}
 					}
 
 					&:not(.st-button) {
