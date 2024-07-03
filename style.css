@@ -405,6 +405,33 @@ html {
 .st-reviews-list__grid .st-card-review {
   height: fit-content;
 }
+.st-reviews-list .swiper-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+.st-reviews-list .swiper-buttons .swiper-button-prev,
+.st-reviews-list .swiper-buttons .swiper-button-next {
+  position: relative;
+  inset: unset;
+  width: fit-content;
+  height: 100%;
+  margin-top: 0;
+  top: unset;
+  transition: all 200ms ease-in-out;
+}
+.st-reviews-list .swiper-buttons .swiper-button-prev:after,
+.st-reviews-list .swiper-buttons .swiper-button-next:after {
+  position: relative;
+  content: url(/wp-content/themes/studio-val/assets/svg/arrow-rounded.svg);
+  font-family: "Poppins", sans-serif;
+  font-size: unset;
+}
+.st-reviews-list .swiper-buttons .swiper-button-prev:after {
+  transform: scaleX(-1);
+}
 
 .st-blog-posts-slider__title {
   width: 750px;

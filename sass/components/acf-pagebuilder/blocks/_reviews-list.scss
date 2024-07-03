@@ -25,4 +25,36 @@
 			height: fit-content;
 		}
 	}
+
+	.swiper-buttons {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 1.5rem;
+		margin-top: 1.5rem;
+
+		.swiper-button-prev,
+		.swiper-button-next {
+			position: relative;
+			inset: unset;
+			width: fit-content;
+			height: 100%;
+			margin-top: 0;
+			top: unset;
+			transition: $transition__fast;
+
+			&:after {
+				position: relative;
+				content: url(/wp-content/themes/studio-val/assets/svg/arrow-rounded.svg);
+				font-family: $font__primary;
+				font-size: unset;
+			}
+		}
+
+		.swiper-button-prev {
+			&:after {
+				transform: scaleX(-1);
+			}
+		}
+	}
 }
