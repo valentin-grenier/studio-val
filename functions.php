@@ -76,6 +76,7 @@ function studio_scripts()
 	wp_enqueue_script('studio-reviews-blog-posts-slider', get_template_directory_uri() . '/js/blog-posts-slider.js', array(), _S_VERSION, true);
 	wp_enqueue_script('studio-single-reference', get_template_directory_uri() . '/js/single-reference.js', array(), _S_VERSION, true);
 	wp_enqueue_script('studio-single-headings', get_template_directory_uri() . '/js/single-headings.js', array(), _S_VERSION, true);
+	wp_enqueue_script('studio-header', get_template_directory_uri() . '/js/header.js', array(), _S_VERSION, true);
 
 	// == Comments
 	if (is_singular() && comments_open() && get_option('thread_comments')) {

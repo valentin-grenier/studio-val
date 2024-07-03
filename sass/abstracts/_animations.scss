@@ -1,2 +1,10 @@
-$transition__fast: all 200ms ease-in-out;
-$transition__normal: all 400ms ease-in-out;
+$transition__fast: all 200ms cubic-bezier(0, 0, 0.1, 1);
+$transition__normal: all 400ms cubic-bezier(0, 0, 0.1, 1);
+$transition__slow: all 800ms cubic-bezier(0, 0, 0.1, 1);
+
+$transition__smooth: all 600ms ease;
+
+html {
+	scroll-behavior: smooth;
+	scroll-margin-top: 4rem;
+}

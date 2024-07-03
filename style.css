@@ -1,3 +1,8 @@
+html {
+  scroll-behavior: smooth;
+  scroll-margin-top: 4rem;
+}
+
 @font-face {
   font-family: "Poppins";
   src: url(/wp-content/themes/studio-val/assets/fonts/Poppins-Regular.ttf) format("truetype");
@@ -420,7 +425,7 @@ html {
   height: 100%;
   margin-top: 0;
   top: unset;
-  transition: all 200ms ease-in-out;
+  transition: all 200ms cubic-bezier(0, 0, 0.1, 1);
 }
 .st-reviews-list .swiper-buttons .swiper-button-prev:after,
 .st-reviews-list .swiper-buttons .swiper-button-next:after {
@@ -1170,11 +1175,17 @@ input:not(input[type=submit]):active, input:not(input[type=submit]):focus {
   position: fixed;
   top: 1.5rem;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, 0%);
   z-index: 999;
+  transition: all 400ms cubic-bezier(0, 0, 0.1, 1);
+  opacity: 1;
 }
 .st-header.logged-in {
   top: 3rem;
+}
+.st-header.hidden {
+  transform: translate(-50%, -100%);
+  opacity: 0;
 }
 .st-header__navigation {
   background: #232a43;

@@ -2,11 +2,18 @@
 	position: fixed;
 	top: 1.5rem;
 	left: 50%;
-	transform: translateX(-50%);
+	transform: translate(-50%, 0%);
 	z-index: 999;
+	transition: $transition__normal;
+	opacity: 1;
 
 	&.logged-in {
 		top: 3rem;
+	}
+
+	&.hidden {
+		transform: translate(-50%, -100%);
+		opacity: 0;
 	}
 
 	&__navigation {

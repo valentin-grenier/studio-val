@@ -31,7 +31,7 @@
 
 		<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e('Aller au contenu', 'studio-val'); ?></a>
 
-		<header class="st-header <?php echo is_user_logged_in() ? "logged-in" : ""; ?>">
+		<header class="st-header hidden <?php echo is_user_logged_in() ? "logged-in" : ""; ?>">
 			<nav class="st-header__navigation">
 				<?php
 				wp_nav_menu(
