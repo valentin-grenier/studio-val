@@ -54,12 +54,13 @@
 
 	&__text {
 		h3 {
+			font-size: $font__sm;
 			margin-bottom: 1rem;
-			line-height: 1rem;
+			line-height: 1.5rem;
 		}
 
 		p {
-			text-wrap: pretty;
+			text-wrap: balance;
 		}
 	}
 

@@ -93,7 +93,7 @@ html {
 
 .st-section {
   position: relative;
-  padding: 2.5rem 0;
+  padding: 4rem 0;
 }
 .st-section.full-width {
   max-width: 100%;
@@ -251,7 +251,7 @@ html {
 
 .st-cards-list {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   padding: 1rem 0;
 }
@@ -648,11 +648,12 @@ input[type=submit] {
   margin: 0 auto;
 }
 .st-card__text h3 {
+  font-size: 16px;
   margin-bottom: 1rem;
-  line-height: 1rem;
+  line-height: 1.5rem;
 }
 .st-card__text p {
-  text-wrap: pretty;
+  text-wrap: balance;
 }
 .st-card__button {
   margin: auto;
