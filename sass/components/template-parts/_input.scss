@@ -1,10 +1,19 @@
+label {
+	font-weight: 600;
+
+	span.wpcf7-list-item-label {
+		font-weight: 400;
+	}
+}
+
 input {
 	&:not(&[type='submit']) {
 		background: $color__white;
-		border: solid 1px $color__grey;
+		border: solid 2px $color__grey-light;
 		border-radius: $radius__xs;
 		padding: 0.75rem 0 0.75rem 0.75rem;
 		font-family: $font__primary;
+		transition: $transition__normal;
 
 		&::placeholder {
 			color: $color__grey;
@@ -17,7 +26,56 @@ input {
 			outline-width: 1px;
 			outline-color: $color__primary;
 		}
+
+		&.input {
+			&-valid {
+				outline: solid 1px $color__green;
+				border: solid 1px $color__green;
+			}
+
+			&-not-valid {
+				outline: solid 1px $color__red;
+				border: solid 1px $color__red;
+			}
+		}
+
+		&.wpcf7-not-valid {
+			outline: solid 1px $color__red;
+			border: solid 1px $color__red;
+		}
 	}
 
 	// * === input[type="submit"] styles are available in ./_button.scss
+}
+
+select {
+	background: $color__white;
+	border: solid 2px $color__grey-light;
+	border-radius: $radius__xs;
+	padding: 0.75rem 0 0.75rem 0.75rem;
+	font-family: $font__primary;
+
+	&::placeholder {
+		color: $color__grey;
+		font-family: $font__primary;
+		font-weight: 600;
+	}
+}
+
+textarea {
+	background: $color__white;
+	border: solid 2px $color__grey-light;
+	border-radius: $radius__xs;
+	padding: 0.75rem 0.75rem 0.75rem 0.75rem;
+	font-family: $font__primary;
+
+	&::placeholder {
+		color: $color__grey;
+		font-family: $font__primary;
+		font-weight: 600;
+	}
+}
+
+span.required {
+	color: $color__red;
 }

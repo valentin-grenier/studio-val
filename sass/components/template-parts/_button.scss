@@ -81,4 +81,8 @@ input[type='submit'] {
 	background: $color__dark;
 	color: $color__white;
 	cursor: pointer;
+
+	&:disabled {
+		opacity: 0.5;
+	}
 }

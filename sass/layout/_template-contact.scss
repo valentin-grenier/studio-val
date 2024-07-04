@@ -1,0 +1,93 @@
+.st-contact {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	gap: 4rem;
+
+	&.st-section.boxed {
+		padding-top: 10rem;
+	}
+
+	> .st-section.boxed,
+	aside {
+		padding-top: 2rem;
+	}
+
+	&__form {
+		margin-top: 2.5rem;
+
+		&--grid {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			column-gap: 2rem;
+		}
+
+		input:not([type='checkbox']):not([type='submit']),
+		select,
+		textarea {
+			width: 100%;
+		}
+
+		.wpcf7-list-item {
+			margin-left: 0;
+		}
+
+		.wpcf7-not-valid-tip {
+			font-weight: 600;
+			font-size: $font__xxs;
+		}
+	}
+
+	&__sidebar {
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+		position: sticky;
+		top: 2rem;
+		height: fit-content;
+		z-index: 999;
+	}
+
+	&__block {
+		padding: 1.25rem;
+		background: $color__white;
+		border-radius: $radius__sm;
+
+		> span {
+			display: block;
+			font-weight: 700;
+			font-size: $font__sm;
+			margin-bottom: 0.5rem;
+		}
+
+		> p {
+			margin-bottom: 1rem;
+		}
+
+		&--socials {
+			display: flex;
+			gap: 1rem;
+
+			img {
+				display: block;
+				border-radius: $radius__xs;
+				width: 3rem;
+			}
+		}
+	}
+
+	.st-graphic-blocks {
+		.st-block {
+			&:nth-child(1) {
+				top: 4rem;
+			}
+
+			&:nth-child(2) {
+				top: 9rem;
+			}
+
+			&:nth-child(3) {
+				left: -10%;
+			}
+		}
+	}
+}

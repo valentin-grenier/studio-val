@@ -1,5 +1,7 @@
 .st-graphic-blocks {
 	.st-block {
+		z-index: 99;
+
 		// == Block sizes
 		&.large {
 			width: 5rem;
