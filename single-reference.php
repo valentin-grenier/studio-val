@@ -13,7 +13,7 @@ get_header();
 // === Button back data
 $button_back_data = [
   'text' => __('Retour aux réalisations', 'studio-val'),
-  'link' => '/references',
+  'link' => '/portfolio',
 ];
 
 // === ACF Data

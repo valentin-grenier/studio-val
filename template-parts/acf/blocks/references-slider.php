@@ -9,7 +9,7 @@ $taxonomy = get_sub_field('selected_taxonomy');
 
 // === Retrieve references logos
 $references_args = array(
-  'post_type' => 'reference',
+  'post_type' => 'portfolio',
   'posts_per_page' => 15,
   'orderby' => 'rand'
 );

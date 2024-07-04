@@ -18,7 +18,7 @@ $terms = get_terms(array(
 
 // === Retrieve projects
 $projects_args = array(
-  'post_type'      => 'reference',
+  'post_type'      => 'portfolio',
   'posts_per_page' => $number_of_projects !== "" ? $number_of_projects : -1,
   'post_status'    => 'publish',
   'orderby'        => 'date',
