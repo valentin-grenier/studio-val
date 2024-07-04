@@ -2140,7 +2140,7 @@
             {
                 "param": "post_type",
                 "operator": "==",
-                "value": "reference"
+                "value": "portfolio"
             }
         ]
     ],
@@ -2155,5 +2155,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1719519017
+    "modified": 1720087333
 }
