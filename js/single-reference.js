@@ -1,9 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
 	if (document.querySelector('.st-single-reference__gallery.swiper')) {
 		const swiper = new Swiper('.st-single-reference__gallery.swiper', {
-			loop: false,
 			spaceBetween: 32,
-			slidesPerView: 2.5,
+			slidesPerView: 1.5,
 			centeredSlides: true,
 			loop: true,
 			speed: 600,

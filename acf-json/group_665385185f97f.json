@@ -1,6 +1,6 @@
 {
     "key": "group_665385185f97f",
-    "title": "Reference",
+    "title": "Post type - Portfolio",
     "fields": [
         {
             "key": "field_665ec6c31dfd4",
@@ -289,10 +289,12 @@
             "choices": {
                 "wordpress": "WordPress",
                 "acf": "ACF Pro",
+                "elementor": "Elementor",
                 "php": "PHP",
                 "react": "React",
                 "next-js": "Next JS",
                 "javascript": "Javascript",
+                "gsap": "GSAP",
                 "typescript": "Typescript",
                 "sass": "Sass",
                 "tailwind": "Tailwind CSS",
@@ -392,7 +394,7 @@
             {
                 "param": "post_type",
                 "operator": "==",
-                "value": "reference"
+                "value": "portfolio"
             }
         ]
     ],
@@ -405,5 +407,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1719519045
+    "modified": 1721054620
 }

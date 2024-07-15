@@ -60,7 +60,9 @@ $projects_query = new WP_Query($projects_args);
   <div class="st-projects-gallery__list">
     <?php if ($projects_query->have_posts()) : ?>
       <?php while ($projects_query->have_posts()) : $projects_query->the_post(); ?>
-        <?php get_template_part('template-parts/card', 'project'); ?>
+        <?php $description = get_field('subtitle');
+        ?>
+        <?php get_template_part('template-parts/card', 'project', array('description' => $description)); ?>
       <?php wp_reset_postdata();
       endwhile; ?>
     <?php endif; ?>

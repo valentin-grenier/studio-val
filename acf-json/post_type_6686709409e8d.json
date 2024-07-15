@@ -67,7 +67,8 @@
     "supports": [
         "title",
         "thumbnail",
-        "custom-fields"
+        "custom-fields",
+        "post-formats"
     ],
     "taxonomies": "",
     "has_archive": false,
@@ -84,5 +85,5 @@
     "delete_with_user": false,
     "register_meta_box_cb": "",
     "enter_title_here": "",
-    "modified": 1720086767
+    "modified": 1720440148
 }

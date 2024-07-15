@@ -2135,13 +2135,6 @@
                 "operator": "==",
                 "value": "template-maintenance-form.php"
             }
-        ],
-        [
-            {
-                "param": "post_type",
-                "operator": "==",
-                "value": "portfolio"
-            }
         ]
     ],
     "menu_order": 0,
@@ -2155,5 +2148,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1720087333
+    "modified": 1720092248
 }

@@ -5,7 +5,6 @@
 	height: 350px;
 	border-radius: $radius__md;
 	overflow: hidden;
-	background: $color__grey;
 
 	&__content {
 		position: absolute;
@@ -13,16 +12,17 @@
 		background: $color__white;
 		padding: 0.75rem 3.5rem 0.75rem 1rem;
 		margin: 0 0.5rem 0.5rem;
+		width: calc(100% - 1rem);
 		border-radius: $radius__md;
 
 		h3 {
-			font-size: $font__sm;
+			font-size: 15px;
 		}
 
 		p {
-			font-size: $font__xxs;
+			font-size: 14px;
 			line-height: 1.25rem;
-			margin-top: 0.5rem;
+			margin-top: 0.25rem;
 		}
 
 		svg {
@@ -38,5 +38,13 @@
 		height: 100%;
 		object-fit: cover;
 		z-index: -1;
+	}
+
+	.placeholder {
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		z-index: -1;
+		background: $color__grey;
 	}
 }
