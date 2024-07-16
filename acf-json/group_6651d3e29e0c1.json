@@ -938,6 +938,28 @@
                                     "display": "block",
                                     "sub_fields": [
                                         {
+                                            "key": "field_66955ee368602",
+                                            "label": "Number of columns (desktop)",
+                                            "name": "number_of_columns",
+                                            "aria-label": "",
+                                            "type": "number",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "default_value": 3,
+                                            "min": "",
+                                            "max": "",
+                                            "placeholder": "",
+                                            "step": "",
+                                            "prepend": "",
+                                            "append": ""
+                                        },
+                                        {
                                             "key": "field_665226dc8ef13",
                                             "label": "Cards list",
                                             "name": "cards_list",
@@ -2148,5 +2170,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1720092248
+    "modified": 1721065226
 }

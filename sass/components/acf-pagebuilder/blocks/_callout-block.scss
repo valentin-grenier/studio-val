@@ -2,11 +2,11 @@
 	background: $color__dark;
 	padding: 4rem;
 	border-radius: $radius__md;
-	max-width: 750px;
+	max-width: 100%;
 	margin: auto;
 
 	&__content {
-		max-width: 75%;
+		max-width: 750px;
 		margin: 0 auto;
 
 		* {

@@ -38,7 +38,7 @@ $background_type = $args['background_type'] ?? null;
     <?php if ($has_image) : ?>
       <?php if ($image_type == 'image' && $image) : ?>
         <div class="st-card__image <?php echo esc_attr($image_or_icon); ?>">
-          <?php echo $image_element; ?>
+          <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
         </div>
       <?php elseif ($image_type == 'dashicons' && $dashicons) : ?>
         <div class="st-card__dashicon">

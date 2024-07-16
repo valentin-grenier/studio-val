@@ -12,4 +12,8 @@
 	&.width-50 {
 		width: 50%;
 	}
+
+	p {
+		text-wrap: pretty;
+	}
 }

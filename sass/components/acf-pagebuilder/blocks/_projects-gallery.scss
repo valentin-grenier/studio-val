@@ -5,20 +5,44 @@
 		display: flex;
 		align-items: center;
 		gap: 1rem;
+		margin-bottom: 2rem;
 
 		svg {
 			width: 1.5rem;
+			height: 1.5rem;
+		}
+
+		button {
+			&.active {
+				background-color: $color__dark;
+				color: $color__white;
+			}
 		}
 	}
 
 	&__list {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
-		gap: 1.5rem;
+		row-gap: 2rem;
+		column-gap: 2rem;
 		padding: $block__padding;
 	}
 
 	.st-button {
 		margin: 1.5rem auto 0;
+	}
+
+	@media screen and (max-width: $breakpoint__md) {
+		&__filters {
+			flex-wrap: wrap;
+
+			button {
+				text-wrap: nowrap;
+			}
+		}
+
+		&__list {
+			grid-template-columns: 1fr;
+		}
 	}
 }

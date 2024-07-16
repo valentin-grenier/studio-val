@@ -3,16 +3,24 @@
 	padding: 4rem 0;
 
 	&.full-width {
-		max-width: 100%;
+		width: 100%;
 	}
 
 	&.boxed {
 		max-width: $container__desktop;
-		padding: 2.5rem 0;
+		padding: 4rem 0;
 		margin: auto;
 	}
 
 	&.no-padding {
 		padding: 0;
+	}
+
+	@media screen and (max-width: calc($container__desktop + 5rem)) {
+		&.boxed {
+			width: 95%;
+			max-width: unset;
+			padding: 2.5rem 0;
+		}
 	}
 }

@@ -86,4 +86,32 @@
 			}
 		}
 	}
+
+	@media screen and (max-width: $breakpoint__lg) {
+		.st-blog__posts {
+			&-list {
+				grid-template-columns: repeat(2, 1fr);
+			}
+		}
+
+		.st-blog__categories {
+			&--list {
+				grid-template-columns: repeat(2, 1fr);
+			}
+		}
+	}
+
+	@media screen and (max-width: $breakpoint__sm) {
+		.st-blog__posts {
+			&-list {
+				grid-template-columns: 1fr;
+			}
+		}
+
+		.st-blog__categories {
+			&--list {
+				grid-template-columns: 1fr;
+			}
+		}
+	}
 }

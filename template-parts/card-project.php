@@ -5,9 +5,10 @@ $thumbnail_url = get_the_post_thumbnail_url();
 $thumbnail_alt = get_the_post_thumbnail_alt(get_the_ID());
 $permalink = get_permalink();
 $arrow_icon = file_get_contents(get_template_directory_uri() . '/assets/svg/arrow-rounded.svg');
+$category = $args['category'];
 ?>
 
-<a class="st-card-project" href="<?php echo $permalink; ?>">
+<a class="st-card-project" href="<?php echo esc_url($permalink); ?>" data-category="<?php echo esc_attr($category); ?>">
   <div class="st-card-project__content">
     <?php if ($title) : ?>
       <h3><?php echo $title; ?></h3>

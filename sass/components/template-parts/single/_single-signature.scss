@@ -56,22 +56,33 @@
 				width: 1rem;
 				filter: invert(1);
 			}
+		}
+	}
 
-			// &.has-linkedin {
-			// 	content: url(/wp-content/themes/studio-val/assets/svg/socials/logo-linkedin.svg);
-			// }
+	@media screen and (max-width: $breakpoint__md) {
+		flex-direction: column;
+		justify-content: center;
+		gap: 1rem;
 
-			// &.has-x {
-			// 	content: url(/wp-content/themes/studio-val/assets/svg/socials/logo-x.svg);
-			// }
+		&--image {
+			margin: auto;
+		}
 
-			// &.has-threads {
-			// 	content: url(/wp-content/themes/studio-val/assets/svg/socials/logo-threads.svg);
-			// }
+		&--author {
+			max-width: unset;
+			text-align: center;
+		}
 
-			// &.has-link {
-			// 	content: url(/wp-content/themes/studio-val/assets/svg/socials/logo-link.svg);
-			// }
+		&--socials {
+			justify-content: center;
+
+			a {
+				padding: 0.5rem;
+
+				img {
+					width: 1.25rem;
+				}
+			}
 		}
 	}
 }

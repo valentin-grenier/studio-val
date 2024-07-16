@@ -3,4 +3,8 @@
 	grid-template-columns: repeat(3, 1fr);
 	gap: 2rem;
 	padding: $block__padding;
+
+	@media screen and (max-width: $breakpoint__lg) {
+		grid-template-columns: repeat(2, 1fr) !important;
+	}
 }

@@ -1,10 +1,10 @@
 <?php
 // === ACF Data
 $cards_list = get_sub_field('cards_list');
-
+$number_of_columns = get_sub_field('number_of_columns');
 ?>
 
-<div class="st-cards-list">
+<div class="st-cards-list" style="grid-template-columns: repeat(<?php echo esc_attr($number_of_columns); ?>, 1fr)">
   <?php if ($cards_list) : ?>
     <?php foreach ($cards_list as $data) : ?>
       <?php

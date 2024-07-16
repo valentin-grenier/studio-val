@@ -1,6 +1,4 @@
 .st-reviews-list {
-	max-width: 600px;
-
 	&__slider {
 		width: 600px;
 
@@ -17,12 +15,13 @@
 	}
 
 	&__grid {
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
+		display: flex;
+		flex-wrap: wrap;
 		gap: 2rem;
 
 		.st-card-review {
 			height: fit-content;
+			width: calc(50% - 1rem);
 		}
 	}
 
@@ -54,6 +53,20 @@
 		.swiper-button-prev {
 			&:after {
 				transform: scaleX(-1);
+			}
+		}
+	}
+
+	@media screen and (max-width: $breakpoint__md) {
+		&__grid {
+			position: relative;
+			flex-wrap: nowrap;
+			overflow: scroll;
+			scroll-snap-type: x mandatory;
+
+			.st-card-review {
+				width: 75%;
+				scroll-snap-align: start;
 			}
 		}
 	}

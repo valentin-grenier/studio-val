@@ -60,4 +60,7 @@
 		-o-transition-timing-function: linear !important;
 		transition-timing-function: linear !important;
 	}
+
+	@media screen and (max-width: $breakpoint__lg) {
+	}
 }

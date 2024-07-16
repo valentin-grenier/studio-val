@@ -5,6 +5,13 @@
 	height: 350px;
 	border-radius: $radius__md;
 	overflow: hidden;
+	transition: all 500ms;
+	visibility: visible;
+	opacity: 1;
+
+	&.hidden {
+		display: none;
+	}
 
 	&__content {
 		position: absolute;

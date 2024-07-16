@@ -12,4 +12,8 @@
 		object-fit: cover;
 		border-radius: $radius__lg;
 	}
+
+	@media screen and (max-width: $breakpoint__md) {
+		height: 450px;
+	}
 }

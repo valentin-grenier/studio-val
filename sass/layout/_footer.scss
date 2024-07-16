@@ -7,7 +7,7 @@
 		flex-wrap: wrap;
 		justify-content: space-between;
 		gap: 4rem;
-		max-width: 1200px;
+		max-width: $container__desktop;
 		margin: auto;
 		padding: 6rem 0 4rem;
 
@@ -28,6 +28,7 @@
 			a {
 				text-decoration: underline;
 				text-underline-offset: 3px;
+				color: $color__light;
 			}
 		}
 	}
@@ -52,6 +53,7 @@
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
+		row-gap: 2rem;
 
 		* {
 			color: $color__light;
@@ -70,6 +72,13 @@
 			display: flex;
 			flex-direction: column;
 			gap: 0.25rem;
+		}
+	}
+
+	@media screen and (max-width: calc($container__desktop + 5rem)) {
+		&__container {
+			width: 95%;
+			justify-content: center;
 		}
 	}
 }

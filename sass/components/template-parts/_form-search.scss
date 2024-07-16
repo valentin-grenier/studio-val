@@ -13,4 +13,14 @@
 			border-radius: $radius__sm;
 		}
 	}
+
+	@media screen and (max-width: $breakpoint__md) {
+		max-width: 100%;
+
+		form {
+			input[type='search'] {
+				width: 100%;
+			}
+		}
+	}
 }

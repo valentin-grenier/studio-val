@@ -3,7 +3,7 @@
 		display: flex;
 		justify-content: center;
 		gap: 4rem;
-		margin-bottom: 1.5rem;
+		margin-bottom: 3rem;
 
 		&--item {
 			background: $color__white;
@@ -61,8 +61,19 @@
 
 	&__bottom {
 		p {
-			font-size: $font__xxs;
-			margin-bottom: 0;
+			width: 75%;
+			margin-left: auto;
+			margin-right: auto;
+
+			&:not(:first-of-type) {
+				margin-bottom: 0;
+			}
+
+			small {
+				display: block;
+				font-size: $font__xxs;
+				margin: inherit auto 0;
+			}
 		}
 	}
 }

@@ -30,8 +30,7 @@ $blocks = [
 		get_template_part('template-parts/single/single', 'content');
 		get_template_part('template-parts/single/single', 'related-posts');
 
-
-
+		echo '<div class="st-link-notification">' . __('Lien copié dans le presse-papier', 'studio-val') . '</div>';
 	endwhile;
 	?>
 

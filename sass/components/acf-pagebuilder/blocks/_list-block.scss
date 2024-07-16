@@ -10,12 +10,13 @@
 
 		&--item {
 			display: flex;
-			align-items: center;
+			align-items: start;
 			gap: 1rem;
 
 			span {
 				display: block;
 				height: 1rem;
+				padding-top: 0.5rem;
 			}
 		}
 	}
