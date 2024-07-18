@@ -90,7 +90,11 @@ function studio_scripts()
 		wp_enqueue_script('studio-single-portfolio', get_template_directory_uri() . '/assets/js/single-portfolio.js', array(), _S_VERSION, true);
 	}
 
-
+	// == GSAP
+	wp_enqueue_script('gsap-cdn', 'https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js', array(), false, true);
+	wp_enqueue_script('gsap-scroll-trigger', 'https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js', array('gsap-cdn'), false, true);
+	wp_enqueue_script('gsap-scroll-trigger', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ModifiersPlugin.min.js', array('gsap-modifier'), false, true);
+	wp_enqueue_script('gsap-file', get_template_directory_uri() . '/assets/js/gsap.js', array('gsap-cdn'), false, true);
 
 	// == Comments
 	if (is_singular() && comments_open() && get_option('thread_comments')) {

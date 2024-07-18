@@ -10,7 +10,7 @@ $button_2 = get_sub_field('button_2');
 $blocks = [
   studio_define_graphic_block('primary', 'large'),
   studio_define_graphic_block('dark', 'large'),
-  studio_define_graphic_block('dark', 'medium'),
+  studio_define_graphic_block('dark', 'small'),
   studio_define_graphic_block('primary', 'medium'),
 ];
 
@@ -23,14 +23,17 @@ $buttons = [
 
 <div class="st-site-title">
   <div class="st-site-title__animated-title">
-    <p>
+    <p id="animated-title">
       <?php echo $animated_title['title']; ?>
-      <?php if ($highlighted_words) : foreach ($highlighted_words as $word) : ?>
+
+      <?php if ($highlighted_words) : ?>
+        <?php foreach ($highlighted_words as $word) : ?>
           <span><?php echo $word ?></span>
-      <?php endforeach;
-      endif; ?>
+        <?php endforeach; ?>
+      <?php endif; ?>
     </p>
   </div>
+
 
   <div class="st-site-title__main-title">
     <h1><?php echo $main_title; ?></h1>

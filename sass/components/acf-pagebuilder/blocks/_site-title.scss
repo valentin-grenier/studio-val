@@ -5,6 +5,8 @@
 	position: relative;
 
 	&__animated-title {
+		opacity: 0;
+
 		p {
 			font-size: $font__xl;
 			font-weight: 700;
@@ -29,6 +31,7 @@
 
 	&__main-title {
 		text-align: center;
+		opacity: 0;
 
 		h1 {
 			font-weight: 400;
@@ -48,6 +51,7 @@
 		justify-content: center;
 		align-items: center;
 		gap: 1.5rem;
+		opacity: 0;
 	}
 
 	.st-graphic-blocks {

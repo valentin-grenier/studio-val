@@ -138,6 +138,9 @@ body,
   gap: 2rem;
   position: relative;
 }
+.st-site-title__animated-title {
+  opacity: 0;
+}
 .st-site-title__animated-title p {
   font-size: clamp(24px, 3vw + 1rem, 2.5rem);
   font-weight: 700;
@@ -158,6 +161,7 @@ body,
 }
 .st-site-title__main-title {
   text-align: center;
+  opacity: 0;
 }
 .st-site-title__main-title h1 {
   font-weight: 400;
@@ -174,6 +178,7 @@ body,
   justify-content: center;
   align-items: center;
   gap: 1.5rem;
+  opacity: 0;
 }
 .st-site-title .st-graphic-blocks .st-block:nth-child(1) {
   top: -2rem;
@@ -284,6 +289,7 @@ body,
   display: flex;
   align-items: center;
   justify-content: center;
+  opacity: 0;
 }
 .st-references-slider .swiper-slide img {
   height: 100%;
@@ -436,6 +442,7 @@ body,
   border-radius: 12px;
   text-align: center;
   font-weight: 600;
+  opacity: 0;
 }
 .st-cards-numbers__card span {
   display: block;
@@ -469,11 +476,14 @@ body,
 }
 
 .st-callout-block {
+  position: relative;
   background: #232a43;
   padding: 4rem;
   border-radius: 20px;
   max-width: 100%;
   margin: auto;
+  transform: scale(0.9);
+  opacity: 0;
 }
 .st-callout-block__content {
   max-width: 750px;
@@ -859,6 +869,7 @@ input[type=submit]:disabled {
   background: #ffffff;
   height: fit-content;
   text-decoration: none;
+  opacity: 0;
 }
 .st-card.dark {
   background: #232a43;
