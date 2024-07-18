@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	const swiper = new Swiper('.st-references-slider', {
 		loop: true,
 		spaceBetween: 48,
-
+		slidesPerView: 3,
 		autoplay: {
 			delay: 1,
 			disableOnInteraction: true,
