@@ -13,4 +13,11 @@
 	.st-card-partner {
 		min-width: 275px;
 	}
+
+	@media screen and (max-width: $breakpoint__md) {
+		.st-card-partner {
+			width: calc(50% - 1rem);
+			flex: 1;
+		}
+	}
 }

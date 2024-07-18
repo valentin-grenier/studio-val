@@ -30,4 +30,18 @@
 	@media screen and (max-width: $breakpoint__lg) {
 		gap: 2rem;
 	}
+
+	@media screen and (max-width: $breakpoint__md) {
+		overflow: scroll;
+		scroll-snap-type: x mandatory;
+
+		&::-webkit-scrollbar {
+			display: none;
+		}
+
+		&__card {
+			min-width: 200px;
+			scroll-snap-align: start;
+		}
+	}
 }

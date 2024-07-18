@@ -16,4 +16,14 @@
 	@media screen and (max-width: $breakpoint__md) {
 		height: 450px;
 	}
+
+	@media screen and (max-width: $breakpoint__sm) {
+		height: 350px;
+
+		&.st-section {
+			&.boxed {
+				width: 95%;
+			}
+		}
+	}
 }

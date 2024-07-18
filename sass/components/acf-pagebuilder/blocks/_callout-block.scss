@@ -18,7 +18,12 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		flex-wrap: wrap;
 		gap: 1.5rem;
 		margin-top: 2rem;
+	}
+
+	@media screen and (max-width: $breakpoint__sm) {
+		padding: 3rem 2rem;
 	}
 }

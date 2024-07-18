@@ -8,6 +8,9 @@
  * @package Studio Val
  */
 
+$logo = file_get_contents(get_template_directory_uri() . '/assets/svg/logo-studio-val-light.svg');
+$burger_icon = file_get_contents(get_template_directory_uri() . '/assets/svg/burger.svg');
+
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
@@ -31,7 +34,22 @@
 
 		<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e('Aller au contenu', 'studio-val'); ?></a>
 
-		<header class="st-header hidden <?php echo is_user_logged_in() ? "logged-in" : ""; ?>">
+		<header class="st-header <?php echo is_user_logged_in() ? "logged-in" : ""; ?>">
+
+			<?php if ($logo) : ?>
+				<a class="st-header__logo" href="/">
+					<?php echo $logo; ?>
+				</a>
+			<?php endif; ?>
+
+			<?php if ($burger_icon) : ?>
+				<button class="st-header__burger">
+					<div></div>
+					<div></div>
+					<div></div>
+				</button>
+			<?php endif; ?>
+
 			<nav class="st-header__navigation">
 				<?php
 				wp_nav_menu(
@@ -41,4 +59,5 @@
 				);
 				?>
 			</nav>
+
 		</header>

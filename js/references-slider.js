@@ -20,6 +20,13 @@ document.addEventListener('DOMContentLoaded', () => {
 			1024: {
 				slidesPerView: 6,
 			},
+			768: {
+				slidesPerView: 4,
+			},
+
+			425: {
+				slidesPerView: 3,
+			},
 		},
 	});
 });

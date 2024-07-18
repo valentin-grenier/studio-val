@@ -74,7 +74,7 @@ function studio_scripts()
 	wp_enqueue_script('studio-references-slider', get_template_directory_uri() . '/js/references-slider.js', array(), _S_VERSION, true);
 	wp_enqueue_script('studio-reviews-list', get_template_directory_uri() . '/js/reviews-list.js', array(), _S_VERSION, true);
 	wp_enqueue_script('studio-reviews-blog-posts-slider', get_template_directory_uri() . '/js/blog-posts-slider.js', array(), _S_VERSION, true);
-	wp_enqueue_script('studio-single-reference', get_template_directory_uri() . '/js/single-reference.js', array(), _S_VERSION, true);
+	wp_enqueue_script('studio-single-portfolio', get_template_directory_uri() . '/js/single-portfolio.js', array(), _S_VERSION, true);
 	wp_enqueue_script('studio-single-headings', get_template_directory_uri() . '/js/single-headings.js', array(), _S_VERSION, true);
 	wp_enqueue_script('studio-header', get_template_directory_uri() . '/js/header.js', array(), _S_VERSION, true);
 	wp_enqueue_script('studio-input', get_template_directory_uri() . '/js/input.js', array(), _S_VERSION, true);

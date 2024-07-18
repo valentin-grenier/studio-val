@@ -76,4 +76,21 @@
 			}
 		}
 	}
+
+	@media screen and (max-width: $breakpoint__md) {
+		&__list {
+			flex-direction: column;
+			gap: 2rem;
+
+			&--item {
+				width: 100%;
+			}
+		}
+
+		&__bottom {
+			p {
+				width: 100%;
+			}
+		}
+	}
 }

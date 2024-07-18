@@ -14,7 +14,6 @@ get_header();
 $blocks = [
   studio_define_graphic_block('primary', 'large'),
   studio_define_graphic_block('primary', 'small'),
-  studio_define_graphic_block('dark', 'medium'),
 ];
 
 // === Latests posts

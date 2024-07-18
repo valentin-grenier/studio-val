@@ -4,7 +4,6 @@
 	&__title {
 		h1 {
 			font-size: $font__xl;
-			line-height: 3.5rem;
 		}
 	}
 
@@ -44,5 +43,8 @@
 				bottom: 4rem;
 			}
 		}
+	}
+
+	@media screen and (max-width: $breakpoint__sm) {
 	}
 }

@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
-	if (document.querySelector('.st-single-reference__gallery.swiper')) {
-		const swiper = new Swiper('.st-single-reference__gallery.swiper', {
+	if (document.querySelector('.st-single-portfolio__gallery.swiper')) {
+		const swiper = new Swiper('.st-single-portfolio__gallery.swiper', {
 			spaceBetween: 32,
 			slidesPerView: 1.5,
 			centeredSlides: true,

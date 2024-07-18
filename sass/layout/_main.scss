@@ -9,4 +9,10 @@ html {
 		position: relative;
 		margin: 10rem auto 0;
 	}
+
+	@media screen and (max-width: $breakpoint__md) {
+		.st-main {
+			width: 90%;
+		}
+	}
 }

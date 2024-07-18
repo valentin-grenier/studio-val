@@ -31,9 +31,7 @@ $socials = array(
 ?>
 
 <aside class="st-single__sidebar">
-  <span class="st-single__sidebar--title">
-    <?php _e("Partagez cet article", "studio-val"); ?>
-  </span>
+
 
   <ul>
     <?php foreach ($socials as $social => $details) : ?>

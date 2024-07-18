@@ -30,4 +30,8 @@
 			border-radius: $radius__md;
 		}
 	}
+
+	@media screen and (max-width: $breakpoint__md) {
+		grid-template-columns: 1fr;
+	}
 }

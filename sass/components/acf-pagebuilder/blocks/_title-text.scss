@@ -16,4 +16,9 @@
 	@media screen and (max-width: $breakpoint__lg) {
 		gap: 2rem;
 	}
+
+	@media screen and (max-width: $breakpoint__md) {
+		flex-direction: column;
+		gap: 0;
+	}
 }

@@ -10,7 +10,7 @@ $taxonomy = get_sub_field('selected_taxonomy');
 // === Retrieve references logos
 $references_args = array(
   'post_type' => 'portfolio',
-  'posts_per_page' => 15,
+  'posts_per_page' => -1,
   'orderby' => 'rand'
 );
 
@@ -18,6 +18,7 @@ $references_args = array(
 if ($filter_by_taxonomy) {
   // == Get the term object for the selected taxonomy
   $selected_term = get_term_by('slug', $taxonomy->slug, 'service-type');
+
 
   if ($selected_term) {
     // == Initialize the terms array with the selected term's ID
@@ -62,9 +63,9 @@ $references_query = new WP_Query($references_args);
           <?php $references_query->the_post(); ?>
           <?php $logo = get_field('logo'); ?>
           <?php if ($logo) : ?>
-            <div class="st-references-slider__slide swiper-slide">
+            <a class="st-references-slider__slide swiper-slide" href="<?php echo esc_url(get_permalink(get_the_ID())); ?>">
               <img src="<?php echo esc_url($logo['url']); ?>" alt="<?php echo esc_html($logo['alt']); ?>">
-            </div>
+            </a>
           <?php endif; ?>
         <?php endwhile; ?>
         <?php wp_reset_postdata(); ?>
@@ -78,9 +79,9 @@ $references_query = new WP_Query($references_args);
         <?php $references_query->the_post(); ?>
         <?php $logo = get_field('logo'); ?>
         <?php if ($logo) : ?>
-          <div class="st-references-slider__item">
+          <a class="st-references-slider__item" href="<?php echo esc_url(get_permalink(get_the_ID())); ?>">
             <img src="<?php echo esc_url($logo['url']); ?>" alt="<?php echo esc_html($logo['alt']); ?>">
-          </div>
+          </a>
         <?php endif; ?>
       <?php endwhile; ?>
       <?php wp_reset_postdata(); ?>

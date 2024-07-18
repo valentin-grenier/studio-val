@@ -61,6 +61,19 @@
 		transition-timing-function: linear !important;
 	}
 
-	@media screen and (max-width: $breakpoint__lg) {
+	@media screen and (max-width: $breakpoint__md) {
+		&.grid {
+			.st-references-slider__item {
+				width: 25%;
+			}
+		}
+	}
+
+	@media screen and (max-width: 550px) {
+		&.grid {
+			.st-references-slider__item {
+				width: calc(50% - 1rem);
+			}
+		}
 	}
 }

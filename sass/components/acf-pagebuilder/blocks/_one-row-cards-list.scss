@@ -3,4 +3,14 @@
 		display: flex;
 		justify-content: space-between;
 	}
+
+	@media screen and (max-width: $breakpoint__md) {
+		&.one-row {
+			flex-direction: column;
+
+			h3 {
+				text-align: center;
+			}
+		}
+	}
 }

@@ -36,6 +36,7 @@
 			font-size: $font__sm;
 
 			strong {
+				display: block;
 				font-size: $font__md;
 				color: $color__dark;
 			}
@@ -72,5 +73,46 @@
 	}
 
 	@media screen and (max-width: $breakpoint__lg) {
+	}
+
+	@media screen and (max-width: $breakpoint__md) {
+		&__animated-title {
+			p {
+				line-height: 2.5rem;
+			}
+		}
+
+		&__main-title {
+			h1 {
+				line-height: 2rem;
+
+				// strong {
+				// 	margin-bottom: 1rem;
+				// }
+			}
+		}
+
+		&__buttons {
+			flex-wrap: wrap;
+		}
+
+		.st-graphic-blocks {
+			.st-block {
+				&:nth-child(1) {
+					top: -25%;
+					left: 0;
+				}
+
+				&:nth-child(2) {
+					top: -25%;
+					right: 0;
+				}
+
+				&:nth-child(3) {
+					left: 0;
+					bottom: 2rem;
+				}
+			}
+		}
 	}
 }

@@ -116,7 +116,7 @@
 		}
 	}
 
-	@media screen and (max-width: $breakpoint__sm) {
+	@media screen and (max-width: 600px) {
 		&__form {
 			&--grid {
 				grid-template-columns: 1fr;

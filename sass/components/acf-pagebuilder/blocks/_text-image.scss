@@ -10,6 +10,7 @@
 	}
 
 	&__image {
+		display: flex;
 		flex: 1;
 		position: sticky;
 		height: fit-content;
@@ -25,5 +26,10 @@
 
 	&__text {
 		flex: 1.5;
+	}
+
+	@media screen and (max-width: $breakpoint__sm) {
+		flex-direction: column;
+		gap: 2rem;
 	}
 }

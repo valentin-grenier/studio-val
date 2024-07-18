@@ -77,8 +77,29 @@
 
 	@media screen and (max-width: calc($container__desktop + 5rem)) {
 		&__container {
-			width: 95%;
+			width: 90%;
 			justify-content: center;
+		}
+	}
+
+	@media screen and (max-width: $breakpoint__md) {
+		&__container {
+			flex-wrap: wrap;
+		}
+
+		&__info {
+			width: 100%;
+		}
+
+		&__links {
+			width: 100%;
+		}
+
+		&__menu {
+			&:nth-child(1),
+			&:nth-child(2) {
+				width: calc(50% - 1rem);
+			}
 		}
 	}
 }

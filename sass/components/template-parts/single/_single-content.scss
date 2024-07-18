@@ -33,6 +33,7 @@
 		time {
 			color: $color__dark;
 			opacity: 0.75;
+			font-size: 15px;
 		}
 	}
 
@@ -59,9 +60,25 @@
 		}
 	}
 
-	@media screen and (max-width: $breakpoint__sm) {
+	@media screen and (max-width: 550px) {
+		&.st-section {
+			&.boxed {
+				width: 95%;
+			}
+		}
+
 		&--container {
 			width: 95%;
+			padding: 2rem 1.5rem;
+		}
+
+		&--tags {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		.wp-block-image {
+			width: 100%;
 		}
 	}
 }

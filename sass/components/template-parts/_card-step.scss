@@ -1,7 +1,6 @@
 .st-card-step {
 	&__number {
 		display: block;
-
 		margin: 0 0 1rem;
 		width: fit-content;
 
@@ -17,8 +16,17 @@
 	}
 
 	&__title {
-		// text-align: center;
 		font-size: $font__md;
 		margin-bottom: 1rem;
+	}
+
+	@media screen and (max-width: 600px) {
+		&__number {
+			margin: 0 auto 1rem;
+		}
+
+		&__title {
+			text-align: center;
+		}
 	}
 }

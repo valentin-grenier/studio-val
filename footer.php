@@ -54,7 +54,7 @@ $bottom = get_field('footer-bottom', 'options');
     </div>
   </div>
 </footer>
-</div><!-- #page -->
+</div>
 
 <?php wp_footer(); ?>
 

@@ -51,9 +51,9 @@ $other_projects_args = array(
 $other_projects_query = new WP_Query($other_projects_args);
 ?>
 
-<main class="st-single-reference">
-  <section class="st-section boxed st-single-reference__header">
-    <div class="st-single-reference__header--content">
+<main class="st-single-portfolio">
+  <section class="st-section boxed st-single-portfolio__header">
+    <div class="st-single-portfolio__header--content">
       <?php get_template_part('template-parts/button', 'back', $button_back_data); ?>
       <h1><?php echo $title; ?></h1>
       <span><?php echo $subtitle; ?></span>
@@ -61,7 +61,7 @@ $other_projects_query = new WP_Query($other_projects_args);
     </div>
 
     <?php if ($thumbnail_url) : ?>
-      <div class="st-single-reference__header--logo">
+      <div class="st-single-portfolio__header--logo">
         <img src="<?php echo esc_url($thumbnail_url); ?>" alt="<?php echo esc_attr($logo['alt']); ?>">
         <?php if ($project_link['text'] !== "") : ?>
           <?php get_template_part('template-parts/button', null, $project_link); ?>
@@ -73,10 +73,10 @@ $other_projects_query = new WP_Query($other_projects_args);
   </section>
 
   <?php if ($gallery) : ?>
-    <section class="st-section boxed st-single-reference__gallery swiper">
+    <section class="st-section boxed st-single-portfolio__gallery swiper">
       <div class="swiper-wrapper">
         <?php foreach ($gallery as $image) : ?>
-          <div class="st-single-reference__gallery--item swiper-slide">
+          <div class="st-single-portfolio__gallery--item swiper-slide">
             <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>">
           </div>
         <?php endforeach; ?>
@@ -92,9 +92,9 @@ $other_projects_query = new WP_Query($other_projects_args);
 
 
   <?php if ($services || $technologies) : ?>
-    <section class="st-section boxed st-single-reference__details">
+    <section class="st-section boxed st-single-portfolio__details">
       <?php if ($services) : ?>
-        <div class="st-single-reference__details--list">
+        <div class="st-single-portfolio__details--list">
           <h2><?php _e('Le projet <strong>en détail</strong>', 'studio-val'); ?></h2>
           <?php
           $services_data['list_items'] = $services;
@@ -104,7 +104,7 @@ $other_projects_query = new WP_Query($other_projects_args);
       <?php endif; ?>
 
       <?php if ($technologies) : ?>
-        <div class="st-single-reference__details--technologies">
+        <div class="st-single-portfolio__details--technologies">
           <h2><?php _e('Technologies <strong>utilisées</strong>', 'studio-val'); ?></h2>
           <ul>
             <?php foreach ($technologies as $technology) : ?>
@@ -121,7 +121,7 @@ $other_projects_query = new WP_Query($other_projects_args);
 
 
   <?php if ($cta_title) : ?>
-    <section class="st-single-reference__cta st-section boxed">
+    <section class="st-single-portfolio__cta st-section boxed">
       <div class="st-callout-block">
         <div class="st-callout-block__content">
           <h2 style="text-align: center;"><?php echo $cta_title; ?></h2>
@@ -137,10 +137,10 @@ $other_projects_query = new WP_Query($other_projects_args);
     </section>
   <?php endif; ?>
 
-  <section class="st-single-reference__other-projects st-section boxed">
-    <h2><?php _e("Découvrez mes autres <strong>réalisations</strong>", "studio-val"); ?></h2>
+  <section class="st-single-portfolio__other-projects st-section boxed">
+    <h2><?php _e("Mes autres <strong>réalisations</strong>", "studio-val"); ?></h2>
 
-    <div class="st-single-reference__other-projects--list">
+    <div class="st-single-portfolio__other-projects--list">
       <?php if ($other_projects_query->have_posts()) : ?>
         <?php while ($other_projects_query->have_posts()) : $other_projects_query->the_post(); ?>
           <?php get_template_part('template-parts/card', 'project'); ?>
