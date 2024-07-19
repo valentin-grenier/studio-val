@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-	if (document.querySelector('.st-reviews-list')) {
+	if (document.querySelector('.st-reviews-list.swiper')) {
 		const swiper = new Swiper('.st-reviews-list', {
 			effect: 'cards',
 			grabCursor: true,
