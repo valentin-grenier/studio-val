@@ -6,6 +6,7 @@
 
 	&__animated-title {
 		opacity: 0;
+		margin-bottom: 1em;
 
 		p {
 			font-size: $font__xl;
@@ -35,7 +36,7 @@
 
 		h1 {
 			font-weight: 400;
-			line-height: 2.5rem;
+			line-height: 1.5rem;
 			font-size: $font__sm;
 
 			strong {
