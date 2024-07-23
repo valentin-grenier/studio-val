@@ -43,7 +43,7 @@ $burger_icon = file_get_contents(get_template_directory_uri() . '/assets/svg/bur
 			<?php endif; ?>
 
 			<?php if ($burger_icon) : ?>
-				<button class="st-header__burger">
+				<button class="st-header__burger" aria-label="Ouvrir le menu mobile">
 					<div></div>
 					<div></div>
 					<div></div>
