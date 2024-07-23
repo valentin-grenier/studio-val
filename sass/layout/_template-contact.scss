@@ -24,19 +24,32 @@
 			column-gap: 2rem;
 		}
 
-		input:not([type='checkbox']):not([type='submit']),
-		select,
-		textarea {
-			width: 100%;
-		}
+		form {
+			input:not([type='checkbox']):not([type='submit']),
+			select,
+			textarea {
+				width: 100%;
+			}
 
-		.wpcf7-list-item {
-			margin-left: 0;
-		}
+			.wpcf7 {
+				&-list-item {
+					margin-left: 0;
+				}
 
-		.wpcf7-not-valid-tip {
-			font-weight: 600;
-			font-size: $font__xxs;
+				&-not-valid-tip {
+					font-weight: 600;
+					font-size: $font__xxs;
+				}
+
+				&-response-output {
+					border-color: $color__green;
+					border-radius: $radius__sm;
+					padding: 1rem !important;
+					background: $color__green-light;
+					font-weight: 600;
+					color: $color__dark;
+				}
+			}
 		}
 	}
 
@@ -48,7 +61,7 @@
 		top: 2rem;
 		height: fit-content;
 		width: 40%;
-		z-index: 999;
+		z-index: 99;
 	}
 
 	&__block {

@@ -780,7 +780,7 @@ body,
   font-family: "Poppins", sans-serif;
   text-decoration: none;
   font-weight: 600;
-  font-size: clamp(14px, 1.5vw + 0.25rem, 1rem);
+  font-size: 15px;
   position: relative;
 }
 .st-button.dark {
@@ -814,7 +814,7 @@ button:not(.st-header__burger) {
   border-radius: 8px;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
-  font-size: clamp(14px, 1.5vw + 0.25rem, 1rem);
+  font-size: 15px;
   text-decoration: none;
   background: rgba(35, 42, 67, 0.3137254902);
   color: #232a43;
@@ -833,11 +833,12 @@ input[type=submit] {
   border-radius: 8px;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
-  font-size: clamp(14px, 1.5vw + 0.25rem, 1rem);
+  font-size: 15px;
   text-decoration: none;
   background: #232a43;
   color: #ffffff;
   cursor: pointer;
+  transition: all 400ms cubic-bezier(0, 0, 0.1, 1);
 }
 input[type=submit]:disabled {
   opacity: 0.5;
@@ -2267,17 +2268,25 @@ html main {
   grid-template-columns: repeat(2, 1fr);
   column-gap: 2rem;
 }
-.st-contact__form input:not([type=checkbox]):not([type=submit]),
-.st-contact__form select,
-.st-contact__form textarea {
+.st-contact__form form input:not([type=checkbox]):not([type=submit]),
+.st-contact__form form select,
+.st-contact__form form textarea {
   width: 100%;
 }
-.st-contact__form .wpcf7-list-item {
+.st-contact__form form .wpcf7-list-item {
   margin-left: 0;
 }
-.st-contact__form .wpcf7-not-valid-tip {
+.st-contact__form form .wpcf7-not-valid-tip {
   font-weight: 600;
   font-size: 0.85rem;
+}
+.st-contact__form form .wpcf7-response-output {
+  border-color: #00c49a;
+  border-radius: 12px;
+  padding: 1rem !important;
+  background: #e4f1f2;
+  font-weight: 600;
+  color: #232a43;
 }
 .st-contact__sidebar {
   display: flex;
@@ -2287,7 +2296,7 @@ html main {
   top: 2rem;
   height: fit-content;
   width: 40%;
-  z-index: 999;
+  z-index: 99;
 }
 .st-contact__block {
   padding: 1.25rem;

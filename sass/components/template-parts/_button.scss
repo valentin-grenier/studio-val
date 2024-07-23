@@ -10,7 +10,7 @@
 		font-family: $font__primary;
 		text-decoration: none;
 		font-weight: 600;
-		font-size: $font__xs;
+		font-size: 15px;
 		position: relative;
 	}
 
@@ -55,7 +55,7 @@ button:not(.st-header__burger) {
 	border-radius: $radius__xs;
 	font-family: $font__primary;
 	font-weight: 600;
-	font-size: $font__xs;
+	font-size: 15px;
 	text-decoration: none;
 	background: $color__grey;
 	color: $color__dark;
@@ -76,11 +76,12 @@ input[type='submit'] {
 	border-radius: $radius__xs;
 	font-family: $font__primary;
 	font-weight: 600;
-	font-size: $font__xs;
+	font-size: 15px;
 	text-decoration: none;
 	background: $color__dark;
 	color: $color__white;
 	cursor: pointer;
+	transition: $transition__normal;
 
 	&:disabled {
 		opacity: 0.5;
