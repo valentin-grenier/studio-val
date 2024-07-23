@@ -2468,4 +2468,36 @@ form fieldset small {
   margin-bottom: 0.5rem;
 }
 
+.st-cursor {
+  width: 2rem;
+  height: 2rem;
+  background: #4d65c7;
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  transform: translate(-25%, -50%);
+  z-index: 9999;
+  transition: all 200ms cubic-bezier(0, 0, 0.1, 1);
+}
+.st-cursor svg {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(140deg);
+  opacity: 0;
+  transition: all 200ms cubic-bezier(0, 0, 0.1, 1);
+  width: 2rem;
+  height: 2rem;
+}
+.st-cursor svg path {
+  stroke: #f4f4f9;
+}
+.st-cursor.is-scaled {
+  width: 4rem;
+  height: 4rem;
+}
+.st-cursor.is-scaled svg {
+  opacity: 1;
+}
+
 /*# sourceMappingURL=main.css.map */

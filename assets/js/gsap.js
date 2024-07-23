@@ -1,5 +1,33 @@
 document.addEventListener('DOMContentLoaded', () => {
 	window.addEventListener('load', () => {
+		// == Custom cursor
+		const cursor = document.querySelector('.st-cursor');
+
+		document.addEventListener('mousemove', (event) => {
+			gsap.to(cursor, {
+				x: event.clientX + 16,
+				y: event.clientY + 24,
+				duration: 0.5,
+				ease: 'power1.out',
+			});
+		});
+
+		const growCursor = () => {
+			cursor.classList.add('is-scaled');
+		};
+
+		const resetCursor = () => {
+			cursor.classList.remove('is-scaled');
+		};
+
+		document.querySelectorAll('a').forEach((link) => {
+			link.addEventListener('mouseenter', () => {
+				growCursor();
+			});
+
+			link.addEventListener('mouseleave', resetCursor);
+		});
+
 		gsap.registerPlugin(ScrollTrigger);
 
 		// == Cards list animation
@@ -52,7 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			});
 
 		// == Callout block animation
-		gsap.utils.toArray('.st-callout-block').forEach((block, index) => {
+		gsap.utils.toArray('.st-callout-block').forEach((block) => {
 			gsap.fromTo(
 				block,
 				{

@@ -10,6 +10,7 @@
 
 $logo = file_get_contents(get_template_directory_uri() . '/assets/svg/logo-studio-val-light.svg');
 $burger_icon = file_get_contents(get_template_directory_uri() . '/assets/svg/burger.svg');
+$arrow_icon = file_get_contents(get_template_directory_uri() . '/assets/svg/arrow.svg');
 
 ?>
 <!doctype html>
@@ -59,5 +60,8 @@ $burger_icon = file_get_contents(get_template_directory_uri() . '/assets/svg/bur
 				);
 				?>
 			</nav>
-
 		</header>
+
+		<div class="st-cursor">
+			<?php echo $arrow_icon; ?>
+		</div>
