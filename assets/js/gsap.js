@@ -97,7 +97,7 @@ document.addEventListener('DOMContentLoaded', () => {
 					ease: 'expo',
 					scrollTrigger: {
 						trigger: block,
-						start: 'top: 50%',
+						start: 'top: 80%',
 						end: 'bottom: 20%',
 						toggleActions: 'play none none none',
 					},
