@@ -1,0 +1,22 @@
+.st-404 {
+	.st-section.boxed {
+		padding-top: 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+
+		h1 {
+			font-size: $font__lg;
+		}
+
+		p {
+			font-size: $font__sm;
+		}
+
+		.st-button {
+			margin-top: 2rem;
+		}
+	}
+}

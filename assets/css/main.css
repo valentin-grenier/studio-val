@@ -1515,6 +1515,24 @@ span.required {
   transform: rotate(10deg);
 }
 
+.st-404 .st-section.boxed {
+  padding-top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.st-404 .st-section.boxed h1 {
+  font-size: clamp(20px, 3vw + 0.75rem, 2rem);
+}
+.st-404 .st-section.boxed p {
+  font-size: 1rem;
+}
+.st-404 .st-section.boxed .st-button {
+  margin-top: 2rem;
+}
+
 .st-footer {
   background: #232a43;
   position: relative;
