@@ -103,6 +103,22 @@
 					}
 
 					&:not(.st-button) {
+						&.current-menu-item {
+							> a {
+								position: relative;
+
+								&:before {
+									content: '>';
+									color: $color__green;
+									position: absolute;
+									top: 50%;
+									left: -1rem;
+									transform: translateY(-50%);
+									font-size: 1.25rem;
+								}
+							}
+						}
+
 						> a {
 							color: $color__white;
 							padding: 18px 0;
@@ -147,6 +163,12 @@
 					animation-delay: 0.5s;
 					flex: 1;
 					text-align: center;
+					transition: $transition__slow;
+					transform: scale(1);
+
+					&:hover {
+						transform: scale(0.9);
+					}
 
 					a {
 						display: flex;

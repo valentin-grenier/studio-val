@@ -1708,6 +1708,18 @@ span.required {
 .st-header__navigation ul.menu > li > a > span.dashicons {
   display: none;
 }
+.st-header__navigation ul.menu > li:not(.st-button).current-menu-item > a {
+  position: relative;
+}
+.st-header__navigation ul.menu > li:not(.st-button).current-menu-item > a:before {
+  content: ">";
+  color: #00c49a;
+  position: absolute;
+  top: 50%;
+  left: -1rem;
+  transform: translateY(-50%);
+  font-size: 1.25rem;
+}
 .st-header__navigation ul.menu > li:not(.st-button) > a {
   color: #ffffff;
   padding: 18px 0;
@@ -1744,6 +1756,11 @@ span.required {
   animation-delay: 0.5s;
   flex: 1;
   text-align: center;
+  transition: all 800ms cubic-bezier(0, 0, 0.1, 1);
+  transform: scale(1);
+}
+.st-header__navigation ul.sub-menu li:hover {
+  transform: scale(0.9);
 }
 .st-header__navigation ul.sub-menu li a {
   display: flex;
