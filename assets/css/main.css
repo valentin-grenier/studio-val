@@ -2561,5 +2561,10 @@ form fieldset small {
   transform: translateY(-100%);
   opacity: 0;
 }
+@media screen and (max-width: 425px) {
+  .st-loader__inner span {
+    font-size: 2.5rem;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */
