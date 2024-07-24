@@ -38,6 +38,9 @@ document.addEventListener('DOMContentLoaded', () => {
 						duration: 0.75,
 						delay: 0.75,
 						ease: 'power2.inOut',
+						onComplete: () => {
+							loader.classList.add('is-hidden');
+						},
 					}
 				);
 			});

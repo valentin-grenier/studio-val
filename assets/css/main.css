@@ -2540,6 +2540,9 @@ form fieldset small {
   background: #232a43;
   display: flex;
 }
+.st-loader.is-hidden {
+  display: none;
+}
 .st-loader__inner {
   display: flex;
   justify-content: center;

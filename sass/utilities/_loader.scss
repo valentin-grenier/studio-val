@@ -6,6 +6,10 @@
 	background: $color__dark;
 	display: flex;
 
+	&.is-hidden {
+		display: none;
+	}
+
 	&__inner {
 		display: flex;
 		justify-content: center;
