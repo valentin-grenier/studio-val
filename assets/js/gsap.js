@@ -1,5 +1,47 @@
 document.addEventListener('DOMContentLoaded', () => {
 	window.addEventListener('load', () => {
+		// == Register GSAP plugins
+
+		gsap.registerPlugin(ScrollTrigger);
+
+		// == Homepage loader
+		const loader = document.querySelector('.st-loader');
+		const loaderInner = loader.querySelector('.st-loader__inner');
+		const loaderText = ['Studio', 'Val'];
+
+		loaderText.forEach((word, index) => {
+			const span = document.createElement('span');
+			span.textContent = word;
+			loaderInner.appendChild(span);
+
+			const tl = gsap.timeline();
+
+			tl.fromTo(
+				span,
+				{ opacity: 0, y: 75 },
+				{
+					opacity: 1,
+					y: 0,
+					duration: 0.75,
+					delay: index * 0.1,
+					ease: 'power2.inOut',
+				},
+				'+=0.75'
+			);
+
+			// == Slide up loader
+			tl.fromTo(
+				loader,
+				{ transform: 'translateY(0%)' },
+				{
+					transform: 'translateY(-100%)',
+					duration: 0.75,
+					delay: 0.75,
+					ease: 'power2.inOut',
+				}
+			);
+		});
+
 		// == Custom cursor
 		const cursor = document.querySelector('.st-cursor');
 
@@ -27,8 +69,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 			link.addEventListener('mouseleave', resetCursor);
 		});
-
-		gsap.registerPlugin(ScrollTrigger);
 
 		// == Cards list animation
 		gsap.utils.toArray('.st-cards-list .st-card').forEach((card, index) => {
@@ -250,94 +290,5 @@ document.addEventListener('DOMContentLoaded', () => {
 					}
 				);
 			});
-
-		// === Homepage animations === //
-		if (window.location.pathname === '/') {
-			// == Hero section
-			const animatedTitle = document.querySelector(
-				'.st-site-title__animated-title'
-			);
-			const mainTitle = document.querySelector(
-				'.st-site-title__main-title'
-			);
-			const buttons = document.querySelector('.st-site-title__buttons');
-			const slider = document.querySelector('.st-references-slider');
-
-			const graphicBlocks = document.querySelectorAll(
-				'.st-graphic-blocks .st-block'
-			);
-
-			if (
-				animatedTitle &&
-				mainTitle &&
-				buttons &&
-				slider &&
-				graphicBlocks
-			) {
-				const tl = gsap.timeline({
-					opacity: 1,
-				});
-
-				// == 1. Display animated title
-				tl.fromTo(
-					animatedTitle,
-					{
-						opacity: 0,
-						scale: 0.9,
-					},
-					{
-						opacity: 1,
-						scale: 1,
-						duration: 1,
-						delay: 1,
-						ease: 'expo',
-					}
-				);
-
-				// == 2. Display main title
-				tl.fromTo(
-					mainTitle,
-					{
-						opacity: 0,
-					},
-					{
-						opacity: 1,
-						delay: 0.5,
-						duration: 1,
-						ease: 'expo',
-					},
-					'-=0.5'
-				);
-
-				// == 3. Display buttons
-				tl.fromTo(
-					buttons,
-					{
-						opacity: 0,
-					},
-					{
-						opacity: 1,
-						duration: 4,
-						ease: 'expo',
-					}
-				);
-
-				// == 4. Display graphic blocks
-
-				// == 5. Display slider with delay
-				tl.fromTo(
-					slider,
-					{
-						opacity: 0,
-					},
-					{
-						opacity: 1,
-						duration: 1,
-						ease: 'expo',
-					},
-					'-=4'
-				);
-			}
-		}
 	});
 });

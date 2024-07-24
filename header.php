@@ -65,3 +65,10 @@ $arrow_icon = file_get_contents(get_template_directory_uri() . '/assets/svg/arro
 		<div class="st-cursor">
 			<?php echo $arrow_icon; ?>
 		</div>
+
+		<?php if (is_front_page()) : ?>
+			<div class="st-loader">
+				<div class="st-loader__inner"></div>
+			</div>
+
+		<?php endif; ?>

@@ -1,0 +1,28 @@
+.st-loader {
+	position: fixed;
+	z-index: 99999;
+	height: 100%;
+	width: 100%;
+	background: $color__dark;
+	display: flex;
+
+	&__inner {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 0.75rem;
+		width: 100%;
+		height: fit-content;
+		margin: auto;
+		overflow: hidden;
+
+		span {
+			color: $color__light;
+			font-size: 5rem;
+			font-weight: 700;
+			position: relative;
+			transform: translateY(-100%);
+			opacity: 0;
+		}
+	}
+}
