@@ -20,7 +20,7 @@ jobs:
                   server: ${{ secrets.FTP_SERVER }}
                   username: ${{ secrets.FTP_USERNAME }}
                   password: ${{ secrets.FTP_PASSWORD }}
-                  server-dir: /public_html/preprods/studio-val-2/wp-content/themes/studio-val/
+                  server-dir: /public_html/studio-val/wp-content/themes/studio-val/
                   exclude: |
                       **/.git*
                       **/.git*/**
