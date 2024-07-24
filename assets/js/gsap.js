@@ -5,42 +5,44 @@ document.addEventListener('DOMContentLoaded', () => {
 		gsap.registerPlugin(ScrollTrigger);
 
 		// == Homepage loader
-		const loader = document.querySelector('.st-loader');
-		const loaderInner = loader.querySelector('.st-loader__inner');
-		const loaderText = ['Studio', 'Val'];
+		if (window.location.pathname === '/') {
+			const loader = document.querySelector('.st-loader');
+			const loaderInner = loader.querySelector('.st-loader__inner');
+			const loaderText = ['Studio', 'Val'];
 
-		loaderText.forEach((word, index) => {
-			const span = document.createElement('span');
-			span.textContent = word;
-			loaderInner.appendChild(span);
+			loaderText.forEach((word, index) => {
+				const span = document.createElement('span');
+				span.textContent = word;
+				loaderInner.appendChild(span);
 
-			const tl = gsap.timeline();
+				const tl = gsap.timeline();
 
-			tl.fromTo(
-				span,
-				{ opacity: 0, y: 75 },
-				{
-					opacity: 1,
-					y: 0,
-					duration: 0.75,
-					delay: index * 0.1,
-					ease: 'power2.inOut',
-				},
-				'+=0.75'
-			);
+				tl.fromTo(
+					span,
+					{ opacity: 0, y: 75 },
+					{
+						opacity: 1,
+						y: 0,
+						duration: 0.75,
+						delay: index * 0.1,
+						ease: 'power2.inOut',
+					},
+					'+=0.75'
+				);
 
-			// == Slide up loader
-			tl.fromTo(
-				loader,
-				{ transform: 'translateY(0%)' },
-				{
-					transform: 'translateY(-100%)',
-					duration: 0.75,
-					delay: 0.75,
-					ease: 'power2.inOut',
-				}
-			);
-		});
+				// == Slide up loader
+				tl.fromTo(
+					loader,
+					{ transform: 'translateY(0%)' },
+					{
+						transform: 'translateY(-100%)',
+						duration: 0.75,
+						delay: 0.75,
+						ease: 'power2.inOut',
+					}
+				);
+			});
+		}
 
 		// == Custom cursor
 		const cursor = document.querySelector('.st-cursor');
@@ -137,7 +139,7 @@ document.addEventListener('DOMContentLoaded', () => {
 					ease: 'expo',
 					scrollTrigger: {
 						trigger: block,
-						start: 'top: 80%',
+						start: 'top: 85%',
 						end: 'bottom: 20%',
 						toggleActions: 'play none none none',
 					},
@@ -290,5 +292,21 @@ document.addEventListener('DOMContentLoaded', () => {
 					}
 				);
 			});
+
+		// == Page title animation
+		// gsap.fromTo(
+		// 	document.querySelector('.st-page-title'),
+		// 	{
+		// 		opacity: 0,
+		// 		y: 30,
+		// 	},
+		// 	{
+		// 		opacity: 1,
+		// 		y: 0,
+		// 		duration: 0.5,
+		// 		delay: 0.25,
+		// 		ease: 'expo',
+		// 	}
+		// );
 	});
 });
