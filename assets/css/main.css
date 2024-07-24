@@ -1856,6 +1856,9 @@ span.required {
   .st-header__navigation ul.menu > li {
     width: calc(50% - 0.5rem);
   }
+  .st-header__navigation ul.menu > li.current-menu-item a::before {
+    content: "";
+  }
   .st-header__navigation ul.menu > li:not(.st-button) > a {
     display: flex;
     flex-direction: column;
