@@ -7,10 +7,12 @@
 
 	&__title {
 		flex: 1.25;
+		opacity: 0;
 	}
 
 	&__text {
 		flex: 1;
+		opacity: 0;
 	}
 
 	@media screen and (max-width: $breakpoint__lg) {

@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
 	window.addEventListener('load', () => {
-		// == Register GSAP plugins
-
+		// == Register GSAP plugins == //
 		gsap.registerPlugin(ScrollTrigger);
 
 		// == Homepage loader
@@ -86,7 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
 					duration: 0.5,
 					scrollTrigger: {
 						trigger: card,
-						start: 'top: 70%',
+						start: 'top: 65%',
 						end: 'bottom: 20%',
 						toggleActions: 'play none none none',
 					},
@@ -139,7 +138,7 @@ document.addEventListener('DOMContentLoaded', () => {
 					ease: 'expo',
 					scrollTrigger: {
 						trigger: block,
-						start: 'top: 85%',
+						start: 'top: 70%',
 						end: 'bottom: 20%',
 						toggleActions: 'play none none none',
 					},
@@ -293,20 +292,264 @@ document.addEventListener('DOMContentLoaded', () => {
 				);
 			});
 
+		gsap.utils
+			.toArray('.st-references-slider.grid .st-references-slider__item')
+			.forEach((item, index) => {
+				gsap.fromTo(
+					item,
+					{
+						opacity: 0,
+						y: 50,
+					},
+					{
+						opacity: 1,
+						y: 0,
+						duration: 0.5,
+						scrollTrigger: {
+							trigger: item,
+							start: 'top: 70%',
+							end: 'bottom: 20%',
+							toggleActions: 'play none none none',
+						},
+						delay: index * 0.05,
+					}
+				);
+			});
+
 		// == Page title animation
-		// gsap.fromTo(
-		// 	document.querySelector('.st-page-title'),
-		// 	{
-		// 		opacity: 0,
-		// 		y: 30,
-		// 	},
-		// 	{
-		// 		opacity: 1,
-		// 		y: 0,
-		// 		duration: 0.5,
-		// 		delay: 0.25,
-		// 		ease: 'expo',
-		// 	}
-		// );
+		gsap.utils.toArray('.st-page-title').forEach((pageTitle) => {
+			gsap.fromTo(
+				pageTitle,
+				{
+					opacity: 0,
+				},
+
+				{
+					opacity: 1,
+					duration: 1,
+					ease: 'expo.out',
+				}
+			);
+		});
+
+		// == Title text animation
+		gsap.utils.toArray('.st-title-text').forEach((titleText) => {
+			const title = titleText.querySelector('.st-title-text__title');
+			const text = titleText.querySelector('.st-title-text__text');
+
+			gsap.fromTo(
+				title,
+				{
+					opacity: 0,
+					y: 25,
+				},
+				{
+					opacity: 1,
+					y: 0,
+					duration: 0.5,
+					delay: 0.5,
+					scrollTrigger: {
+						trigger: title,
+						start: 'top: 70%',
+						end: 'bottom: 20%',
+						toggleActions: 'play none none none',
+					},
+				}
+			);
+
+			gsap.fromTo(
+				text,
+				{
+					opacity: 0,
+					y: 25,
+				},
+				{
+					opacity: 1,
+					y: 0,
+					duration: 0.5,
+					delay: 0.5,
+					scrollTrigger: {
+						trigger: text,
+						start: 'top: 70%',
+						end: 'bottom: 20%',
+						toggleActions: 'play none none none',
+					},
+				}
+			);
+		});
+
+		// == Text block animation
+		gsap.utils.toArray('.st-text').forEach((textBlock) => {
+			gsap.fromTo(
+				textBlock,
+				{
+					opacity: 0,
+					y: 25,
+				},
+				{
+					opacity: 1,
+					y: 0,
+					duration: 0.5,
+					delay: 0.5,
+					scrollTrigger: {
+						trigger: textBlock,
+						start: 'top: 70%',
+						end: 'bottom: 20%',
+						toggleActions: 'play none none none',
+					},
+				}
+			);
+		});
+
+		// == Projects list animation
+		gsap.utils.toArray('.st-projects-gallery').forEach((element, index) => {
+			const list = element.querySelector('.st-projects-gallery__list');
+			const cards = element.querySelectorAll('.st-card-project');
+			const filters = element.querySelector(
+				'.st-projects-gallery__filters'
+			);
+
+			cards.forEach((card, index) => {
+				gsap.fromTo(
+					card,
+					{
+						opacity: 0,
+					},
+					{
+						opacity: 1,
+
+						duration: 0.5,
+						scrollTrigger: {
+							trigger: card,
+							start: 'top: 70%',
+							end: 'bottom: 20%',
+							toggleActions: 'play none none none',
+						},
+						delay: index * 0.05,
+					}
+				);
+			});
+
+			gsap.to(filters, {
+				opacity: 1,
+				delay: 0.5,
+				duration: 0.75,
+				ease: 'power2.inOut',
+				scrollTrigger: {
+					trigger: list,
+					start: 'top: 70%',
+					end: 'bottom: 20%',
+					toggleActions: 'play none none none',
+				},
+			});
+		}, '+=0.5');
+
+		// == List block animation
+		gsap.utils.toArray('.st-list-block').forEach((listBlock) => {
+			const list = listBlock.querySelectorAll('.st-list-block__list');
+			const image = listBlock.querySelector('.st-list-block__image');
+
+			gsap.fromTo(
+				list,
+				{
+					opacity: 0,
+					x: -25,
+				},
+				{
+					opacity: 1,
+					x: 0,
+					duration: 0.5,
+					delay: 0.5,
+					scrollTrigger: {
+						trigger: listBlock,
+						start: 'top: 70%',
+						end: 'bottom: 20%',
+						toggleActions: 'play none none none',
+					},
+				}
+			);
+
+			gsap.fromTo(
+				image,
+				{
+					opacity: 0,
+					x: 25,
+				},
+				{
+					opacity: 1,
+					x: 0,
+					duration: 0.5,
+					delay: 0.5,
+					scrollTrigger: {
+						trigger: listBlock,
+						start: 'top: 70%',
+						end: 'bottom: 20%',
+						toggleActions: 'play none none none',
+					},
+				}
+			);
+		});
+
+		// == Pricing table animation
+		gsap.utils
+			.toArray('.st-pricing-table__list--item')
+			.forEach((table, index) => {
+				gsap.fromTo(
+					table,
+					{
+						opacity: 0,
+						y: 25,
+					},
+					{
+						opacity: 1,
+						y: 0,
+						duration: 0.5,
+						delay: index * 0.5,
+						scrollTrigger: {
+							trigger: table,
+							start: 'top: 60%',
+							end: 'bottom: 20%',
+							toggleActions: 'play none none none',
+						},
+					}
+				);
+			});
+
+		// == Steps block animation
+		gsap.utils.toArray('.st-steps-block').forEach((stepsBlock) => {
+			const cards = stepsBlock.querySelectorAll('.st-card-step');
+
+			cards.forEach((card, index) => {
+				gsap.fromTo(
+					card,
+					{
+						opacity: 0,
+						y: 25,
+					},
+					{
+						opacity: 1,
+						y: 0,
+						duration: 1,
+						delay: index * 0.1,
+						ease: 'expo.out',
+						scrollTrigger: {
+							trigger: card,
+							start: 'top: 70%',
+							end: 'bottom: 20%',
+							toggleActions: 'play none none none',
+						},
+					}
+				);
+			});
+		});
+
+		// == Contact form animation
+		if (document.querySelector('.st-contact')) {
+			gsap.to(document.querySelector('.st-contact'), {
+				opacity: 1,
+				duration: 0.5,
+				delay: 0.75,
+			});
+		}
 	});
 });

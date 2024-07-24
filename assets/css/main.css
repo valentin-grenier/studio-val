@@ -221,6 +221,7 @@ body,
 }
 
 .st-page-title {
+  opacity: 0;
   margin-bottom: 1.5rem;
 }
 .st-page-title__title h1 {
@@ -346,6 +347,7 @@ body,
 
 .st-text {
   padding: 1rem 0 1.5rem;
+  opacity: 0;
 }
 .st-text.width-100 {
   width: 100%;
@@ -415,9 +417,11 @@ body,
 }
 .st-title-text__title {
   flex: 1.25;
+  opacity: 0;
 }
 .st-title-text__text {
   flex: 1;
+  opacity: 0;
 }
 @media screen and (max-width: 1024px) {
   .st-title-text {
@@ -516,6 +520,7 @@ body,
   align-items: center;
   gap: 1rem;
   margin-bottom: 2rem;
+  opacity: 0;
 }
 .st-projects-gallery__filters svg {
   width: 1.5rem;
@@ -654,6 +659,7 @@ body,
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  opacity: 0;
 }
 .st-list-block__list--item {
   display: flex;
@@ -667,6 +673,7 @@ body,
 }
 .st-list-block__image {
   height: 100%;
+  opacity: 0;
 }
 .st-list-block__image img {
   height: 100%;
@@ -689,6 +696,7 @@ body,
   background: #ffffff;
   padding: 1.5rem;
   border-radius: 20px;
+  opacity: 0;
 }
 .st-pricing-table__list--item h3 {
   margin-bottom: 0.5rem;
@@ -934,7 +942,7 @@ input[type=submit]:disabled {
   overflow: hidden;
   transition: all 500ms;
   visibility: visible;
-  opacity: 1;
+  opacity: 0;
 }
 .st-card-project.hidden {
   display: none;
@@ -1033,6 +1041,9 @@ input[type=submit]:disabled {
   line-height: 1.5rem;
 }
 
+.st-card-step {
+  opacity: 0;
+}
 .st-card-step__number {
   display: block;
   margin: 0 0 1rem;
@@ -2281,6 +2292,7 @@ html main {
 .st-contact {
   display: flex;
   gap: 4rem;
+  opacity: 0;
 }
 .st-contact.st-section.boxed {
   padding-top: 10rem;
