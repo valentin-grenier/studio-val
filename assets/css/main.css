@@ -2499,5 +2499,10 @@ form fieldset small {
 .st-cursor.is-scaled svg {
   opacity: 1;
 }
+@media screen and (max-width: 768px) {
+  .st-cursor {
+    display: none;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */

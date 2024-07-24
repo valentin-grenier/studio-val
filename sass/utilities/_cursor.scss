@@ -32,4 +32,8 @@
 			opacity: 1;
 		}
 	}
+
+	@media screen and (max-width: $breakpoint__md) {
+		display: none;
+	}
 }
