@@ -1,5 +1,5 @@
 node_modules
-package.lock
-
 vendor
 composer.lock
+package.lock
+.vscode
