@@ -59,4 +59,23 @@
 			transform: rotate(10deg);
 		}
 	}
+
+	@media screen and (max-width: $breakpoint__sm) {
+		.st-block {
+			&.large {
+				width: 4rem;
+				height: 4rem;
+			}
+
+			&.medium {
+				width: 3rem;
+				height: 3rem;
+			}
+
+			&.small {
+				width: 2rem;
+				height: 2rem;
+			}
+		}
+	}
 }

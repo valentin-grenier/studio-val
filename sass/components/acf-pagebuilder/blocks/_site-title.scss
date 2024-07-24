@@ -114,8 +114,13 @@
 				}
 
 				&:nth-child(3) {
-					left: 0;
-					bottom: 2rem;
+					left: 1rem;
+					bottom: 0rem;
+				}
+
+				&:nth-child(4) {
+					right: 1rem;
+					bottom: 0rem;
 				}
 			}
 		}
