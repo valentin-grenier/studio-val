@@ -498,6 +498,9 @@ body,
 .st-callout-block__content * {
   color: #ffffff;
 }
+.st-callout-block__content p {
+  text-wrap: pretty;
+}
 .st-callout-block__buttons {
   display: flex;
   justify-content: center;
