@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', () => {
 					duration: 0.5,
 					scrollTrigger: {
 						trigger: card,
-						start: 'top: 65%',
+						start: 'top: 85%',
 						end: 'bottom: 20%',
 						toggleActions: 'play none none none',
 					},
@@ -114,7 +114,7 @@ document.addEventListener('DOMContentLoaded', () => {
 						ease: 'expo.out',
 						scrollTrigger: {
 							trigger: card,
-							start: 'top: 60%',
+							start: 'top: 85%',
 							end: 'bottom: 20%',
 							toggleActions: 'play none none none',
 						},
@@ -141,7 +141,7 @@ document.addEventListener('DOMContentLoaded', () => {
 					ease: 'expo',
 					scrollTrigger: {
 						trigger: block,
-						start: 'top: 70%',
+						start: 'top: 85%',
 						end: 'bottom: 20%',
 						toggleActions: 'play none none none',
 					},
@@ -286,7 +286,7 @@ document.addEventListener('DOMContentLoaded', () => {
 						duration: 0.5,
 						scrollTrigger: {
 							trigger: slide,
-							start: 'top: 90%',
+							start: 'top: 85%',
 							end: 'bottom: 20%',
 							toggleActions: 'play none none none',
 						},
@@ -310,7 +310,7 @@ document.addEventListener('DOMContentLoaded', () => {
 						duration: 0.5,
 						scrollTrigger: {
 							trigger: item,
-							start: 'top: 70%',
+							start: 'top: 85%',
 							end: 'bottom: 20%',
 							toggleActions: 'play none none none',
 						},
@@ -350,10 +350,9 @@ document.addEventListener('DOMContentLoaded', () => {
 					opacity: 1,
 					y: 0,
 					duration: 0.5,
-					delay: 0.5,
 					scrollTrigger: {
 						trigger: title,
-						start: 'top: 70%',
+						start: 'top: 85%',
 						end: 'bottom: 20%',
 						toggleActions: 'play none none none',
 					},
@@ -370,10 +369,9 @@ document.addEventListener('DOMContentLoaded', () => {
 					opacity: 1,
 					y: 0,
 					duration: 0.5,
-					delay: 0.5,
 					scrollTrigger: {
 						trigger: text,
-						start: 'top: 70%',
+						start: 'top: 85%',
 						end: 'bottom: 20%',
 						toggleActions: 'play none none none',
 					},
@@ -393,10 +391,9 @@ document.addEventListener('DOMContentLoaded', () => {
 					opacity: 1,
 					y: 0,
 					duration: 0.5,
-					delay: 0.5,
 					scrollTrigger: {
 						trigger: textBlock,
-						start: 'top: 70%',
+						start: 'top: 85%',
 						end: 'bottom: 20%',
 						toggleActions: 'play none none none',
 					},
@@ -424,7 +421,7 @@ document.addEventListener('DOMContentLoaded', () => {
 						duration: 0.5,
 						scrollTrigger: {
 							trigger: card,
-							start: 'top: 70%',
+							start: 'top: 85%',
 							end: 'bottom: 20%',
 							toggleActions: 'play none none none',
 						},
@@ -435,12 +432,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
 			gsap.to(filters, {
 				opacity: 1,
-				delay: 0.5,
 				duration: 0.75,
 				ease: 'power2.inOut',
 				scrollTrigger: {
 					trigger: list,
-					start: 'top: 70%',
+					start: 'top: 85%',
 					end: 'bottom: 20%',
 					toggleActions: 'play none none none',
 				},
@@ -462,10 +458,9 @@ document.addEventListener('DOMContentLoaded', () => {
 					opacity: 1,
 					x: 0,
 					duration: 0.5,
-					delay: 0.5,
 					scrollTrigger: {
 						trigger: listBlock,
-						start: 'top: 70%',
+						start: 'top: 85%',
 						end: 'bottom: 20%',
 						toggleActions: 'play none none none',
 					},
@@ -482,10 +477,9 @@ document.addEventListener('DOMContentLoaded', () => {
 					opacity: 1,
 					x: 0,
 					duration: 0.5,
-					delay: 0.5,
 					scrollTrigger: {
 						trigger: listBlock,
-						start: 'top: 70%',
+						start: 'top: 85%',
 						end: 'bottom: 20%',
 						toggleActions: 'play none none none',
 					},
@@ -510,7 +504,7 @@ document.addEventListener('DOMContentLoaded', () => {
 						delay: index * 0.5,
 						scrollTrigger: {
 							trigger: table,
-							start: 'top: 60%',
+							start: 'top: 85%',
 							end: 'bottom: 20%',
 							toggleActions: 'play none none none',
 						},
@@ -537,7 +531,7 @@ document.addEventListener('DOMContentLoaded', () => {
 						ease: 'expo.out',
 						scrollTrigger: {
 							trigger: card,
-							start: 'top: 70%',
+							start: 'top: 85%',
 							end: 'bottom: 20%',
 							toggleActions: 'play none none none',
 						},
@@ -558,11 +552,10 @@ document.addEventListener('DOMContentLoaded', () => {
 					},
 					{
 						opacity: 1,
-
 						duration: 0.5,
 						scrollTrigger: {
 							trigger: card,
-							start: 'top: 80%',
+							start: 'top: 85%',
 							end: 'bottom: 20%',
 							toggleActions: 'play none none none',
 						},
@@ -575,7 +568,6 @@ document.addEventListener('DOMContentLoaded', () => {
 			gsap.to(document.querySelector('.st-contact'), {
 				opacity: 1,
 				duration: 0.5,
-				delay: 0.75,
 			});
 		}
 	});
