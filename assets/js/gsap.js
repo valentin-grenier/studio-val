@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', () => {
 					duration: 0.5,
 					scrollTrigger: {
 						trigger: card,
-						start: 'top: 85%',
+						start: 'top: 90%',
 						end: 'bottom: 20%',
 						toggleActions: 'play none none none',
 					},
@@ -114,7 +114,7 @@ document.addEventListener('DOMContentLoaded', () => {
 						ease: 'expo.out',
 						scrollTrigger: {
 							trigger: card,
-							start: 'top: 85%',
+							start: 'top: 90%',
 							end: 'bottom: 20%',
 							toggleActions: 'play none none none',
 						},
@@ -141,7 +141,7 @@ document.addEventListener('DOMContentLoaded', () => {
 					ease: 'expo',
 					scrollTrigger: {
 						trigger: block,
-						start: 'top: 85%',
+						start: 'top: 90%',
 						end: 'bottom: 20%',
 						toggleActions: 'play none none none',
 					},
@@ -286,7 +286,7 @@ document.addEventListener('DOMContentLoaded', () => {
 						duration: 0.5,
 						scrollTrigger: {
 							trigger: slide,
-							start: 'top: 85%',
+							start: 'top: 90%',
 							end: 'bottom: 20%',
 							toggleActions: 'play none none none',
 						},
@@ -310,7 +310,7 @@ document.addEventListener('DOMContentLoaded', () => {
 						duration: 0.5,
 						scrollTrigger: {
 							trigger: item,
-							start: 'top: 85%',
+							start: 'top: 90%',
 							end: 'bottom: 20%',
 							toggleActions: 'play none none none',
 						},
@@ -352,7 +352,7 @@ document.addEventListener('DOMContentLoaded', () => {
 					duration: 0.5,
 					scrollTrigger: {
 						trigger: title,
-						start: 'top: 85%',
+						start: 'top: 90%',
 						end: 'bottom: 20%',
 						toggleActions: 'play none none none',
 					},
@@ -371,7 +371,7 @@ document.addEventListener('DOMContentLoaded', () => {
 					duration: 0.5,
 					scrollTrigger: {
 						trigger: text,
-						start: 'top: 85%',
+						start: 'top: 90%',
 						end: 'bottom: 20%',
 						toggleActions: 'play none none none',
 					},
@@ -393,7 +393,7 @@ document.addEventListener('DOMContentLoaded', () => {
 					duration: 0.5,
 					scrollTrigger: {
 						trigger: textBlock,
-						start: 'top: 85%',
+						start: 'top: 90%',
 						end: 'bottom: 20%',
 						toggleActions: 'play none none none',
 					},
@@ -421,7 +421,7 @@ document.addEventListener('DOMContentLoaded', () => {
 						duration: 0.5,
 						scrollTrigger: {
 							trigger: card,
-							start: 'top: 85%',
+							start: 'top: 90%',
 							end: 'bottom: 20%',
 							toggleActions: 'play none none none',
 						},
@@ -436,7 +436,7 @@ document.addEventListener('DOMContentLoaded', () => {
 				ease: 'power2.inOut',
 				scrollTrigger: {
 					trigger: list,
-					start: 'top: 85%',
+					start: 'top: 90%',
 					end: 'bottom: 20%',
 					toggleActions: 'play none none none',
 				},
@@ -460,7 +460,7 @@ document.addEventListener('DOMContentLoaded', () => {
 					duration: 0.5,
 					scrollTrigger: {
 						trigger: listBlock,
-						start: 'top: 85%',
+						start: 'top: 90%',
 						end: 'bottom: 20%',
 						toggleActions: 'play none none none',
 					},
@@ -479,7 +479,7 @@ document.addEventListener('DOMContentLoaded', () => {
 					duration: 0.5,
 					scrollTrigger: {
 						trigger: listBlock,
-						start: 'top: 85%',
+						start: 'top: 90%',
 						end: 'bottom: 20%',
 						toggleActions: 'play none none none',
 					},
@@ -504,7 +504,7 @@ document.addEventListener('DOMContentLoaded', () => {
 						delay: index * 0.5,
 						scrollTrigger: {
 							trigger: table,
-							start: 'top: 85%',
+							start: 'top: 90%',
 							end: 'bottom: 20%',
 							toggleActions: 'play none none none',
 						},
@@ -531,7 +531,7 @@ document.addEventListener('DOMContentLoaded', () => {
 						ease: 'expo.out',
 						scrollTrigger: {
 							trigger: card,
-							start: 'top: 85%',
+							start: 'top: 90%',
 							end: 'bottom: 20%',
 							toggleActions: 'play none none none',
 						},
@@ -555,7 +555,7 @@ document.addEventListener('DOMContentLoaded', () => {
 						duration: 0.5,
 						scrollTrigger: {
 							trigger: card,
-							start: 'top: 85%',
+							start: 'top: 90%',
 							end: 'bottom: 20%',
 							toggleActions: 'play none none none',
 						},
