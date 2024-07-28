@@ -85,6 +85,7 @@ span {
 
 p {
 	line-height: 1.75rem;
+	text-wrap: pretty;
 
 	&:not(:last-of-type) {
 		margin-bottom: 1.25rem;
