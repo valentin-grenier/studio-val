@@ -401,6 +401,7 @@ body,
   position: sticky;
   height: fit-content;
   top: 2rem;
+  opacity: 0;
 }
 .st-text-image__image img {
   height: 100%;
@@ -410,6 +411,7 @@ body,
 }
 .st-text-image__text {
   flex: 1.5;
+  opacity: 0;
 }
 @media screen and (max-width: 425px) {
   .st-text-image {

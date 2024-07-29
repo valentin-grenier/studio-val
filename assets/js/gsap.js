@@ -429,6 +429,50 @@ document.addEventListener('DOMContentLoaded', () => {
 			);
 		});
 
+		// == Text image animation
+		gsap.utils.toArray('.st-text-image').forEach((textImage) => {
+			const text = textImage.querySelector('.st-text-image__text');
+			const image = textImage.querySelector('.st-text-image__image');
+
+			gsap.fromTo(
+				text,
+				{
+					opacity: 0,
+					x: 25,
+				},
+				{
+					opacity: 1,
+					x: 0,
+					duration: 0.5,
+					scrollTrigger: {
+						trigger: text,
+						start: 'top: 90%',
+						end: 'bottom: 20%',
+						toggleActions: 'play none none none',
+					},
+				}
+			);
+
+			gsap.fromTo(
+				image,
+				{
+					opacity: 0,
+					x: -25,
+				},
+				{
+					opacity: 1,
+					x: 0,
+					duration: 0.5,
+					scrollTrigger: {
+						trigger: image,
+						start: 'top: 90%',
+						end: 'bottom: 20%',
+						toggleActions: 'play none none none',
+					},
+				}
+			);
+		});
+
 		// == Text block animation
 		gsap.utils.toArray('.st-text').forEach((textBlock) => {
 			gsap.fromTo(
