@@ -257,6 +257,10 @@
 						}
 					}
 
+					&.mobile-full-width {
+						width: 100%;
+					}
+
 					&:not(.st-button) {
 						> a {
 							display: flex;

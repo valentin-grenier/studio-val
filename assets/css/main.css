@@ -1883,6 +1883,9 @@ span.required {
   .st-header__navigation ul.menu > li.current-menu-item a::before {
     content: "";
   }
+  .st-header__navigation ul.menu > li.mobile-full-width {
+    width: 100%;
+  }
   .st-header__navigation ul.menu > li:not(.st-button) > a {
     display: flex;
     flex-direction: column;
