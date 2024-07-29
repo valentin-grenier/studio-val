@@ -11,7 +11,7 @@ $link_icon = file_get_contents(get_template_directory_uri() . '/assets/svg/arrow
   <a class="st-card-partner" href="<?php echo esc_url($link['url']); ?>" target="<?php echo esc_attr($link['target']); ?>" title="<?php echo esc_attr($link['title']); ?>">
     <?php if ($image) : ?>
       <div class="st-card-partner__image">
-        <img src="<?php echo esc_url($image['sizes']['medium']); ?>" alt="<?php echo esc_url($image['alt']); ?>">
+        <img src="<?php echo esc_url($image['sizes']['medium']); ?>" alt="<?php echo esc_attr($image['alt']); ?>">
       </div>
     <?php endif; ?>
 
@@ -26,7 +26,7 @@ $link_icon = file_get_contents(get_template_directory_uri() . '/assets/svg/arrow
   <div class="st-card-partner">
     <?php if ($image) : ?>
       <div class="st-card-partner__image">
-        <img src="<?php echo esc_url($image['sizes']['medium']); ?>" alt="<?php echo esc_url($image['alt']); ?>">
+        <img src="<?php echo esc_url($image['sizes']['medium']); ?>" alt="<?php echo esc_attr($image['alt']); ?>">
       </div>
     <?php endif; ?>
 

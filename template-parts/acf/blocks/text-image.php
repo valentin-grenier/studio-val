@@ -8,7 +8,7 @@ $content_order = get_sub_field('content_order');
 <div class="st-text-image <?php echo esc_attr($content_order); ?>">
   <?php if ($image) : ?>
     <div class="st-text-image__image">
-      <img src="<?php echo esc_url($image['url']) ?>" alt="<?php echo esc_url($image['alt']) ?>">
+      <img src="<?php echo esc_url($image['url']) ?>" alt="<?php echo esc_attr($image['alt']) ?>">
     </div>
   <?php endif; ?>
 
