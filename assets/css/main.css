@@ -2617,4 +2617,12 @@ form fieldset small {
   }
 }
 
+.cmplz-cookiebanner .cmplz-buttons button {
+  opacity: 1;
+}
+
+#cmplz-manage-consent .cmplz-manage-consent {
+  opacity: 1;
+}
+
 /*# sourceMappingURL=main.css.map */
