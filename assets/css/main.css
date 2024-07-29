@@ -87,6 +87,7 @@ span a {
 
 p {
   line-height: 1.75rem;
+  text-wrap: pretty;
 }
 p:not(:last-of-type) {
   margin-bottom: 1.25rem;
@@ -506,6 +507,9 @@ body,
 }
 .st-callout-block__content * {
   color: #ffffff;
+}
+.st-callout-block__content p {
+  text-wrap: pretty;
 }
 .st-callout-block__buttons {
   display: flex;
@@ -1865,6 +1869,9 @@ span.required {
   .st-header__navigation ul.menu > li {
     width: calc(50% - 0.5rem);
   }
+  .st-header__navigation ul.menu > li.current-menu-item a::before {
+    content: "";
+  }
   .st-header__navigation ul.menu > li:not(.st-button) > a {
     display: flex;
     flex-direction: column;
@@ -1952,12 +1959,32 @@ html main {
 }
 
 .st-page {
-  max-width: 750px;
+  max-width: 800px;
   margin: auto;
 }
 .st-page h1 {
   text-align: center;
   margin-bottom: 2rem;
+}
+.st-page h2,
+.st-page h3,
+.st-page h4 {
+  margin: 1rem 0 1.5rem;
+  color: #232a43;
+}
+.st-page h2 {
+  color: #232a43;
+  font-size: 1.75rem;
+}
+.st-page h3 {
+  font-size: 1.25rem;
+}
+.st-page ul {
+  margin: 0 0 1.5rem;
+  padding-left: 1.5rem;
+}
+.st-page ul li:not(:last-child) {
+  margin-bottom: 0.5rem;
 }
 
 .st-blog__header h1 {
@@ -2549,6 +2576,9 @@ form fieldset small {
   background: #232a43;
   display: flex;
 }
+.st-loader.is-hidden {
+  display: none;
+}
 .st-loader__inner {
   display: flex;
   justify-content: center;
@@ -2566,6 +2596,11 @@ form fieldset small {
   position: relative;
   transform: translateY(-100%);
   opacity: 0;
+}
+@media screen and (max-width: 425px) {
+  .st-loader__inner span {
+    font-size: 2.5rem;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

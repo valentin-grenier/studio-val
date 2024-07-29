@@ -249,6 +249,14 @@
 				> li {
 					width: calc(50% - 0.5rem);
 
+					&.current-menu-item {
+						a {
+							&::before {
+								content: '';
+							}
+						}
+					}
+
 					&:not(.st-button) {
 						> a {
 							display: flex;

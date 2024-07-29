@@ -6,6 +6,10 @@
 	background: $color__dark;
 	display: flex;
 
+	&.is-hidden {
+		display: none;
+	}
+
 	&__inner {
 		display: flex;
 		justify-content: center;
@@ -23,6 +27,14 @@
 			position: relative;
 			transform: translateY(-100%);
 			opacity: 0;
+		}
+	}
+
+	@media screen and (max-width: $breakpoint__sm) {
+		&__inner {
+			span {
+				font-size: 2.5rem;
+			}
 		}
 	}
 }
