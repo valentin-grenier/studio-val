@@ -97,6 +97,56 @@ document.addEventListener('DOMContentLoaded', () => {
 			);
 		});
 
+		// == Partners list animation
+		gsap.utils
+			.toArray('.st-partners-list .st-card-partner')
+			.forEach((card, index) => {
+				gsap.fromTo(
+					card,
+					{
+						opacity: 0,
+						y: 30,
+					},
+					{
+						opacity: 1,
+						y: 0,
+						duration: 0.5,
+						scrollTrigger: {
+							trigger: card,
+							start: 'top: 90%',
+							end: 'bottom: 20%',
+							toggleActions: 'play none none none',
+						},
+						delay: index * 0.075,
+					}
+				);
+			});
+
+		// == Reviews list animation (grid only)
+		gsap.utils
+			.toArray('.st-reviews-list__grid .st-card-review')
+			.forEach((card, index) => {
+				gsap.fromTo(
+					card,
+					{
+						opacity: 0,
+						y: 30,
+					},
+					{
+						opacity: 1,
+						y: 0,
+						duration: 0.5,
+						scrollTrigger: {
+							trigger: card,
+							start: 'top: 90%',
+							end: 'bottom: 20%',
+							toggleActions: 'play none none none',
+						},
+						delay: index * 0.075,
+					}
+				);
+			});
+
 		// == Cards number animation
 		gsap.utils
 			.toArray('.st-cards-numbers .st-cards-numbers__card')

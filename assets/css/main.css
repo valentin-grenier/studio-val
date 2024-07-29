@@ -585,6 +585,7 @@ body,
 .st-reviews-list__grid .st-card-review {
   height: fit-content;
   width: calc(50% - 1rem);
+  opacity: 0;
 }
 .st-reviews-list .swiper-buttons {
   display: flex;
@@ -1090,6 +1091,7 @@ input[type=submit]:disabled {
   padding: 1.5rem;
   border-radius: 20px;
   text-decoration: none;
+  opacity: 0;
 }
 .st-card-partner__image {
   width: 6rem;
