@@ -543,6 +543,31 @@ document.addEventListener('DOMContentLoaded', () => {
 			});
 		});
 
+		// == Single : Other projects animation
+		gsap.utils
+			.toArray(
+				'.st-single-portfolio__other-projects--list .st-card-project'
+			)
+			.forEach((card, index) => {
+				gsap.fromTo(
+					card,
+					{
+						opacity: 0,
+					},
+					{
+						opacity: 1,
+
+						duration: 0.5,
+						scrollTrigger: {
+							trigger: card,
+							start: 'top: 80%',
+							end: 'bottom: 20%',
+							toggleActions: 'play none none none',
+						},
+					}
+				);
+			});
+
 		// == Contact form animation
 		if (document.querySelector('.st-contact')) {
 			gsap.to(document.querySelector('.st-contact'), {
