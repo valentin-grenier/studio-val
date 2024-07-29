@@ -368,6 +368,13 @@ body,
 .st-text.width-50 {
   width: 50%;
 }
+.st-text h1,
+.st-text h2,
+.st-text h3,
+.st-text h4,
+.st-text p {
+  width: 100%;
+}
 .st-text p {
   text-wrap: pretty;
 }
