@@ -1329,12 +1329,9 @@ span.required {
 }
 .st-single__table-of-content ol {
   list-style: none;
-  counter-reset: roman-counter;
-}
-.st-single__table-of-content ol li {
-  counter-increment: roman-counter;
 }
 .st-single__table-of-content ol li.h2 {
+  counter-increment: roman-counter;
   font-weight: 700;
   margin-bottom: 0.5rem;
 }
@@ -1344,7 +1341,10 @@ span.required {
   margin-right: 0rem;
 }
 .st-single__table-of-content ol li.h3 {
-  padding-left: 0.5rem;
+  padding-left: 0.75rem;
+}
+.st-single__table-of-content ol li.h3:not(:last-of-type) {
+  margin-bottom: 0.5rem;
 }
 
 .st-single__signature {

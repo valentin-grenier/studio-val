@@ -13,12 +13,10 @@
 
 	ol {
 		list-style: none;
-		counter-reset: roman-counter;
 
 		li {
-			counter-increment: roman-counter;
-
 			&.h2 {
+				counter-increment: roman-counter;
 				font-weight: 700;
 				margin-bottom: 0.5rem;
 
@@ -30,7 +28,11 @@
 			}
 
 			&.h3 {
-				padding-left: 0.5rem;
+				padding-left: 0.75rem;
+
+				&:not(:last-of-type) {
+					margin-bottom: 0.5rem;
+				}
 			}
 		}
 	}
