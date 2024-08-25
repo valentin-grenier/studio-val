@@ -19,8 +19,6 @@ $content = get_the_content();
       <p><?php _e("Publié par <strong>$author</strong>, Développeur WordPress</p>", "studio-val"); ?></p>
     </div>
 
-    <p><?php echo $excerpt; ?></p>
-
     <?php get_template_part('template-parts/single/single', 'table-of-content'); ?>
 
     <div class="st-single__content--text">

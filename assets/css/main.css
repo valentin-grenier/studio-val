@@ -1278,11 +1278,21 @@ span.required {
   opacity: 0.75;
   font-size: 15px;
 }
+.st-single__content--text h2 {
+  margin-top: 2rem;
+}
+.st-single__content--text h3 {
+  margin-top: 2rem;
+}
 .st-single__content .wp-block-image {
-  width: 90%;
+  width: 100%;
+}
+.st-single__content .wp-block-image.aligncenter img {
+  margin-left: auto;
+}
+.st-single__content .wp-block-image img {
   margin: 2rem auto;
   border-radius: 20px;
-  overflow: hidden;
 }
 .st-single__content .wp-block-code {
   background: #181818;
@@ -1292,6 +1302,14 @@ span.required {
   padding: 1.5rem;
   margin: 2rem auto;
   border-radius: 12px;
+}
+.st-single__content .wp-block-list {
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+}
+.st-single__content .wp-block-list li {
+  margin-bottom: 0.5rem;
+  line-height: 1.75rem;
 }
 @media screen and (max-width: 768px) {
   .st-single__content--container {
