@@ -1292,7 +1292,7 @@ span.required {
 }
 .st-single__content .wp-block-image img {
   margin: 2rem auto;
-  border-radius: 20px;
+  border-radius: 12px;
 }
 .st-single__content .wp-block-code {
   background: #181818;
@@ -1310,6 +1310,10 @@ span.required {
 .st-single__content .wp-block-list li {
   margin-bottom: 0.5rem;
   line-height: 1.75rem;
+}
+.st-single__content .wp-block-gallery {
+  display: flex;
+  gap: 1rem;
 }
 @media screen and (max-width: 768px) {
   .st-single__content--container {
