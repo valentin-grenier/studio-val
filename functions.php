@@ -90,6 +90,10 @@ function studio_scripts()
 		wp_enqueue_script('studio-single-portfolio', get_template_directory_uri() . '/assets/js/single-portfolio.js', array(), _S_VERSION, true);
 	}
 
+	if (is_home()) {
+		wp_enqueue_script('gsap-blog', get_template_directory_uri() . '/assets/js/gsap-blog.js', array('gsap-cdn'), _S_VERSION, true);
+	}
+
 	// == GSAP
 	wp_enqueue_script('gsap-cdn', 'https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js', array(), _S_VERSION, true);
 	wp_enqueue_script('gsap-scroll-trigger', 'https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js', array('gsap-cdn'), _S_VERSION, true);
@@ -138,7 +142,8 @@ function studio_define_graphic_block($color, $size)
 
 	// Return block properties as an array
 	return [
-		'color' => $color, 'size' => $size
+		'color' => $color,
+		'size' => $size
 	];
 }
 // == Generate graphic blocks
@@ -185,6 +190,30 @@ function studio_custom_excerpt_length($length)
 	return 20;
 }
 add_filter('excerpt_length', 'studio_custom_excerpt_length', 999);
+
+// == Long excerpt
+function studio_long_excerpt($length = 55)
+{
+	global $post;
+
+	$original_excerpt_length = apply_filters('excerpt_length', 20);
+
+	// == Temporarily change the excerpt length
+	add_filter('excerpt_length', function () use ($length) {
+		return $length;
+	}, 999);
+
+	// Get the excerpt with the new length
+	$excerpt = get_the_excerpt($post);
+
+	// Restore the original excerpt length filter
+	add_filter('excerpt_length', function () use ($original_excerpt_length) {
+		return $original_excerpt_length;
+	}, 999);
+
+	return $excerpt;
+}
+
 
 // Customize "Read More" text
 function studio_custom_excerpt_more($more)

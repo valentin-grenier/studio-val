@@ -55,16 +55,40 @@ $cta = array(
 <main id="content" class="st-blog">
 
   <section class="st-section boxed st-blog__header">
-    <h1><span>Studio Val</span><br /> <?php _e('Le blog du développement WordPress', 'studio-val'); ?></h1>
-    <p><?php _e('Par un développeur WordPress, pour les développeurs WordPress !', 'studio-val'); ?></p>
+    <div class="st-blog__title">
+      <h1><?php _e('<strong>Les actualités</strong> de Studio Val', 'studio-val'); ?></h1>
+      <p><?php _e('Par un développeur WordPress, pour les développeurs WordPress !', 'studio-val'); ?></p>
 
-    <?php get_template_part('template-parts/form', 'search'); ?>
+    </div>
+
+    <?php if ($posts_query->have_posts()) : ?>
+      <?php $posts_query->the_post(); ?>
+      <a class="st-blog__hero" href="<?php echo get_permalink(); ?>">
+        <div class="st-blog__hero--image">
+          <?php the_post_thumbnail(); ?>
+        </div>
+        <div class="st-blog__hero--content">
+
+          <div class="st-blog__hero--text">
+            <span class="label"><?php _e('Nouveau', 'studio-val'); ?></span>
+            <h2><?php echo get_the_title(); ?></h2>
+            <p><?php echo studio_long_excerpt(55); ?></p>
+          </div>
+
+          <div class="st-blog__hero--meta">
+            <?php $hero_category = get_categories(); ?>
+            <span class="category" href="<?php echo $hero_category[1]->slug; ?>"><?php echo $hero_category[1]->name; ?></span>
+            <time datetime="<?php echo get_the_date('Y-m-d'); ?>"><?php echo get_the_date('j F Y'); ?></time>
+          </div>
+        </div>
+      </a>
+    <?php endif; ?>
 
     <?php echo studio_generate_graphic_blocks($blocks); ?>
   </section>
 
   <section class="st-section boxed st-blog__posts">
-    <h2><?php _e('Les dernières <strong>publications</strong>', 'studio-val'); ?></h2>
+    <h2><?php _e('Les articles <strong>récents</strong>', 'studio-val'); ?></h2>
     <div class="st-blog__posts-list">
       <?php if ($posts_query->have_posts()) : ?>
         <?php while ($posts_query->have_posts()) : $posts_query->the_post(); ?>
@@ -73,33 +97,6 @@ $cta = array(
         <?php wp_reset_postdata(); ?>
       <?php endif; ?>
     </div>
-  </section>
-
-  <section class="st-section boxed st-blog__categories">
-    <h2><?php _e('Sur ce blog, j\'écris à propos de <strong>ces sujets</strong>', 'studio-val'); ?></h2>
-    <?php if (!empty($categories)) : ?>
-      <div class="st-blog__categories--list">
-        <?php foreach ($categories as $category) : ?>
-          <?php
-          $image_type = get_field('image_type', 'category_', $category->term_id);
-          $dashicon = get_field('dashicon', 'category_' . $category->term_id);
-          $image = get_field('image', 'category_' . $category->term_id);
-          ?>
-
-          <a class="st-card" href="/blog/<?php echo esc_url($category->slug); ?>">
-            <?php if ($image) : ?>
-              <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>">
-            <?php else : ?>
-              <div class="st-card__dashicon">
-                <span class="dashicons dashicons-<?php echo esc_attr($dashicon); ?>"></span>
-              </div>
-            <?php endif; ?>
-            <span class="st-card__text"><?php echo $category->name ?></span>
-            <span class=" st-card__link-icon"><?php echo $icon_arrow; ?></span>
-          </a>
-        <?php endforeach; ?>
-      </div>
-    <?php endif; ?>
   </section>
 
   <section class="st-section boxed st-blog__cta">

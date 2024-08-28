@@ -32,7 +32,7 @@ $socials = array(
 
 <aside class="st-single__sidebar">
 
-
+  <span class="st-single__sidebar--title"><?php _e('<strong>Partagez</strong> cet article', 'studio-val'); ?></span>
   <ul>
     <?php foreach ($socials as $social => $details) : ?>
       <li>

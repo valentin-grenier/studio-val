@@ -14,20 +14,23 @@
 
 	&--header {
 		margin-bottom: 2rem;
+
 		h1 {
 			font-size: $font__lg;
 			text-wrap: pretty;
 			line-height: 2.5rem;
+			margin-bottom: 1rem;
 		}
 	}
 
 	&--tags {
 		margin-bottom: 1.5rem;
 
-		span {
-			font-weight: 600;
-			color: $color__primary;
+		a {
+			font-weight: 700;
+			color: $color__orange;
 			margin-right: 1.5rem;
+			text-decoration: none;
 		}
 
 		time {
@@ -37,11 +40,29 @@
 		}
 	}
 
+	&--text {
+		h2 {
+			margin-top: 2rem;
+		}
+
+		h3 {
+			margin-top: 2rem;
+		}
+	}
+
 	.wp-block-image {
-		width: 90%;
-		margin: 2rem auto;
-		border-radius: $radius__md;
-		overflow: hidden;
+		width: 100%;
+
+		&.aligncenter {
+			img {
+				margin-left: auto;
+			}
+		}
+
+		img {
+			margin: 2rem auto;
+			border-radius: $radius__sm;
+		}
 	}
 
 	.wp-block-code {
@@ -52,6 +73,21 @@
 		padding: 1.5rem;
 		margin: 2rem auto;
 		border-radius: $radius__sm;
+	}
+
+	.wp-block-list {
+		margin: 1rem 0;
+		padding-left: 1.5rem;
+
+		li {
+			margin-bottom: 0.5rem;
+			line-height: 1.75rem;
+		}
+	}
+
+	.wp-block-gallery {
+		display: flex;
+		gap: 1rem;
 	}
 
 	@media screen and (max-width: $breakpoint__md) {

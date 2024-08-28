@@ -1,26 +1,22 @@
 .st-single__sidebar {
-	position: absolute;
-	top: 4rem;
-	left: 0;
-	height: calc(100% - 8rem);
-	width: 8rem;
+	margin: 4rem auto 0;
 
 	&--title {
-		display: none;
+		display: block;
+		text-align: center;
 		justify-content: center;
-		margin-bottom: 1.5rem;
+		margin-bottom: 1rem;
 		font-weight: 600;
 		font-size: $font__sm;
 	}
 
 	ul {
-		position: sticky;
-		top: 8rem;
 		list-style: none;
 		display: flex;
 		align-items: center;
-		flex-direction: column;
+		justify-content: center;
 		gap: 1rem;
+		height: fit-content;
 
 		li {
 			a {
@@ -49,25 +45,6 @@
 					filter: invert(1);
 				}
 			}
-		}
-	}
-
-	@media screen and (max-width: $breakpoint__md) {
-		position: relative;
-		inset: unset;
-		height: 100%;
-		width: 100%;
-		margin-top: 2rem;
-
-		&--title {
-			display: flex;
-		}
-
-		ul {
-			position: relative;
-			inset: unset;
-			flex-direction: row;
-			justify-content: center;
 		}
 	}
 }

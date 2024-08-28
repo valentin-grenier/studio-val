@@ -14,10 +14,18 @@ $permalink = get_permalink();
     <?php if ($thumbnail_url) : ?>
       <img src="<?php echo esc_url($thumbnail_url); ?>" alt="<?php echo esc_attr($thumbnail_alt); ?>">
     <?php endif; ?>
-    <span class="st-card-post__category"><?php echo $category[0]->name; ?></span>
   </div>
   <div class="st-card-post__content">
     <h3><?php echo $title; ?></h3>
     <p><?php echo $excerpt; ?></p>
+
+    <div class="st-card-post__meta">
+      <span class="category">
+        <?php echo $category[0]->name; ?>
+      </span>
+      <time datetime="<?php echo get_the_date('Y-m-d'); ?>"><?php echo get_the_date('j F Y'); ?></time>
+    </div>
   </div>
+
+
 </a>

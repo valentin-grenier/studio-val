@@ -1,0 +1,1263 @@
+{
+    "description": "DO NOT DELETE THIS FILE. This file is used to keep track of which files have been synced in the most recent deployment. If you delete this file a resync will need to be done (which can take a while) - read more: https://github.com/SamKirkland/FTP-Deploy-Action",
+    "version": "1.0.0",
+    "generatedTime": 1724764806663,
+    "data": [
+        {
+            "type": "file",
+            "name": ".DS_Store",
+            "size": 8196,
+            "hash": "0bd5163ea8a2a178aebc4f91c8b97f912527d2041b7a16b593372bdc37649c6a"
+        },
+        {
+            "type": "file",
+            "name": ".eslintrc",
+            "size": 120,
+            "hash": "f7333fa9c41790ddfe4e77f79e3d32175d0dc4349c5191e67332b6f4a9293ce0"
+        },
+        {
+            "type": "file",
+            "name": ".stylelintrc.json",
+            "size": 416,
+            "hash": "626983399912be08d2355878fc7c2c86ae1f4550b2702d5c25763907d40966b3"
+        },
+        {
+            "type": "file",
+            "name": "404.php",
+            "size": 1060,
+            "hash": "2594ec55d0c0e24dc919cc0df0f6cbe9f8769000a06491d668444fe6ab7ba58e"
+        },
+        {
+            "type": "file",
+            "name": "LICENSE",
+            "size": 18046,
+            "hash": "db296f2f7f35bca3a174efb0eb392b3b17bd94b341851429a3dff411b1c2fc73"
+        },
+        {
+            "type": "file",
+            "name": "README.md",
+            "size": 4485,
+            "hash": "91fb21f043e1bd53b97cd251828b22a7c74d2770af3e6e02148caa310b7f4e51"
+        },
+        {
+            "type": "folder",
+            "name": "acf-json"
+        },
+        {
+            "type": "file",
+            "name": "archive.php",
+            "size": 251,
+            "hash": "33dbf8dae34cfffbe81021470e54e33f4d69b226690b896fcf42da9de0da3c5a"
+        },
+        {
+            "type": "folder",
+            "name": "assets"
+        },
+        {
+            "type": "file",
+            "name": "category.php",
+            "size": 1793,
+            "hash": "7eb2f09b67cca0eded06e002362b07767f6b2d68fca73e546f68cbe71fcfa4c2"
+        },
+        {
+            "type": "file",
+            "name": "composer.json",
+            "size": 1280,
+            "hash": "ff9f8813a0815f57c27aaf6014c81b288256d896097f2e2c52224ed170727e01"
+        },
+        {
+            "type": "file",
+            "name": "footer.php",
+            "size": 1493,
+            "hash": "14d76f2980bffcab18bdd07f8c67cfd558f1e56cfcc05a715b0eb34b5ef5e6c8"
+        },
+        {
+            "type": "file",
+            "name": "functions.php",
+            "size": 8111,
+            "hash": "d1cf6bb4b089a7dc2f234502d043d85fd89e3c4247be7f6806375cc57888dbbd"
+        },
+        {
+            "type": "file",
+            "name": "header.php",
+            "size": 1860,
+            "hash": "f22978e5e002ba800b8c487573cc417b460b9d0893961ff35b2ab03f34de15c6"
+        },
+        {
+            "type": "file",
+            "name": "home.php",
+            "size": 4246,
+            "hash": "f57e2d22dc45fd982f9ee66406cb26e0542d1f6ef4cf24e6e246c691ac9f5cc5"
+        },
+        {
+            "type": "file",
+            "name": "index.php",
+            "size": 6,
+            "hash": "00aba3928cd622ad67c0f81ecd5aa8699e07f8f4908c045fe34f6a2dc0067b37"
+        },
+        {
+            "type": "file",
+            "name": "package.json",
+            "size": 1737,
+            "hash": "4a6b623c0b8e4beb59896575ef07825047fb8ab74991c38b0a5407c4462045c5"
+        },
+        {
+            "type": "file",
+            "name": "page.php",
+            "size": 544,
+            "hash": "0166b7164050e908c0d947caead9415baebfbc05177042f7795623467904e433"
+        },
+        {
+            "type": "file",
+            "name": "phpcs.xml.dist",
+            "size": 4042,
+            "hash": "2e4718a891426078c2521a427d3991fd680e402a41dee168d999cc737b82dd01"
+        },
+        {
+            "type": "file",
+            "name": "readme.txt",
+            "size": 1134,
+            "hash": "d97e276daa30b2cef99610bcad74b9df31828f2a54d8298f1e50d8ce54b00d0a"
+        },
+        {
+            "type": "folder",
+            "name": "sass"
+        },
+        {
+            "type": "file",
+            "name": "screenshot.png",
+            "size": 264,
+            "hash": "7e4bc613f200af7487c0da58919280ce263cb66a7bc6b800922bbae6573d8bff"
+        },
+        {
+            "type": "file",
+            "name": "search.php",
+            "size": 287,
+            "hash": "dcea24ac5a5df8157dde97e86d404ea0bab944ddd28ad2d724466c034439bc76"
+        },
+        {
+            "type": "file",
+            "name": "single-portfolio.php",
+            "size": 5075,
+            "hash": "8f4a9013341ba263bf0f8452c698512357192e1e6311338678053cf181754fcb"
+        },
+        {
+            "type": "file",
+            "name": "single.php",
+            "size": 838,
+            "hash": "a8099cb568c6462aad11d5e670ba23b94f599ab0b859d500cf6a5e2e44c67c22"
+        },
+        {
+            "type": "file",
+            "name": "style.css",
+            "size": 398,
+            "hash": "32c85541eb738db1dbe5d25c52b1620fe83da667bbba049de2dd7c3e59befffe"
+        },
+        {
+            "type": "file",
+            "name": "template-acf.php",
+            "size": 487,
+            "hash": "627881617ba577a7090cd5cd0468a546d7f572cf87b97340abc7eb54d9e5b549"
+        },
+        {
+            "type": "file",
+            "name": "template-contact-page.php",
+            "size": 2130,
+            "hash": "65fcac7077eee5595d98cf3b07402a3bbb546d1333404f1e3ef17354ac5c2a88"
+        },
+        {
+            "type": "file",
+            "name": "template-maintenance-form.php",
+            "size": 626,
+            "hash": "2e82693c564fe1d047ff2d24333e5edf30c2eef2364a77044c50511bf1252917"
+        },
+        {
+            "type": "folder",
+            "name": "template-parts"
+        },
+        {
+            "type": "file",
+            "name": "acf-json/group_6651c0fd43e77.json",
+            "size": 4989,
+            "hash": "fd699f0313dc4eb3d58c7f5c422eb51d18dd188795676e5bb8dee956f5e2fdf8"
+        },
+        {
+            "type": "file",
+            "name": "acf-json/group_6651c36eead61.json",
+            "size": 2296,
+            "hash": "ef725d39e674cb8d2cff8bf464c719781846ac2192b385cb8412de40347bdc4f"
+        },
+        {
+            "type": "file",
+            "name": "acf-json/group_6651d3e29e0c1.json",
+            "size": 126753,
+            "hash": "63d6589c94d8221949bf9df0703fe0efca1d0178325b86524f876d0c099e366d"
+        },
+        {
+            "type": "file",
+            "name": "acf-json/group_66522546b40f2.json",
+            "size": 11348,
+            "hash": "be44a5046be521dc1fc1fb45a5eccb59e37b5b323053fc7e38a74bc2f65e580a"
+        },
+        {
+            "type": "file",
+            "name": "acf-json/group_66522ef0d49f0.json",
+            "size": 3899,
+            "hash": "562e111a6fd55de2e553c4b554d7934ed1a0f62a8adcfd01a0a0c90efa9cc7c4"
+        },
+        {
+            "type": "file",
+            "name": "acf-json/group_6652325023161.json",
+            "size": 2168,
+            "hash": "dfaccf413649e8280b3f949663b0cc3ff1145efc850b85be3e614e136c9a2177"
+        },
+        {
+            "type": "file",
+            "name": "acf-json/group_665232df70bd5.json",
+            "size": 3308,
+            "hash": "e5539106727a49be5cfeff4e03d8288fbce2ae349e759f1232214810f08ab985"
+        },
+        {
+            "type": "file",
+            "name": "acf-json/group_665385185f97f.json",
+            "size": 11417,
+            "hash": "68615c450df71743db8de466d2b1af4a3db153083bbfa025d9672b46f8fbf8a8"
+        },
+        {
+            "type": "file",
+            "name": "acf-json/group_665f6f8c27b9a.json",
+            "size": 2986,
+            "hash": "ee74ae689610946c34741a9a50133f66fb5a2314616698a4e6b9efa6d8375eed"
+        },
+        {
+            "type": "file",
+            "name": "acf-json/group_667dc57a7b542.json",
+            "size": 10439,
+            "hash": "6dfe479c65cb99ccfa6a755022126c31966722e41c0e72f1bdc06b41e7345971"
+        },
+        {
+            "type": "file",
+            "name": "acf-json/post_type_6686709409e8d.json",
+            "size": 2871,
+            "hash": "b40162d92fcb19f7874445127a83b8d989009863c08ba4d2dca1f295e0f765dd"
+        },
+        {
+            "type": "file",
+            "name": "acf-json/taxonomy_665231a193879.json",
+            "size": 2403,
+            "hash": "83243f33fbccaae0f629eeb9f8e231695c4b62e4cbdd1b9e2adf6330c4d64fdc"
+        },
+        {
+            "type": "file",
+            "name": "assets/.DS_Store",
+            "size": 6148,
+            "hash": "9b6aeb0893ebd061c7baa65db19c6131acdfd625aaedc8adfc24038715836f4f"
+        },
+        {
+            "type": "folder",
+            "name": "assets/css"
+        },
+        {
+            "type": "folder",
+            "name": "assets/fonts"
+        },
+        {
+            "type": "folder",
+            "name": "assets/js"
+        },
+        {
+            "type": "folder",
+            "name": "assets/svg"
+        },
+        {
+            "type": "folder",
+            "name": "sass/abstracts"
+        },
+        {
+            "type": "folder",
+            "name": "sass/base"
+        },
+        {
+            "type": "folder",
+            "name": "sass/components"
+        },
+        {
+            "type": "folder",
+            "name": "sass/layout"
+        },
+        {
+            "type": "file",
+            "name": "sass/styles.scss",
+            "size": 133,
+            "hash": "04c84bce9ac1485cc0a768499b9f3d3d4cfcd370d1b5ee6e19c83be5f4fb7ce8"
+        },
+        {
+            "type": "folder",
+            "name": "sass/utilities"
+        },
+        {
+            "type": "folder",
+            "name": "template-parts/acf"
+        },
+        {
+            "type": "file",
+            "name": "template-parts/button-back.php",
+            "size": 153,
+            "hash": "a05f01df26734f31c7802137aff1a7ddcacaa42167e6a7d17da299bfc57d9ce5"
+        },
+        {
+            "type": "file",
+            "name": "template-parts/button.php",
+            "size": 356,
+            "hash": "17577d685313793de5c8d1e27766e4a4e107af47b1f40bb7e00ade5f8fbb94f3"
+        },
+        {
+            "type": "file",
+            "name": "template-parts/card-partner.php",
+            "size": 1440,
+            "hash": "89ee8e24779bdeaac4786c9bf08d7408b534132b9dd30959baeff404847e9af4"
+        },
+        {
+            "type": "file",
+            "name": "template-parts/card-post.php",
+            "size": 809,
+            "hash": "d75c075f763d2b2c358877aa85779583d894d8bfdbaed0ae914d1512ef54e4bb"
+        },
+        {
+            "type": "file",
+            "name": "template-parts/card-project.php",
+            "size": 978,
+            "hash": "771f1c2284bfdc8157f3d1467a91d427d6223edf90a777d3e4a6b9bd382c7fc2"
+        },
+        {
+            "type": "file",
+            "name": "template-parts/card-review.php",
+            "size": 391,
+            "hash": "dee1f83918c055aa904a56d4f5733fb312f208b42ef8a784ab03062f9718ecdf"
+        },
+        {
+            "type": "file",
+            "name": "template-parts/card-step.php",
+            "size": 431,
+            "hash": "b5e63c81b1424bbe8ce5794d8799bcb42155c7f3f3cc20abe7365b28f4340063"
+        },
+        {
+            "type": "file",
+            "name": "template-parts/card.php",
+            "size": 2363,
+            "hash": "d79a2798581bd63d45ecb5a13eb36658a20e47c62a1871eae6c84eff5f757c42"
+        },
+        {
+            "type": "file",
+            "name": "template-parts/contact-form.php",
+            "size": 0,
+            "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+            "type": "file",
+            "name": "template-parts/contact-sidebar.php",
+            "size": 0,
+            "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+            "type": "file",
+            "name": "template-parts/form-maintenance.php",
+            "size": 2176,
+            "hash": "2b8ed0e166bc5ac82c96da1fa01421746b79484dbf1483e6e46080d3f9ce1c7e"
+        },
+        {
+            "type": "file",
+            "name": "template-parts/form-search.php",
+            "size": 75,
+            "hash": "9b6c70bb20816e03a4c1143f64bff3bef53b695e93603d0aa263fe6dc1ace7db"
+        },
+        {
+            "type": "file",
+            "name": "template-parts/list.php",
+            "size": 853,
+            "hash": "6444db4efc371fa1a691db32c48518db136bca9691794fad7a956d90dd9a8b46"
+        },
+        {
+            "type": "folder",
+            "name": "template-parts/single"
+        },
+        {
+            "type": "file",
+            "name": "assets/css/main.css",
+            "size": 52658,
+            "hash": "1cdf9f6eda59295dd2bc5aafeacd0cec1694ab435bcda58bab3708d258d223ad"
+        },
+        {
+            "type": "file",
+            "name": "assets/css/main.css.map",
+            "size": 15642,
+            "hash": "43adde5ea8da89bd2049d3a0010a22b05224b31dd701d3e4e8f415feae4bfcc9"
+        },
+        {
+            "type": "file",
+            "name": "assets/fonts/Poppins-Bold.ttf",
+            "size": 153944,
+            "hash": "7219547ee25334cbac0fe4b3acf0bf631e48ebb622c71af038edaaa652c60875"
+        },
+        {
+            "type": "file",
+            "name": "assets/fonts/Poppins-Regular.ttf",
+            "size": 158240,
+            "hash": "707fdc5c8bab57a90061c6a8ed7b70d5ffb82fc810e994e79f90bace890c255a"
+        },
+        {
+            "type": "file",
+            "name": "assets/fonts/Poppins-SemiBold.ttf",
+            "size": 155232,
+            "hash": "248c0244b350ec68880996aa6be6d7796274b49992d5fcbbefe251906aa4ea36"
+        },
+        {
+            "type": "file",
+            "name": "assets/js/blog-posts-slider.js",
+            "size": 585,
+            "hash": "10d8f5dae7a49cb06d14b42869d545316e7ed8187c7f0fd7b5b39caece7100bc"
+        },
+        {
+            "type": "file",
+            "name": "assets/js/gsap.js",
+            "size": 13399,
+            "hash": "2bdb101b55313c09764c37ad0e131c14bdc7f1fef463c16e63e5a30765de1f9c"
+        },
+        {
+            "type": "file",
+            "name": "assets/js/header.js",
+            "size": 724,
+            "hash": "8225608e8b026af64f2b890ed8bb038540cbc0b41788d4f7d24fc605f8ab34b0"
+        },
+        {
+            "type": "file",
+            "name": "assets/js/input.js",
+            "size": 2350,
+            "hash": "e2b8429363a3d7671abf16a9e9d60438693ec3f26e8179f07548b29824ee8449"
+        },
+        {
+            "type": "file",
+            "name": "assets/js/projects-gallery.js",
+            "size": 1132,
+            "hash": "0cb69aeeb1b859848abf0af6d1a97e673da13f638763f03c60c19d20de893d5c"
+        },
+        {
+            "type": "file",
+            "name": "assets/js/references-slider.js",
+            "size": 555,
+            "hash": "91a70eb2c3f17dba514dc04094a6c8b7ca86035973d9584539dc69aac92a72e9"
+        },
+        {
+            "type": "file",
+            "name": "assets/js/reviews-list.js",
+            "size": 309,
+            "hash": "ed55b18b6e8eae5765d7ec1ed89f6799ac0f47f9127bc637e0ad16893d9122d8"
+        },
+        {
+            "type": "file",
+            "name": "assets/js/single-headings.js",
+            "size": 979,
+            "hash": "a143d81904d9ec597a7417b1bbcfc563ac7b8e1bd301c0d81fb1fb7bb55b32ac"
+        },
+        {
+            "type": "file",
+            "name": "assets/js/single-portfolio.js",
+            "size": 474,
+            "hash": "d4cb4c0fc1571a5c684a1fc0b351704471979068029eb92ef3ab0a50a30d56ed"
+        },
+        {
+            "type": "file",
+            "name": "assets/js/single-sidebar.js",
+            "size": 1263,
+            "hash": "767ee5c32d6badefb87b29d732d9cc3e4b42419a9ff5d3756c3bac3b6f9bc8c3"
+        },
+        {
+            "type": "file",
+            "name": "assets/svg/.DS_Store",
+            "size": 6148,
+            "hash": "893202e912510b9c2c7cb0552ff048eed027dde8cd6df925f8405a8f645f886f"
+        },
+        {
+            "type": "file",
+            "name": "assets/svg/arrow-rounded.svg",
+            "size": 914,
+            "hash": "9003f9b43b51800f42eeae6396e6951c87cc405dc5eacf55c29432df120bfbd9"
+        },
+        {
+            "type": "file",
+            "name": "assets/svg/arrow.svg",
+            "size": 226,
+            "hash": "addcc118f47837c424ad0272cf86d19b3a65445601d938da930358ffa7ead545"
+        },
+        {
+            "type": "file",
+            "name": "assets/svg/burger.svg",
+            "size": 438,
+            "hash": "7f539aaf4ae37de7fbcc5c23b98883e96aafb5fa4ad3184ffd88c3b51ad8af02"
+        },
+        {
+            "type": "file",
+            "name": "assets/svg/checkmark.svg",
+            "size": 636,
+            "hash": "820e280bf7112d13658dd3b3d1ce8f36a17591fe9704181a2219f50bb2944fe4"
+        },
+        {
+            "type": "file",
+            "name": "assets/svg/cross.svg",
+            "size": 742,
+            "hash": "7214546bbe7fd82a72ab07547ba53152eebbe8356a2056a486f5fcb12949ac3b"
+        },
+        {
+            "type": "file",
+            "name": "assets/svg/filter.svg",
+            "size": 540,
+            "hash": "17587c5d8bda442e4ba30523bb4943e7ded0947091d7122831e223bd994796e0"
+        },
+        {
+            "type": "file",
+            "name": "assets/svg/logo-studio-val-light.svg",
+            "size": 8511,
+            "hash": "66bcf2a935369ff008562fa9c4800a299e9545ae5635e60cea7a102adfe8bcc0"
+        },
+        {
+            "type": "folder",
+            "name": "assets/svg/socials"
+        },
+        {
+            "type": "folder",
+            "name": "assets/svg/technologies"
+        },
+        {
+            "type": "file",
+            "name": "sass/abstracts/_animations.scss",
+            "size": 283,
+            "hash": "bc9cebf53a8aa21701f3ed138369e9359f8fddbf1c83f170c2042ec142e9305d"
+        },
+        {
+            "type": "file",
+            "name": "sass/abstracts/_borders.scss",
+            "size": 103,
+            "hash": "0af991f206ed126080da90e924a7870a98851d9002c8e97598af1f414ec13fd2"
+        },
+        {
+            "type": "file",
+            "name": "sass/abstracts/_colors.scss",
+            "size": 421,
+            "hash": "16b7feec7032c01228a0e10e551e2ae473ddeede58027db0e3f63ab65f42070c"
+        },
+        {
+            "type": "file",
+            "name": "sass/abstracts/_fonts.scss",
+            "size": 1788,
+            "hash": "b807fc2811502a3eeaea981335b630a01caae28b2de6a1c5290209d054d17a8c"
+        },
+        {
+            "type": "file",
+            "name": "sass/abstracts/_index.scss",
+            "size": 125,
+            "hash": "bf3d427d3e4e6537ee16e37158efcb545a2df062fa9bf7b4dbe13cd219380786"
+        },
+        {
+            "type": "file",
+            "name": "sass/abstracts/_layout.scss",
+            "size": 80,
+            "hash": "ce792eec90d37a40e19ff353fbabdb481100fea9a4dbe0b524df3e6e77dd258e"
+        },
+        {
+            "type": "file",
+            "name": "sass/abstracts/_media-queries.scss",
+            "size": 127,
+            "hash": "626889b66e05e7adccf358ffd624732421f031a551de1b99be46d2ea49d2ad39"
+        },
+        {
+            "type": "file",
+            "name": "sass/base/_index.scss",
+            "size": 144,
+            "hash": "d99116352705847f93e26dccbcff87af23bf4c7b31deca91c5feeb74afc1d400"
+        },
+        {
+            "type": "file",
+            "name": "sass/components/_index.scss",
+            "size": 101,
+            "hash": "5ce2ef40e7ff3bb3839c73ec0f28b79da92b3997b817fd76c1b0da1ad4e64958"
+        },
+        {
+            "type": "folder",
+            "name": "sass/components/acf-pagebuilder"
+        },
+        {
+            "type": "folder",
+            "name": "sass/components/graphic-components"
+        },
+        {
+            "type": "folder",
+            "name": "sass/components/template-parts"
+        },
+        {
+            "type": "file",
+            "name": "sass/layout/_404.scss",
+            "size": 305,
+            "hash": "9a79ffa06853e61459e33bde4dfe23c9db93d84bda11e67473d8bb88cf809ec3"
+        },
+        {
+            "type": "file",
+            "name": "sass/layout/_blog.scss",
+            "size": 1962,
+            "hash": "be5f6d38746ec49ecfe4ca6a4efd445368a23205d977471cbda1fe4066145cf3"
+        },
+        {
+            "type": "file",
+            "name": "sass/layout/_footer.scss",
+            "size": 1473,
+            "hash": "0f1c21192d30debfab4ac5c843de5f5dcaa3c716bbb5e88f40490c339bd87269"
+        },
+        {
+            "type": "file",
+            "name": "sass/layout/_header.scss",
+            "size": 6104,
+            "hash": "6cc6961c14246f6da63862b130da155cf6fc672edf7132e0176fd156e5fb2f0f"
+        },
+        {
+            "type": "file",
+            "name": "sass/layout/_index.scss",
+            "size": 221,
+            "hash": "e2506aaf623e0c5225d75c9c68a2798e0ccd4412c04e99fa2d0afba2957af97a"
+        },
+        {
+            "type": "file",
+            "name": "sass/layout/_main.scss",
+            "size": 221,
+            "hash": "649c258e8aadc274897e8dc61a3b2673c39c4859c347b4dd76f0db094da905af"
+        },
+        {
+            "type": "file",
+            "name": "sass/layout/_page.scss",
+            "size": 381,
+            "hash": "4f5226888e588d520126065b68d9a5ac9b494092d11e2cef7cabb456fa2fcc8a"
+        },
+        {
+            "type": "file",
+            "name": "sass/layout/_search.scss",
+            "size": 0,
+            "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+            "type": "file",
+            "name": "sass/layout/_sidebar.scss",
+            "size": 0,
+            "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+            "type": "file",
+            "name": "sass/layout/_single-portfolio.scss",
+            "size": 3997,
+            "hash": "ca12a7d90fcdc8728f5cab4a87b198a4d6044f4c6a93550a4d0e5e770627f948"
+        },
+        {
+            "type": "file",
+            "name": "sass/layout/_single.scss",
+            "size": 920,
+            "hash": "4a03e913f6b9c7f062a54d07b5fcd13f0c8b5c10ad53c04fa8782d7509662ba9"
+        },
+        {
+            "type": "file",
+            "name": "sass/layout/_template-contact.scss",
+            "size": 2044,
+            "hash": "1ba7ca2c36efb69048e96c8394b7f13f00c04b71883870f60bb598477ebb9093"
+        },
+        {
+            "type": "file",
+            "name": "sass/utilities/_box-model.scss",
+            "size": 328,
+            "hash": "21d6d9a01b75f52b088236553d56a78f6389a690e8fc8b3d73ff8591746005b2"
+        },
+        {
+            "type": "file",
+            "name": "sass/utilities/_complianz.scss",
+            "size": 172,
+            "hash": "97585028298c8ead4e62996ad3fbcc26a20a553d4c71056f0df38121f79ed58b"
+        },
+        {
+            "type": "file",
+            "name": "sass/utilities/_cursor.scss",
+            "size": 631,
+            "hash": "5b5efdbcabd58da51fb0205b96e67c9418542299d933d5bfb2a52a5e55a48d20"
+        },
+        {
+            "type": "file",
+            "name": "sass/utilities/_form.scss",
+            "size": 1299,
+            "hash": "4f3338e823d58461db9d438862651ab49a46c8a52bb5fae4f56d2e0d39d17554"
+        },
+        {
+            "type": "file",
+            "name": "sass/utilities/_index.scss",
+            "size": 112,
+            "hash": "401935393faf71bbb65b4ef26ffe6b4b32b579394460398e31bd10a4a87f8e35"
+        },
+        {
+            "type": "file",
+            "name": "sass/utilities/_loader.scss",
+            "size": 631,
+            "hash": "2c4ae4da9a0fe75b250a9f984b5c63d91d716965e2e8776da7b2780a227cfbe0"
+        },
+        {
+            "type": "file",
+            "name": "sass/utilities/_medias.scss",
+            "size": 39,
+            "hash": "c73580642fa3a62e902b5e499bf54d0191fa190805335b00737995651f18abe4"
+        },
+        {
+            "type": "folder",
+            "name": "template-parts/acf/blocks"
+        },
+        {
+            "type": "file",
+            "name": "template-parts/acf/section.php",
+            "size": 400,
+            "hash": "709eaa725eb2486d731928686cfc9b430a4ec02890505f7ef59bbc3cde3058dd"
+        },
+        {
+            "type": "file",
+            "name": "template-parts/single/single-content.php",
+            "size": 1106,
+            "hash": "f036d0e0950d386e2387a7d79c69a3d93715aafa84c97ef66305b3d659f93a5d"
+        },
+        {
+            "type": "file",
+            "name": "template-parts/single/single-related-posts.php",
+            "size": 1397,
+            "hash": "1934b334b939479f543ebadb396e097cc2165d52e8b81ba561a59808e9e861cd"
+        },
+        {
+            "type": "file",
+            "name": "template-parts/single/single-sidebar.php",
+            "size": 1774,
+            "hash": "2866343c23c09b0afe6be3cc4181902b8727103d7ab9f8781be99ae2fd778cf0"
+        },
+        {
+            "type": "file",
+            "name": "template-parts/single/single-signature.php",
+            "size": 1699,
+            "hash": "49c2db7c4643575e933a08618586a455f9a3ff0b1fcca791efe45c88ed1eb9b6"
+        },
+        {
+            "type": "file",
+            "name": "template-parts/single/single-table-of-content.php",
+            "size": 794,
+            "hash": "bbd35c1c70df9d4ac55d74e80533444c148350589a92003ccc72e215482111f2"
+        },
+        {
+            "type": "file",
+            "name": "template-parts/single/single-thumbnail.php",
+            "size": 355,
+            "hash": "b759017082667bc13f2b836fee23b1d71cc40932920b1782bb0bc84929cad3c1"
+        },
+        {
+            "type": "file",
+            "name": "assets/svg/socials/logo-facebook.svg",
+            "size": 368,
+            "hash": "5cc9aecdd723d0a0b6199b12e5f760f4e799dcd0240993b708ee8ce76a447c91"
+        },
+        {
+            "type": "file",
+            "name": "assets/svg/socials/logo-link.svg",
+            "size": 1421,
+            "hash": "6bd9435033dad3585011b06f4dca90d4899d018e9ee57279ea5c6312f72a13fe"
+        },
+        {
+            "type": "file",
+            "name": "assets/svg/socials/logo-linkedin.svg",
+            "size": 714,
+            "hash": "888c8515e844642d7b5c71e56896f10c2f3d1392439110efa456a5934c683d52"
+        },
+        {
+            "type": "file",
+            "name": "assets/svg/socials/logo-threads.svg",
+            "size": 1963,
+            "hash": "68110ab0f5c30381c228348f589c383527fc64cd3a84d670feb6b31a86d04609"
+        },
+        {
+            "type": "file",
+            "name": "assets/svg/socials/logo-whatsapp.svg",
+            "size": 1712,
+            "hash": "ada9473c7055ddd7f3613001b028d1475fa5abfaa01a6fb03abb3bcb54b840a0"
+        },
+        {
+            "type": "file",
+            "name": "assets/svg/socials/logo-x.svg",
+            "size": 441,
+            "hash": "74bc9b7e5789c5c769ca94e2c32ee66b12330616f6bc8d9c14a26779d5d6e3f5"
+        },
+        {
+            "type": "file",
+            "name": "assets/svg/technologies/acf.svg",
+            "size": 2261,
+            "hash": "25b7316817303982c4473481934ea578c98a7c443fc4bda6a40ab63e738edd9a"
+        },
+        {
+            "type": "file",
+            "name": "assets/svg/technologies/api.svg",
+            "size": 1274,
+            "hash": "0f04bb3cdb56ea7b3a56e38e749081cfc95f05e3700f0244603cd82e5c9c82f5"
+        },
+        {
+            "type": "file",
+            "name": "assets/svg/technologies/bootstrap.svg",
+            "size": 2556,
+            "hash": "0fc35ce3fb79c01be11e8866c761d0c6c8d3bfcc93e44a04c366b846e6603596"
+        },
+        {
+            "type": "file",
+            "name": "assets/svg/technologies/css.svg",
+            "size": 514,
+            "hash": "a810278210f8e650cbdab95891ee93ebf3c02f392b5a1d311100c886b1fe7d2c"
+        },
+        {
+            "type": "file",
+            "name": "assets/svg/technologies/elementor.svg",
+            "size": 456,
+            "hash": "a37434213a3530688c30c041a40287e6c9bdd27de034baa27ed1dd2916f9b5bf"
+        },
+        {
+            "type": "file",
+            "name": "assets/svg/technologies/github.svg",
+            "size": 1866,
+            "hash": "1901584afa81b88739e300f346eebeb09c437a173545d383630e58acadc93738"
+        },
+        {
+            "type": "file",
+            "name": "assets/svg/technologies/gsap.svg",
+            "size": 19616,
+            "hash": "d7518e354dcac542a4149bbbd5e32968f0e94265e6dbff2355390ec162a602c8"
+        },
+        {
+            "type": "file",
+            "name": "assets/svg/technologies/html.svg",
+            "size": 501,
+            "hash": "9a329fa444001fc59e2a22557fc71ac5fb4ff1f0824abbf4d2ad819ebfd1327d"
+        },
+        {
+            "type": "file",
+            "name": "assets/svg/technologies/javascript.svg",
+            "size": 659,
+            "hash": "70a8caa29651bdc5ce0ab484ed96e662d740e3c1d8ee10df16dc1f1c9c3a351b"
+        },
+        {
+            "type": "file",
+            "name": "assets/svg/technologies/next-js.svg",
+            "size": 2325,
+            "hash": "4bfa6b60881eef1d740bd3629f703548b93b427c09d9fdbf5a0c0cb4279a0c72"
+        },
+        {
+            "type": "file",
+            "name": "assets/svg/technologies/php.svg",
+            "size": 7176,
+            "hash": "691bf97b664db532c6d91736c9af99eab9b5ed69d845cacb1dd788cb8ad422f7"
+        },
+        {
+            "type": "file",
+            "name": "assets/svg/technologies/react.svg",
+            "size": 4943,
+            "hash": "f61d470d08d4d301c442adfaea6e9186c198fb588076c57b1e45a99ff9e50206"
+        },
+        {
+            "type": "file",
+            "name": "assets/svg/technologies/redux.svg",
+            "size": 2313,
+            "hash": "7f15ac35e3a914e9da96500c096608748cd956ed23125f66981e6e415dbf3b43"
+        },
+        {
+            "type": "file",
+            "name": "assets/svg/technologies/sass.svg",
+            "size": 1443,
+            "hash": "aa29cfe913d1c2230492de6a3f3226d1a91a2b5003cdcae22fd53d5ecb271492"
+        },
+        {
+            "type": "file",
+            "name": "assets/svg/technologies/sql.svg",
+            "size": 5872,
+            "hash": "3b960efe48772280441642fb20213cb99a1b375951d5fb7cbca70b69373ecb02"
+        },
+        {
+            "type": "file",
+            "name": "assets/svg/technologies/tailwind.svg",
+            "size": 769,
+            "hash": "b5b16c80f812d7c460bf9dd65d64bd360f8f21bfd46afdd26d024cf7d3b5d115"
+        },
+        {
+            "type": "file",
+            "name": "assets/svg/technologies/typescript.svg",
+            "size": 1157,
+            "hash": "757a846ec5b910ac45c4c1ecf879094ab88d43d7ac48a85c06e8f469188abeea"
+        },
+        {
+            "type": "file",
+            "name": "assets/svg/technologies/wordpress.svg",
+            "size": 2553,
+            "hash": "db3e2f5318138c8c46a23b89355a3dd408bfe7c05531266deedd83b934cfb058"
+        },
+        {
+            "type": "file",
+            "name": "sass/components/acf-pagebuilder/_index.scss",
+            "size": 43,
+            "hash": "93c52b406fe42b0793a5856b299b88ba41c04b2f67104f10d149ac7f7235e409"
+        },
+        {
+            "type": "file",
+            "name": "sass/components/acf-pagebuilder/_section.scss",
+            "size": 379,
+            "hash": "4408b9edcd7701322f3bb05e224ccbb14c5e117c2905d53f13d6537bc6b86e4b"
+        },
+        {
+            "type": "folder",
+            "name": "sass/components/acf-pagebuilder/blocks"
+        },
+        {
+            "type": "file",
+            "name": "sass/components/graphic-components/_blocks.scss",
+            "size": 1054,
+            "hash": "7c7aa2ef764294b96db1bd0f541cbe8b555a73071063b62628fc38e0ab7b2820"
+        },
+        {
+            "type": "file",
+            "name": "sass/components/graphic-components/_index.scss",
+            "size": 18,
+            "hash": "af946899de81251aa4c8a8f36a7a0bea6bee5cc8c6c59a8f26e694f3db6518bc"
+        },
+        {
+            "type": "file",
+            "name": "sass/components/template-parts/_button-back.scss",
+            "size": 294,
+            "hash": "c046bafeba14a7899187e0c8e567e7fc725b36bd1bbfcf68b563158410566c56"
+        },
+        {
+            "type": "file",
+            "name": "sass/components/template-parts/_button.scss",
+            "size": 1354,
+            "hash": "ff39207bfdee969977a255c0b76e41ac4a5d674857c86a536ee13a05e7d279da"
+        },
+        {
+            "type": "file",
+            "name": "sass/components/template-parts/_card-partner.scss",
+            "size": 556,
+            "hash": "37c0bc0d26438016955fcb130ba30b01b7ab1fdbc19c44d4d7479e5bad15c1ae"
+        },
+        {
+            "type": "file",
+            "name": "sass/components/template-parts/_card-post.scss",
+            "size": 688,
+            "hash": "ad742bf111aa602c1cc349d6b87d579df333e1690205e374b7d3bac689fa3436"
+        },
+        {
+            "type": "file",
+            "name": "sass/components/template-parts/_card-project.scss",
+            "size": 907,
+            "hash": "6d0ee595e4b29f130c6d752ccb3f0c6dd786ba4ea00c9447f9c041d54cb48d49"
+        },
+        {
+            "type": "file",
+            "name": "sass/components/template-parts/_card-review.scss",
+            "size": 264,
+            "hash": "0fbb9cade091690dc1efa33c7930b6258b344de802592d10f8b6411b78c13317"
+        },
+        {
+            "type": "file",
+            "name": "sass/components/template-parts/_card-step.scss",
+            "size": 488,
+            "hash": "1f1e7e15e83edbf95dc5eadcbcae63c482953fdee6bd27059eebb2763837152b"
+        },
+        {
+            "type": "file",
+            "name": "sass/components/template-parts/_card.scss",
+            "size": 1091,
+            "hash": "1048a5fd1b3dc72f962296b5f4f07ad2782ba532eaf164e1f15419609095f16e"
+        },
+        {
+            "type": "file",
+            "name": "sass/components/template-parts/_form-maintenance.scss",
+            "size": 27,
+            "hash": "00de27db12274c66c777fc2b6a2cdd5483f30ba920608978342cadc633155587"
+        },
+        {
+            "type": "file",
+            "name": "sass/components/template-parts/_form-search.scss",
+            "size": 369,
+            "hash": "a2586b8d8932ae6533f358aa3597caffde9f53338bb246ffac1d4df1813b421a"
+        },
+        {
+            "type": "file",
+            "name": "sass/components/template-parts/_index.scss",
+            "size": 262,
+            "hash": "ee7d59d697d4fd18a0c5c35a98d1b5d3d42b9ff9d6d434d628a132e667d44cb8"
+        },
+        {
+            "type": "file",
+            "name": "sass/components/template-parts/_input.scss",
+            "size": 1476,
+            "hash": "92267cf623a8ee5932c7664e31a0fbbef1c6a887023eae1eb2eee699f2e36989"
+        },
+        {
+            "type": "folder",
+            "name": "sass/components/template-parts/single"
+        },
+        {
+            "type": "file",
+            "name": "template-parts/acf/blocks/blog-posts-slider.php",
+            "size": 948,
+            "hash": "3086021ce96caa0d88e7dda5663a66bce4760237896688cfeb359a5d41e37b6b"
+        },
+        {
+            "type": "file",
+            "name": "template-parts/acf/blocks/button.php",
+            "size": 303,
+            "hash": "b20d1a7a0737c42f0afee68c02344a6469e5327a514d0dd8805f14bea22bd838"
+        },
+        {
+            "type": "file",
+            "name": "template-parts/acf/blocks/callout-block.php",
+            "size": 788,
+            "hash": "9f17ef4c0f4f018f8878595a7e11dd2f8d06b46f6458605f485a24f187baf0b7"
+        },
+        {
+            "type": "file",
+            "name": "template-parts/acf/blocks/cards-list.php",
+            "size": 1055,
+            "hash": "bc8034e52be53e739251da5470c53db12044e4a73eb07199b81cca83809f6604"
+        },
+        {
+            "type": "file",
+            "name": "template-parts/acf/blocks/cards-numbers.php",
+            "size": 399,
+            "hash": "42cc947f8dfd765e324569e611a0c7dd2364200575cb1d34df7d75e9e5da7a94"
+        },
+        {
+            "type": "file",
+            "name": "template-parts/acf/blocks/list-block.php",
+            "size": 868,
+            "hash": "aac3f11872435db7fbaf99dcdffb0675b953110363440958bb8b2a5909a1ce6d"
+        },
+        {
+            "type": "file",
+            "name": "template-parts/acf/blocks/one-row-cards-list.php",
+            "size": 918,
+            "hash": "71f02fd77d1d870d58fa5dfdb3f960b91385b66b215550ba4f0f138cfec45ef9"
+        },
+        {
+            "type": "file",
+            "name": "template-parts/acf/blocks/page-title.php",
+            "size": 826,
+            "hash": "c9b0dc97737858d928c9181a9d10988741c172c12c8cb9e8568d5f8d4d45a834"
+        },
+        {
+            "type": "file",
+            "name": "template-parts/acf/blocks/partners-list.php",
+            "size": 858,
+            "hash": "cca5be456cb4353061f5220ce1d0d91b0768cf81239f11403e889790980e8bc2"
+        },
+        {
+            "type": "file",
+            "name": "template-parts/acf/blocks/pricing-table.php",
+            "size": 1515,
+            "hash": "1baecf036ee0ddfabecb87a7d1432b99c56a2e72f99062afda488e96fe239121"
+        },
+        {
+            "type": "file",
+            "name": "template-parts/acf/blocks/projects-gallery.php",
+            "size": 2917,
+            "hash": "0a463f72dc9fa596423b920c7b620ac52d008da7e0ce8cee2f2a4a37ff270281"
+        },
+        {
+            "type": "file",
+            "name": "template-parts/acf/blocks/references-slider.php",
+            "size": 3261,
+            "hash": "cb308a9adfcbbff76efbba7052a90b17218f4879e1de47573281a4b88e11cc5c"
+        },
+        {
+            "type": "file",
+            "name": "template-parts/acf/blocks/reviews-list.php",
+            "size": 1287,
+            "hash": "0c6b8edc116d43bcbe8e642eddc04f7c9da8a19f6da52b19a2e816ae4ad887ba"
+        },
+        {
+            "type": "file",
+            "name": "template-parts/acf/blocks/site-title.php",
+            "size": 1274,
+            "hash": "e2db85bdbb0e739dcf87ef0c73e38f8d28e1f25d0712cbc08f54d4d2aef15277"
+        },
+        {
+            "type": "file",
+            "name": "template-parts/acf/blocks/steps-block.php",
+            "size": 344,
+            "hash": "d82e2769f6cd8ce0e479186cf4dfabec1866fbff5173ba25dbc82a8bef3afb42"
+        },
+        {
+            "type": "file",
+            "name": "template-parts/acf/blocks/text-image.php",
+            "size": 524,
+            "hash": "6628ee19e2c5396b5dc20247858ff9f53e853ee7cdfe8939c5882a4c24d6ea43"
+        },
+        {
+            "type": "file",
+            "name": "template-parts/acf/blocks/text.php",
+            "size": 461,
+            "hash": "3bd7448f95ebe0d20f5df4830de2bbd1221aa786aaa8466fd05d23f15fab4d8a"
+        },
+        {
+            "type": "file",
+            "name": "template-parts/acf/blocks/title-text.php",
+            "size": 364,
+            "hash": "f103fcd335658a4c81d46c2d91cc4690326c0efa14c12f15f8d158b6081183e3"
+        },
+        {
+            "type": "file",
+            "name": "sass/components/acf-pagebuilder/blocks/_blog-posts-slider.scss",
+            "size": 123,
+            "hash": "5ab08b2cc1fd32053bdb8461912d41cd572afb828ee2890f2b5be483a0dd47f2"
+        },
+        {
+            "type": "file",
+            "name": "sass/components/acf-pagebuilder/blocks/_callout-block.scss",
+            "size": 525,
+            "hash": "a83824e8e127f3cfaeaa3bb2502075867826b881044aee7ee4e77d46b21e937d"
+        },
+        {
+            "type": "file",
+            "name": "sass/components/acf-pagebuilder/blocks/_cards-list.scss",
+            "size": 305,
+            "hash": "a9bc0b39b5e0477a2dcbdecb70f75b0eb919eca52fc23a77b5c6e0b32d7c2408"
+        },
+        {
+            "type": "file",
+            "name": "sass/components/acf-pagebuilder/blocks/_cards-numbers.scss",
+            "size": 780,
+            "hash": "6ca32808efcacf19df383c826a74f0eeca402ced06761d038be74de4dc6d4c83"
+        },
+        {
+            "type": "file",
+            "name": "sass/components/acf-pagebuilder/blocks/_index.scss",
+            "size": 422,
+            "hash": "7c79e54c7d944ab98f6d6b118ddf4f1eb0c614558ccc0fe16336895327d19504"
+        },
+        {
+            "type": "file",
+            "name": "sass/components/acf-pagebuilder/blocks/_list-block.scss",
+            "size": 538,
+            "hash": "d4ce5da0f5325e91b184b7967950af3d37175c7fdf7dec89968f87ebfe50dfa5"
+        },
+        {
+            "type": "file",
+            "name": "sass/components/acf-pagebuilder/blocks/_one-row-cards-list.scss",
+            "size": 223,
+            "hash": "bd7dd737f48969fdd4371319da2867a967c41f4b01c7fef0f0cd0ee15021f923"
+        },
+        {
+            "type": "file",
+            "name": "sass/components/acf-pagebuilder/blocks/_page-title.scss",
+            "size": 637,
+            "hash": "b0983069b00675ba9c4ae1dda6a7efc4fe33df71263e7aa7674423a9e55fd50a"
+        },
+        {
+            "type": "file",
+            "name": "sass/components/acf-pagebuilder/blocks/_partners-list.scss",
+            "size": 313,
+            "hash": "4c91b78bfc4fdf6596f57b631f4722f10f0b960b2e9a89632456873cbfb64c9b"
+        },
+        {
+            "type": "file",
+            "name": "sass/components/acf-pagebuilder/blocks/_pricing-table.scss",
+            "size": 1371,
+            "hash": "8bf4517d438d149f26b354c83436b093ac414d4b1a7c2cd41e8b4a4840328714"
+        },
+        {
+            "type": "file",
+            "name": "sass/components/acf-pagebuilder/blocks/_projects-gallery.scss",
+            "size": 670,
+            "hash": "a4eb2f1084a06141ffea374ff084ef4a7292d4d158eeecbd5e9746126d59d4cc"
+        },
+        {
+            "type": "file",
+            "name": "sass/components/acf-pagebuilder/blocks/_references-slider.scss",
+            "size": 1360,
+            "hash": "9d5814359e62696c39a989172dcab67a1d8831251623d4a45064fa5a643f407f"
+        },
+        {
+            "type": "file",
+            "name": "sass/components/acf-pagebuilder/blocks/_reviews-list.scss",
+            "size": 1503,
+            "hash": "08b84894e10a0307707ca42eff7092e7f69ccca5e269a76cc709126407e6989c"
+        },
+        {
+            "type": "file",
+            "name": "sass/components/acf-pagebuilder/blocks/_site-title.scss",
+            "size": 1642,
+            "hash": "fd7ffb1229fdadb4d3bb44aceb1b99e49c040be5d33d1a86c249d1ae2af6e051"
+        },
+        {
+            "type": "file",
+            "name": "sass/components/acf-pagebuilder/blocks/_steps.scss",
+            "size": 186,
+            "hash": "11fd4e53ab5001d7b7b3ef0ebb1d8edbf27264b1b8d964d02fd23f33dafe4fb9"
+        },
+        {
+            "type": "file",
+            "name": "sass/components/acf-pagebuilder/blocks/_text-image.scss",
+            "size": 522,
+            "hash": "61a77215223728c16c5d9fcce9d5ad0e1cb5365833119116f58f596ffbc1e7a2"
+        },
+        {
+            "type": "file",
+            "name": "sass/components/acf-pagebuilder/blocks/_text.scss",
+            "size": 468,
+            "hash": "522ba2f452b591fab2f1ffb3ccf30281031e42895d0559ccf67a6ca65e9c8794"
+        },
+        {
+            "type": "file",
+            "name": "sass/components/acf-pagebuilder/blocks/_title-text.scss",
+            "size": 370,
+            "hash": "7e12e93695fe3a35ad0f3a593a8d1755451ff6cf5dd16c89e233431412f51898"
+        },
+        {
+            "type": "file",
+            "name": "sass/components/template-parts/single/_index.scss",
+            "size": 181,
+            "hash": "5f54b3e39314bba7f69bb307a11956aa0a47f0d47120edaa07dfd9cbebb96a16"
+        },
+        {
+            "type": "file",
+            "name": "sass/components/template-parts/single/_single-content.scss",
+            "size": 1652,
+            "hash": "b808dc3226ba1811506dbf48a6310dda400e74b4bb3d56a409ea1d459e712ec3"
+        },
+        {
+            "type": "file",
+            "name": "sass/components/template-parts/single/_single-related-posts.scss",
+            "size": 316,
+            "hash": "0d3c79d89b56cea467cd45bd8d66193ca2be1e0742ab57a35b496d4ff2a7e2e0"
+        },
+        {
+            "type": "file",
+            "name": "sass/components/template-parts/single/_single-sidebar.scss",
+            "size": 1183,
+            "hash": "d709397af37751121084d5af34dd92c064d8d1943e03205928e2351f43369bb9"
+        },
+        {
+            "type": "file",
+            "name": "sass/components/template-parts/single/_single-signature.scss",
+            "size": 1197,
+            "hash": "385206b88ec449803e81cab9fd022445a365e49556faa8a97e2436e775a2d6f0"
+        },
+        {
+            "type": "file",
+            "name": "sass/components/template-parts/single/_single-table-of-content.scss",
+            "size": 639,
+            "hash": "2e68a25d7c520e534e8a650ef2b0c55281335293391affb24025f576c5e298e7"
+        },
+        {
+            "type": "file",
+            "name": "sass/components/template-parts/single/_single-thumbnail.scss",
+            "size": 431,
+            "hash": "a1797887a728af302974dde4e5950984033841b3a76b9804b25f727b8b181de4"
+        }
+    ]
+}

@@ -2150,13 +2150,6 @@
                 "operator": "!=",
                 "value": "30"
             }
-        ],
-        [
-            {
-                "param": "page_template",
-                "operator": "==",
-                "value": "template-maintenance-form.php"
-            }
         ]
     ],
     "menu_order": 0,
@@ -2170,5 +2163,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1721065226
+    "modified": 1724850846
 }
