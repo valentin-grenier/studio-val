@@ -1,0 +1,26 @@
+.st-blog.category {
+	.st-blog__header {
+		padding-bottom: 0;
+
+		h1 {
+			margin-bottom: 0;
+			font-size: $font__lg;
+		}
+
+		p {
+			font-weight: 400;
+			font-size: $font__sm;
+			max-width: 1000px;
+			margin: auto;
+			text-wrap: balance;
+		}
+	}
+
+	.st-graphic-blocks {
+		.st-block {
+			&:nth-child(3) {
+				display: none;
+			}
+		}
+	}
+}

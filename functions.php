@@ -90,7 +90,7 @@ function studio_scripts()
 		wp_enqueue_script('studio-single-portfolio', get_template_directory_uri() . '/assets/js/single-portfolio.js', array(), _S_VERSION, true);
 	}
 
-	if (is_home()) {
+	if (is_home() || is_category() || is_archive()) {
 		wp_enqueue_script('gsap-blog', get_template_directory_uri() . '/assets/js/gsap-blog.js', array('gsap-cdn'), _S_VERSION, true);
 	}
 
@@ -289,3 +289,18 @@ function studio_acf_export_json($path)
 	return $path;
 }
 add_filter('acf/settings/save_json', 'studio_acf_export_json');
+
+
+// == Edit RankMath breadscrumbs: edit category slug
+add_filter('rank_math/frontend/breadcrumb/items', function ($crumbs, $class) {
+	// Loop through each breadcrumb item
+	foreach ($crumbs as $crumb) {
+		// Check if it's a category breadcrumb
+		if (is_category() && strpos($crumb[1], '/blog/') === false) {
+			// Prefix the slug with '/blog/'
+			$crumb[1] = home_url('/blog/') . untrailingslashit(str_replace(home_url(), '', $crumb[1]));
+		}
+	}
+
+	return $crumbs;
+}, 10, 2);

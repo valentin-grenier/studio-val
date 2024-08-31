@@ -88,7 +88,7 @@
 				display: flex;
 				justify-content: center;
 				align-items: start;
-				gap: 2.5rem;
+				gap: 1.75rem;
 
 				> li {
 					> a {
@@ -106,15 +106,26 @@
 						&.current-menu-item {
 							> a {
 								position: relative;
+								color: $color__green;
 
 								&:before {
-									content: '>';
+									content: '[';
 									color: $color__green;
 									position: absolute;
 									top: 50%;
-									left: -1rem;
+									left: -0.75rem;
 									transform: translateY(-50%);
-									font-size: 1.25rem;
+									font-size: 1rem;
+								}
+
+								&:after {
+									content: ']';
+									color: $color__green;
+									position: absolute;
+									top: 50%;
+									right: -0.75rem;
+									transform: translateY(-50%);
+									font-size: 1rem;
 								}
 							}
 						}
@@ -207,7 +218,7 @@
 		}
 	}
 
-	@media screen and (max-width: 800px) {
+	@media screen and (max-width: 900px) {
 		flex-wrap: wrap;
 		padding: 1.25rem;
 		width: 90%;
@@ -247,12 +258,17 @@
 				transition-delay: 0.15s;
 
 				> li {
-					width: calc(50% - 0.5rem);
+					&.menu-item-object-page {
+						width: calc(50% - 0.5rem);
+					}
 
 					&.current-menu-item {
 						a {
-							&::before {
-								content: '';
+							color: $color__white;
+
+							&::before,
+							&::after {
+								content: '' !important;
 							}
 						}
 					}

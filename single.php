@@ -26,6 +26,8 @@ $blocks = [
 
 		echo studio_generate_graphic_blocks($blocks);
 
+		echo get_template_part('template-parts/breadcrumbs');
+
 		get_template_part('template-parts/single/single', 'thumbnail');
 		get_template_part('template-parts/single/single', 'content');
 		get_template_part('template-parts/single/single', 'related-posts');

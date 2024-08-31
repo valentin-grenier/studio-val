@@ -131,18 +131,6 @@
 		}
 	}
 
-	&.category {
-		.st-blog__header {
-			p {
-				font-weight: 400;
-				font-size: $font__sm;
-				max-width: 1000px;
-				margin: auto;
-				text-wrap: balance;
-			}
-		}
-	}
-
 	@media screen and (max-width: $breakpoint__lg) {
 		&__posts {
 			&-list {

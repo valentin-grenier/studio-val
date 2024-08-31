@@ -1,0 +1,25 @@
+.st-breadcrumbs {
+	&.st-section {
+		padding: 1.5rem 0 0;
+	}
+
+	.rank-math-breadcrumb {
+		width: fit-content;
+		background: white;
+		padding: 0.75rem 1rem;
+		border-radius: $radius__sm;
+
+		a {
+			text-decoration: none;
+		}
+	}
+
+	@media screen and (max-width: $breakpoint__sm) {
+		.rank-math-breadcrumb {
+			p,
+			span {
+				font-size: $font__xs;
+			}
+		}
+	}
+}

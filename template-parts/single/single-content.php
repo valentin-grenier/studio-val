@@ -13,7 +13,7 @@ $content = get_the_content();
   <div class="st-single__content--container">
     <div class="st-single__content--header">
       <div class="st-single__content--tags">
-        <a href="<?php echo $category[0]->slug; ?>"><?php echo $category[0]->name; ?></a>
+        <a href="<?php echo get_site_url() . '/blog/' . $category[0]->slug; ?>"><?php echo $category[0]->name; ?></a>
         <time datetime="<?php echo esc_attr($datetime); ?>"><?php echo $date; ?></time>
       </div>
       <h1><?php echo $title ?></h1>

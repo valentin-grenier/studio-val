@@ -44,10 +44,13 @@ $icon_arrow = file_get_contents(get_template_directory_uri() . '/assets/svg/arro
 <main id="content" class="st-blog category">
 
   <section class="st-section boxed st-blog__header">
-    <h1><?php _e("Les articles à propos de <strong>$category->name</strong>", "studio-val"); ?></h1>
-    <p><?php echo $category->description; ?></p>
 
-    <?php get_template_part('template-parts/form', 'search'); ?>
+    <?php get_template_part('template-parts/breadcrumbs'); ?>
+
+
+
+    <h1><?php _e("Articles de la catégorie \"<strong>$category->name</strong>\"", "studio-val"); ?></h1>
+    <p><?php echo $category->description; ?></p>
 
     <?php echo studio_generate_graphic_blocks($blocks); ?>
   </section>
