@@ -24,7 +24,13 @@ $menus = [
 
 $bottom = get_field('footer-bottom', 'options');
 
+$icon_arrow = file_get_contents(get_template_directory() . '/assets/svg/arrow.svg');
+
 ?>
+
+<div class="st-back-to-top">
+  <button><?php echo $icon_arrow; ?></button>
+</div>
 
 <footer class="st-footer">
   <div class="st-footer__container">

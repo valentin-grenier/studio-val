@@ -87,3 +87,38 @@ input[type='submit'] {
 		opacity: 0.5;
 	}
 }
+
+// == Back to top button
+.st-back-to-top {
+	position: fixed;
+	bottom: 2rem;
+	right: 2rem;
+	transition: $transition__slow;
+	z-index: 999;
+	transform: translateY(200%);
+
+	button {
+		display: flex;
+		padding: 0.5rem;
+		border-radius: $radius__full;
+		opacity: 1;
+		background: $color__dark;
+
+		svg {
+			transform: rotate(90deg);
+
+			path {
+				stroke: $color__white;
+			}
+		}
+	}
+
+	&.active {
+		transform: translateY(0%);
+	}
+
+	@media screen and (max-width: $breakpoint__sm) {
+		bottom: 1rem;
+		right: 1rem;
+	}
+}
