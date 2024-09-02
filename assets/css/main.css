@@ -1323,9 +1323,9 @@ span.required {
 .st-single__content--container {
   position: relative;
   background: #ffffff;
-  width: calc(100% - 4rem);
+  width: calc(100% - 12rem);
   margin: auto;
-  padding: 4rem 8rem;
+  padding: 4rem 4rem;
   border-radius: 30px;
 }
 .st-single__content--header {

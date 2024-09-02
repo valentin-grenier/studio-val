@@ -29,15 +29,17 @@ if ($categories) {
 
     <h2><?php _e("Envie d'en <strong>savoir plus ?</strong>", "studio-val"); ?></h2>
 
-    <div class="st-single__related-posts--list">
-      <?php if ($related_posts_query->have_posts()) : ?>
+
+    <?php if ($related_posts_query->have_posts()) : ?>
+      <div class="st-single__related-posts--list">
         <?php while ($related_posts_query->have_posts()) : $related_posts_query->the_post(); ?>
           <?php get_template_part('template-parts/card', 'post'); ?>
         <?php endwhile; ?>
         <?php wp_reset_postdata(); ?>
-      <?php else : ?>
-        <p><?php _e("Je suis en train d'écrire les prochains articles, patience !", "studio-val"); ?></p>
-      <?php endif; ?>
-    </div>
+      </div>
+    <?php else : ?>
+      <p><?php _e("Je suis en train d'écrire les prochains articles, patience !", "studio-val"); ?></p>
+    <?php endif; ?>
+
   </section>
 <?php endif; ?>
