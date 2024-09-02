@@ -76,8 +76,8 @@ $cta = array(
           </div>
 
           <div class="st-blog__hero--meta">
-            <?php $hero_category = get_categories(); ?>
-            <span class="category" href="<?php echo $hero_category[1]->slug; ?>"><?php echo $hero_category[1]->name; ?></span>
+            <?php $hero_category = get_the_category(); ?>
+            <span class="category" href="<?php echo $hero_category[0]->slug; ?>"><?php echo $hero_category[0]->name; ?></span>
             <time datetime="<?php echo get_the_date('Y-m-d'); ?>"><?php echo get_the_date('j F Y'); ?></time>
           </div>
         </div>

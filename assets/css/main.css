@@ -2094,6 +2094,9 @@ html main {
   margin-bottom: 0.5rem;
 }
 
+.st-blog__header.st-section.boxed {
+  padding-bottom: 0;
+}
 .st-blog__title {
   opacity: 0;
 }

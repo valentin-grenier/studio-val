@@ -1,4 +1,10 @@
 .st-blog {
+	&__header {
+		&.st-section.boxed {
+			padding-bottom: 0;
+		}
+	}
+
 	&__title {
 		opacity: 0;
 
