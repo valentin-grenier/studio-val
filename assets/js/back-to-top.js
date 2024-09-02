@@ -11,8 +11,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	// == Hide button when at the top
 	window.addEventListener('scroll', () => {
-		console.log(window.scrollY);
-
 		if (window.scrollY < 500) {
 			button.classList.remove('active');
 		} else {
