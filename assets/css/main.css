@@ -1416,6 +1416,9 @@ span.required {
   .st-single__content .wp-block-image {
     width: 100%;
   }
+  .st-single__content .wp-block-list {
+    padding-left: 0;
+  }
 }
 
 .st-single__table-of-content {
