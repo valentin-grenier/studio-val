@@ -66,9 +66,8 @@ $arrow_icon = file_get_contents(get_template_directory_uri() . '/assets/svg/arro
 			<?php echo $arrow_icon; ?>
 		</div>
 
-		<?php if (is_front_page()) : ?>
+		<?php if (is_front_page() && !is_user_logged_in()) : ?>
 			<div class="st-loader">
 				<div class="st-loader__inner"></div>
 			</div>
-
 		<?php endif; ?>

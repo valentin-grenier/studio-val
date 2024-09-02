@@ -100,6 +100,12 @@ function studio_scripts()
 	wp_enqueue_script('gsap-scroll-trigger', 'https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js', array('gsap-cdn'), _S_VERSION, true);
 	wp_enqueue_script('gsap-file', get_template_directory_uri() . '/assets/js/gsap.js', array('gsap-cdn'), _S_VERSION, true);
 
+
+	// == GSAP for front page only
+	if (is_front_page()) {
+		wp_enqueue_script('gsap-front-page', get_template_directory_uri() . '/assets/js/gsap-front-page.js', array('gsap-cdn'), _S_VERSION, true);
+	}
+
 	// == Comments
 	if (is_singular() && comments_open() && get_option('thread_comments')) {
 		wp_enqueue_script('comment-reply');
