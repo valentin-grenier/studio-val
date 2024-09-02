@@ -83,6 +83,17 @@
 			margin-bottom: 0.5rem;
 			line-height: 1.75rem;
 		}
+
+		&.is-checklist {
+			list-style: none;
+
+			li {
+				&::before {
+					content: '✅';
+					margin-right: 0.25rem;
+				}
+			}
+		}
 	}
 
 	.wp-block-gallery {

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   scroll-behavior: smooth;
   scroll-margin-top: 4rem;
@@ -1351,6 +1352,13 @@ span.required {
 .st-single__content .wp-block-list li {
   margin-bottom: 0.5rem;
   line-height: 1.75rem;
+}
+.st-single__content .wp-block-list.is-checklist {
+  list-style: none;
+}
+.st-single__content .wp-block-list.is-checklist li::before {
+  content: "✅";
+  margin-right: 0.25rem;
 }
 .st-single__content .wp-block-gallery {
   display: flex;
