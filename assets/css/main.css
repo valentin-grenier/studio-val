@@ -1838,11 +1838,11 @@ span.required {
 .st-header__navigation ul.menu > li > a > span.dashicons {
   display: none;
 }
-.st-header__navigation ul.menu > li:not(.st-button).current-menu-item > a {
+.st-header__navigation ul.menu > li:not(.st-button):not(.menu-item-home).current-menu-item > a {
   position: relative;
   color: #00c49a;
 }
-.st-header__navigation ul.menu > li:not(.st-button).current-menu-item > a:before {
+.st-header__navigation ul.menu > li:not(.st-button):not(.menu-item-home).current-menu-item > a:before {
   content: "[";
   color: #00c49a;
   position: absolute;
@@ -1851,7 +1851,7 @@ span.required {
   transform: translateY(-50%);
   font-size: 1rem;
 }
-.st-header__navigation ul.menu > li:not(.st-button).current-menu-item > a:after {
+.st-header__navigation ul.menu > li:not(.st-button):not(.menu-item-home).current-menu-item > a:after {
   content: "]";
   color: #00c49a;
   position: absolute;

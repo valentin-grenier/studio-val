@@ -103,29 +103,31 @@
 					}
 
 					&:not(.st-button) {
-						&.current-menu-item {
-							> a {
-								position: relative;
-								color: $color__green;
-
-								&:before {
-									content: '[';
+						&:not(.menu-item-home) {
+							&.current-menu-item {
+								> a {
+									position: relative;
 									color: $color__green;
-									position: absolute;
-									top: 50%;
-									left: -0.75rem;
-									transform: translateY(-50%);
-									font-size: 1rem;
-								}
 
-								&:after {
-									content: ']';
-									color: $color__green;
-									position: absolute;
-									top: 50%;
-									right: -0.75rem;
-									transform: translateY(-50%);
-									font-size: 1rem;
+									&:before {
+										content: '[';
+										color: $color__green;
+										position: absolute;
+										top: 50%;
+										left: -0.75rem;
+										transform: translateY(-50%);
+										font-size: 1rem;
+									}
+
+									&:after {
+										content: ']';
+										color: $color__green;
+										position: absolute;
+										top: 50%;
+										right: -0.75rem;
+										transform: translateY(-50%);
+										font-size: 1rem;
+									}
 								}
 							}
 						}
