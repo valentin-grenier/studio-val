@@ -5,13 +5,17 @@ $number_of_buttons = get_sub_field('number_of_buttons');
 $buttons = [
   $button_1 = get_sub_field('button_1')
 ];
+
 if ($number_of_buttons > 1) {
   $button_2 = get_sub_field('button_2');
   $buttons[] = $button_2;
 }
+
+$appearance = get_sub_field('appearance');
+
 ?>
 
-<div class="st-callout-block">
+<div class="st-callout-block <?php echo esc_attr($appearance); ?>">
   <?php if ($content) : ?>
     <div class="st-callout-block__content">
       <?php echo $content; ?>

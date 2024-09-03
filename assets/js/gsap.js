@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		document.addEventListener('mousemove', (event) => {
 			gsap.to(cursor, {
 				x: event.clientX + 16,
-				y: event.clientY + 24,
+				y: event.clientY + -115,
 				duration: 0.5,
 				ease: 'power1.out',
 			});
@@ -620,6 +620,47 @@ document.addEventListener('DOMContentLoaded', () => {
 				opacity: 1,
 				duration: 0.5,
 			});
+		}
+
+		// == Text with rolling cards animation
+		if (document.querySelector('.st-text-rolling-cards')) {
+			gsap.utils
+				.toArray('.st-text-rolling-cards .st-text-rolling-cards__card')
+				.forEach((card) => {
+					gsap.to(card, {
+						opacity: 1,
+						duration: 0.5,
+						scrollTrigger: {
+							trigger: card,
+							start: 'top: 40%',
+							end: 'bottom: 80%',
+							toggleActions: 'play none none reverse',
+						},
+					});
+				});
+		}
+
+		// == Text offer animation
+		if (document.querySelector('.st-text-offer')) {
+			gsap.fromTo(
+				document.querySelector('.st-text-offer__offer'),
+				{
+					opacity: 0,
+					x: 20,
+				},
+				{
+					opacity: 1,
+					x: 0,
+					duration: 0.5,
+					delay: 0.25,
+					scrollTrigger: {
+						trigger: '.st-text-offer',
+						start: 'top: 80%',
+						end: 'bottom: 80%',
+						toggleActions: 'play none none none',
+					},
+				}
+			);
 		}
 	});
 });

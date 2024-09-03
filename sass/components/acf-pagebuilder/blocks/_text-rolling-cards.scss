@@ -1,0 +1,41 @@
+.st-text-rolling-cards {
+	position: relative;
+	display: grid;
+	grid-template-columns: 1.5fr 1fr;
+	gap: 4rem;
+
+	&__text {
+		position: sticky;
+		top: 4rem;
+		height: fit-content;
+	}
+
+	&__cards {
+		display: flex;
+		flex-direction: column;
+		gap: 1.5rem;
+	}
+
+	&__card {
+		border-radius: $radius__md;
+		padding: 1.5rem;
+		background: $color__white;
+		transition: $transition__fast;
+
+		&:not(:first-of-type) {
+			opacity: 0.3;
+		}
+
+		&--title {
+			font-weight: 700;
+		}
+	}
+
+	@media screen and (max-width: 1024px) {
+		grid-template-columns: 1fr;
+
+		&__text {
+			position: static;
+		}
+	}
+}

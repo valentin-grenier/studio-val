@@ -8,6 +8,19 @@
 	transform: scale(0.9);
 	opacity: 0;
 
+	&.light {
+		background: $color__white;
+		color: $color__dark;
+
+		* {
+			color: $color__dark;
+		}
+
+		strong {
+			color: $color__primary;
+		}
+	}
+
 	&__content {
 		max-width: 750px;
 		margin: 0 auto;
