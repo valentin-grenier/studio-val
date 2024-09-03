@@ -6,6 +6,11 @@
 		h1 {
 			font-size: $font__xl;
 		}
+
+		.big-subtitle {
+			font-size: $font__md;
+			font-weight: 700;
+		}
 	}
 
 	&__title-subtitle {
