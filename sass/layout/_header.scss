@@ -104,7 +104,8 @@
 
 					&:not(.st-button) {
 						&:not(.menu-item-home) {
-							&.current-menu-item {
+							&.current-menu-item,
+							&.current-page-parent {
 								> a {
 									position: relative;
 									color: $color__green;
