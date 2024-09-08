@@ -1,7 +1,7 @@
 {
     "description": "DO NOT DELETE THIS FILE. This file is used to keep track of which files have been synced in the most recent deployment. If you delete this file a resync will need to be done (which can take a while) - read more: https://github.com/SamKirkland/FTP-Deploy-Action",
     "version": "1.0.0",
-    "generatedTime": 1724764806663,
+    "generatedTime": 1725394671423,
     "data": [
         {
             "type": "file",
@@ -14,6 +14,12 @@
             "name": ".eslintrc",
             "size": 120,
             "hash": "f7333fa9c41790ddfe4e77f79e3d32175d0dc4349c5191e67332b6f4a9293ce0"
+        },
+        {
+            "type": "file",
+            "name": ".ftp-deploy-sync-state.json",
+            "size": 44928,
+            "hash": "92afb2c47dc619213ef7d553a9ea61e4bcf65c857f0461e4b6d2e2b69d87058f"
         },
         {
             "type": "file",
@@ -56,8 +62,8 @@
         {
             "type": "file",
             "name": "category.php",
-            "size": 1793,
-            "hash": "7eb2f09b67cca0eded06e002362b07767f6b2d68fca73e546f68cbe71fcfa4c2"
+            "size": 1800,
+            "hash": "8f96f9b7562fe78f7d1307fa0ecea18f67f7c9428a18f256e823b835847a9f29"
         },
         {
             "type": "file",
@@ -68,26 +74,26 @@
         {
             "type": "file",
             "name": "footer.php",
-            "size": 1493,
-            "hash": "14d76f2980bffcab18bdd07f8c67cfd558f1e56cfcc05a715b0eb34b5ef5e6c8"
+            "size": 1662,
+            "hash": "ef59068e242ae5196a6f41c91605a84a6a3d91cb80910106ba78f2f96bc1c919"
         },
         {
             "type": "file",
             "name": "functions.php",
-            "size": 8111,
-            "hash": "d1cf6bb4b089a7dc2f234502d043d85fd89e3c4247be7f6806375cc57888dbbd"
+            "size": 9654,
+            "hash": "44d2ee3de00a37899439d0e4deb531f940c806defd154ea1e491703fb909248d"
         },
         {
             "type": "file",
             "name": "header.php",
-            "size": 1860,
-            "hash": "f22978e5e002ba800b8c487573cc417b460b9d0893961ff35b2ab03f34de15c6"
+            "size": 1883,
+            "hash": "dc74c3a6620e43908fa3c2b81aa0750c1fbb11fcd0d7c4ed97f08f736b6abfb7"
         },
         {
             "type": "file",
             "name": "home.php",
-            "size": 4246,
-            "hash": "f57e2d22dc45fd982f9ee66406cb26e0542d1f6ef4cf24e6e246c691ac9f5cc5"
+            "size": 3897,
+            "hash": "c7feae77fae7322d00b002c9551ed9087b3215447ec95995df6b2f0e060610fc"
         },
         {
             "type": "file",
@@ -144,8 +150,8 @@
         {
             "type": "file",
             "name": "single.php",
-            "size": 838,
-            "hash": "a8099cb568c6462aad11d5e670ba23b94f599ab0b859d500cf6a5e2e44c67c22"
+            "size": 895,
+            "hash": "f071dbeac1e50a737089b37f0923436b9a48e7ad737621020811dad5f7524f56"
         },
         {
             "type": "file",
@@ -190,8 +196,8 @@
         {
             "type": "file",
             "name": "acf-json/group_6651d3e29e0c1.json",
-            "size": 126753,
-            "hash": "63d6589c94d8221949bf9df0703fe0efca1d0178325b86524f876d0c099e366d"
+            "size": 142205,
+            "hash": "511e9affd5973bfd1491a9fb6082339a54139f44bf3f13384b183ac21e5a69a3"
         },
         {
             "type": "file",
@@ -202,8 +208,8 @@
         {
             "type": "file",
             "name": "acf-json/group_66522ef0d49f0.json",
-            "size": 3899,
-            "hash": "562e111a6fd55de2e553c4b554d7934ed1a0f62a8adcfd01a0a0c90efa9cc7c4"
+            "size": 4573,
+            "hash": "99abf46367c9a09e28f4588a0c75b44d8d3048c3868f3910ab6fd031c2cd7463"
         },
         {
             "type": "file",
@@ -237,6 +243,12 @@
         },
         {
             "type": "file",
+            "name": "acf-json/group_66d72ac8b16a5.json",
+            "size": 4952,
+            "hash": "5666755d0b079960bd38428069f19550d565b0d78ca5ff864bda8ac9b87849c1"
+        },
+        {
+            "type": "file",
             "name": "acf-json/post_type_6686709409e8d.json",
             "size": 2871,
             "hash": "b40162d92fcb19f7874445127a83b8d989009863c08ba4d2dca1f295e0f765dd"
@@ -246,12 +258,6 @@
             "name": "acf-json/taxonomy_665231a193879.json",
             "size": 2403,
             "hash": "83243f33fbccaae0f629eeb9f8e231695c4b62e4cbdd1b9e2adf6330c4d64fdc"
-        },
-        {
-            "type": "file",
-            "name": "assets/.DS_Store",
-            "size": 6148,
-            "hash": "9b6aeb0893ebd061c7baa65db19c6131acdfd625aaedc8adfc24038715836f4f"
         },
         {
             "type": "folder",
@@ -264,6 +270,12 @@
         {
             "type": "folder",
             "name": "assets/js"
+        },
+        {
+            "type": "file",
+            "name": "assets/.DS_Store",
+            "size": 6148,
+            "hash": "9b6aeb0893ebd061c7baa65db19c6131acdfd625aaedc8adfc24038715836f4f"
         },
         {
             "type": "folder",
@@ -301,6 +313,12 @@
         },
         {
             "type": "file",
+            "name": "template-parts/breadcrumbs.php",
+            "size": 154,
+            "hash": "d21ef287b9e3f55c37aa4014e676d68dcbb520f95ff8a7b36740aaec1f30d7a3"
+        },
+        {
+            "type": "file",
             "name": "template-parts/button-back.php",
             "size": 153,
             "hash": "a05f01df26734f31c7802137aff1a7ddcacaa42167e6a7d17da299bfc57d9ce5"
@@ -320,8 +338,8 @@
         {
             "type": "file",
             "name": "template-parts/card-post.php",
-            "size": 809,
-            "hash": "d75c075f763d2b2c358877aa85779583d894d8bfdbaed0ae914d1512ef54e4bb"
+            "size": 968,
+            "hash": "de8c9157f44a1165f8c831e90b5ff418694fd2c31646a40e9c6f7d2dc7abbf3b"
         },
         {
             "type": "file",
@@ -384,14 +402,14 @@
         {
             "type": "file",
             "name": "assets/css/main.css",
-            "size": 52658,
-            "hash": "1cdf9f6eda59295dd2bc5aafeacd0cec1694ab435bcda58bab3708d258d223ad"
+            "size": 57770,
+            "hash": "d0b82da32b0c98d2f7ec134f296ad623f4893af72d71549b1789feb591148e40"
         },
         {
             "type": "file",
             "name": "assets/css/main.css.map",
-            "size": 15642,
-            "hash": "43adde5ea8da89bd2049d3a0010a22b05224b31dd701d3e4e8f415feae4bfcc9"
+            "size": 17111,
+            "hash": "4dae211541ed2688f43f3bc1f1bfdd683dc887bf0bc88ceb03fec85c56f0b79d"
         },
         {
             "type": "file",
@@ -413,15 +431,33 @@
         },
         {
             "type": "file",
+            "name": "assets/js/back-to-top.js",
+            "size": 641,
+            "hash": "7707d2085685b45d161ff05decbe61738ce3af118ab3c4633c138c6aa0f300b5"
+        },
+        {
+            "type": "file",
             "name": "assets/js/blog-posts-slider.js",
             "size": 585,
             "hash": "10d8f5dae7a49cb06d14b42869d545316e7ed8187c7f0fd7b5b39caece7100bc"
         },
         {
             "type": "file",
+            "name": "assets/js/gsap-blog.js",
+            "size": 936,
+            "hash": "c4da29589a57b222e6a9d12ced6d5c4263c41b88f2e63a6fa76cfa1fb0ce7dd6"
+        },
+        {
+            "type": "file",
+            "name": "assets/js/gsap-front-page.js",
+            "size": 1129,
+            "hash": "8c39174be37eff9687ab0dde3002ef0fcaeb8325407ba7e56715ac7b915b7c6f"
+        },
+        {
+            "type": "file",
             "name": "assets/js/gsap.js",
-            "size": 13399,
-            "hash": "2bdb101b55313c09764c37ad0e131c14bdc7f1fef463c16e63e5a30765de1f9c"
+            "size": 13356,
+            "hash": "ef939e5593acc856d948679ea9822e896913b48035636d7036e120eea375f8b6"
         },
         {
             "type": "file",
@@ -529,27 +565,27 @@
         },
         {
             "type": "file",
-            "name": "sass/abstracts/_animations.scss",
-            "size": 283,
-            "hash": "bc9cebf53a8aa21701f3ed138369e9359f8fddbf1c83f170c2042ec142e9305d"
-        },
-        {
-            "type": "file",
             "name": "sass/abstracts/_borders.scss",
             "size": 103,
             "hash": "0af991f206ed126080da90e924a7870a98851d9002c8e97598af1f414ec13fd2"
         },
         {
             "type": "file",
-            "name": "sass/abstracts/_colors.scss",
-            "size": 421,
-            "hash": "16b7feec7032c01228a0e10e551e2ae473ddeede58027db0e3f63ab65f42070c"
+            "name": "sass/abstracts/_animations.scss",
+            "size": 283,
+            "hash": "bc9cebf53a8aa21701f3ed138369e9359f8fddbf1c83f170c2042ec142e9305d"
         },
         {
             "type": "file",
             "name": "sass/abstracts/_fonts.scss",
             "size": 1788,
             "hash": "b807fc2811502a3eeaea981335b630a01caae28b2de6a1c5290209d054d17a8c"
+        },
+        {
+            "type": "file",
+            "name": "sass/abstracts/_colors.scss",
+            "size": 508,
+            "hash": "b431ab5eb6cace9754aabf9d4c1ad67e69f3465febe5a505479a00cc810258f1"
         },
         {
             "type": "file",
@@ -572,8 +608,8 @@
         {
             "type": "file",
             "name": "sass/base/_index.scss",
-            "size": 144,
-            "hash": "d99116352705847f93e26dccbcff87af23bf4c7b31deca91c5feeb74afc1d400"
+            "size": 170,
+            "hash": "23a9fa2a92725a6326acf08d81d2da86f7812e65d7b9ea400215187df8f8adaa"
         },
         {
             "type": "file",
@@ -601,9 +637,9 @@
         },
         {
             "type": "file",
-            "name": "sass/layout/_blog.scss",
-            "size": 1962,
-            "hash": "be5f6d38746ec49ecfe4ca6a4efd445368a23205d977471cbda1fe4066145cf3"
+            "name": "sass/layout/_category.scss",
+            "size": 357,
+            "hash": "cc2f3d4eda917711341b54b761ce6b021d832ab167422edcb81d591e40e4af2e"
         },
         {
             "type": "file",
@@ -614,14 +650,20 @@
         {
             "type": "file",
             "name": "sass/layout/_header.scss",
-            "size": 6104,
-            "hash": "6cc6961c14246f6da63862b130da155cf6fc672edf7132e0176fd156e5fb2f0f"
+            "size": 6516,
+            "hash": "6f062988cea1297525e25525cea31babc99f51d2bdb9595a991d2e87db80284b"
+        },
+        {
+            "type": "file",
+            "name": "sass/layout/_home.scss",
+            "size": 3027,
+            "hash": "7978633500b3b0b9b79c0368164a4fe9f8e9a61477181f4c23b12f0da2ed9d5b"
         },
         {
             "type": "file",
             "name": "sass/layout/_index.scss",
-            "size": 221,
-            "hash": "e2506aaf623e0c5225d75c9c68a2798e0ccd4412c04e99fa2d0afba2957af97a"
+            "size": 242,
+            "hash": "b57ccc50e64ec4d03853d7b4a608fce65d39db13e38eb964c97c48784cd1ae6e"
         },
         {
             "type": "file",
@@ -698,8 +740,8 @@
         {
             "type": "file",
             "name": "sass/utilities/_loader.scss",
-            "size": 631,
-            "hash": "2c4ae4da9a0fe75b250a9f984b5c63d91d716965e2e8776da7b2780a227cfbe0"
+            "size": 641,
+            "hash": "2f086fc54b51659d49eb9cf2d4ab5e7aa45d989139fe295b47b64f2e1cc0f18b"
         },
         {
             "type": "file",
@@ -720,20 +762,20 @@
         {
             "type": "file",
             "name": "template-parts/single/single-content.php",
-            "size": 1106,
-            "hash": "f036d0e0950d386e2387a7d79c69a3d93715aafa84c97ef66305b3d659f93a5d"
+            "size": 1253,
+            "hash": "503685b13b3c354dc5205631e1aa3885733ef72f523368e13fbe86f15dfbe5f3"
         },
         {
             "type": "file",
             "name": "template-parts/single/single-related-posts.php",
             "size": 1397,
-            "hash": "1934b334b939479f543ebadb396e097cc2165d52e8b81ba561a59808e9e861cd"
+            "hash": "ee41cfa8c64b5764369e7e0ee8e6adfac76c98c03391c7adffc44ef7548d9356"
         },
         {
             "type": "file",
             "name": "template-parts/single/single-sidebar.php",
-            "size": 1774,
-            "hash": "2866343c23c09b0afe6be3cc4181902b8727103d7ab9f8781be99ae2fd778cf0"
+            "size": 1890,
+            "hash": "b1dcab3188ad40a7e365d86b09634f12bc975fa23eb7ed2465bf22ac26f17e9f"
         },
         {
             "type": "file",
@@ -744,8 +786,8 @@
         {
             "type": "file",
             "name": "template-parts/single/single-table-of-content.php",
-            "size": 794,
-            "hash": "bbd35c1c70df9d4ac55d74e80533444c148350589a92003ccc72e215482111f2"
+            "size": 1138,
+            "hash": "f2e7642a95befb6d18e7c4bb6599ae8044f74604ba35fc840d1d007d6278188d"
         },
         {
             "type": "file",
@@ -915,15 +957,21 @@
         },
         {
             "type": "file",
+            "name": "sass/components/graphic-components/_index.scss",
+            "size": 18,
+            "hash": "af946899de81251aa4c8a8f36a7a0bea6bee5cc8c6c59a8f26e694f3db6518bc"
+        },
+        {
+            "type": "file",
             "name": "sass/components/graphic-components/_blocks.scss",
             "size": 1054,
             "hash": "7c7aa2ef764294b96db1bd0f541cbe8b555a73071063b62628fc38e0ab7b2820"
         },
         {
             "type": "file",
-            "name": "sass/components/graphic-components/_index.scss",
-            "size": 18,
-            "hash": "af946899de81251aa4c8a8f36a7a0bea6bee5cc8c6c59a8f26e694f3db6518bc"
+            "name": "sass/components/template-parts/_breadcrumbs.scss",
+            "size": 382,
+            "hash": "77b8bc3ee1d925a330ee3d8846d3b5cc36fbd5dad44f21eb7d501730bb57383c"
         },
         {
             "type": "file",
@@ -934,8 +982,8 @@
         {
             "type": "file",
             "name": "sass/components/template-parts/_button.scss",
-            "size": 1354,
-            "hash": "ff39207bfdee969977a255c0b76e41ac4a5d674857c86a536ee13a05e7d279da"
+            "size": 1863,
+            "hash": "4044f32bf68f16adae39f7ba2da61af757f01dfb3ba09eb9d7e58910e6afdddd"
         },
         {
             "type": "file",
@@ -946,8 +994,8 @@
         {
             "type": "file",
             "name": "sass/components/template-parts/_card-post.scss",
-            "size": 688,
-            "hash": "ad742bf111aa602c1cc349d6b87d579df333e1690205e374b7d3bac689fa3436"
+            "size": 980,
+            "hash": "176856b59eb05029f50dca906a9ee16c4facc7bb800f489e67849b1957d46a47"
         },
         {
             "type": "file",
@@ -988,8 +1036,8 @@
         {
             "type": "file",
             "name": "sass/components/template-parts/_index.scss",
-            "size": 262,
-            "hash": "ee7d59d697d4fd18a0c5c35a98d1b5d3d42b9ff9d6d434d628a132e667d44cb8"
+            "size": 285,
+            "hash": "d7b32032c26948076d22a93e8bb331dec65995c5cac76e5988cfe50cb648b314"
         },
         {
             "type": "file",
@@ -1016,8 +1064,8 @@
         {
             "type": "file",
             "name": "template-parts/acf/blocks/callout-block.php",
-            "size": 788,
-            "hash": "9f17ef4c0f4f018f8878595a7e11dd2f8d06b46f6458605f485a24f187baf0b7"
+            "size": 871,
+            "hash": "097a23311e8823793dc6bbb98ee7df3cbc0aaebfb896a23e86f47f9bc2f282f0"
         },
         {
             "type": "file",
@@ -1099,6 +1147,18 @@
         },
         {
             "type": "file",
+            "name": "template-parts/acf/blocks/text-offer.php",
+            "size": 1453,
+            "hash": "ddc1679dc34266c11ba0fc7ef6214f112b68da937f036e90d917fa0fd3caa4e7"
+        },
+        {
+            "type": "file",
+            "name": "template-parts/acf/blocks/text-rolling-cards.php",
+            "size": 835,
+            "hash": "3cf373e91c745aac81949f42175f92ee89c33924209a915b15ee6c899e9fdb84"
+        },
+        {
+            "type": "file",
             "name": "template-parts/acf/blocks/text.php",
             "size": 461,
             "hash": "3bd7448f95ebe0d20f5df4830de2bbd1221aa786aaa8466fd05d23f15fab4d8a"
@@ -1117,15 +1177,15 @@
         },
         {
             "type": "file",
-            "name": "sass/components/acf-pagebuilder/blocks/_callout-block.scss",
-            "size": 525,
-            "hash": "a83824e8e127f3cfaeaa3bb2502075867826b881044aee7ee4e77d46b21e937d"
-        },
-        {
-            "type": "file",
             "name": "sass/components/acf-pagebuilder/blocks/_cards-list.scss",
             "size": 305,
             "hash": "a9bc0b39b5e0477a2dcbdecb70f75b0eb919eca52fc23a77b5c6e0b32d7c2408"
+        },
+        {
+            "type": "file",
+            "name": "sass/components/acf-pagebuilder/blocks/_callout-block.scss",
+            "size": 670,
+            "hash": "5a466b3ce30cb3c01e4332fb58ecf0aa98685175d29775d82f02cc319f0f70b0"
         },
         {
             "type": "file",
@@ -1135,15 +1195,15 @@
         },
         {
             "type": "file",
-            "name": "sass/components/acf-pagebuilder/blocks/_index.scss",
-            "size": 422,
-            "hash": "7c79e54c7d944ab98f6d6b118ddf4f1eb0c614558ccc0fe16336895327d19504"
-        },
-        {
-            "type": "file",
             "name": "sass/components/acf-pagebuilder/blocks/_list-block.scss",
             "size": 538,
             "hash": "d4ce5da0f5325e91b184b7967950af3d37175c7fdf7dec89968f87ebfe50dfa5"
+        },
+        {
+            "type": "file",
+            "name": "sass/components/acf-pagebuilder/blocks/_index.scss",
+            "size": 476,
+            "hash": "74d65c5fdcf6ba8db5b51aa6f1416f3ddae4dcf405d7c3ae9213a62963d7272e"
         },
         {
             "type": "file",
@@ -1154,8 +1214,8 @@
         {
             "type": "file",
             "name": "sass/components/acf-pagebuilder/blocks/_page-title.scss",
-            "size": 637,
-            "hash": "b0983069b00675ba9c4ae1dda6a7efc4fe33df71263e7aa7674423a9e55fd50a"
+            "size": 706,
+            "hash": "31d85f31b4bc9c61cc652a2e1630431e06ee908494e6a85d538ecede6b39ebb9"
         },
         {
             "type": "file",
@@ -1195,15 +1255,27 @@
         },
         {
             "type": "file",
+            "name": "sass/components/acf-pagebuilder/blocks/_text-image.scss",
+            "size": 522,
+            "hash": "61a77215223728c16c5d9fcce9d5ad0e1cb5365833119116f58f596ffbc1e7a2"
+        },
+        {
+            "type": "file",
+            "name": "sass/components/acf-pagebuilder/blocks/_text-offer.scss",
+            "size": 748,
+            "hash": "acabce5fbf9d8b05183b02e4af8b31989113871282d147d8e4af46b72ec8a9a8"
+        },
+        {
+            "type": "file",
             "name": "sass/components/acf-pagebuilder/blocks/_steps.scss",
             "size": 186,
             "hash": "11fd4e53ab5001d7b7b3ef0ebb1d8edbf27264b1b8d964d02fd23f33dafe4fb9"
         },
         {
             "type": "file",
-            "name": "sass/components/acf-pagebuilder/blocks/_text-image.scss",
-            "size": 522,
-            "hash": "61a77215223728c16c5d9fcce9d5ad0e1cb5365833119116f58f596ffbc1e7a2"
+            "name": "sass/components/acf-pagebuilder/blocks/_text-rolling-cards.scss",
+            "size": 623,
+            "hash": "7ae5427aa7f4b45e30fda8edd20633a0d1fd4d5b7c0648a1c590ffc372e28917"
         },
         {
             "type": "file",
@@ -1226,8 +1298,8 @@
         {
             "type": "file",
             "name": "sass/components/template-parts/single/_single-content.scss",
-            "size": 1652,
-            "hash": "b808dc3226ba1811506dbf48a6310dda400e74b4bb3d56a409ea1d459e712ec3"
+            "size": 1890,
+            "hash": "799bc803aafd03670891ff2d1f9c8d1f9a95b744cf895a11245ca0cf2ba86194"
         },
         {
             "type": "file",
@@ -1237,15 +1309,15 @@
         },
         {
             "type": "file",
-            "name": "sass/components/template-parts/single/_single-sidebar.scss",
-            "size": 1183,
-            "hash": "d709397af37751121084d5af34dd92c064d8d1943e03205928e2351f43369bb9"
-        },
-        {
-            "type": "file",
             "name": "sass/components/template-parts/single/_single-signature.scss",
             "size": 1197,
             "hash": "385206b88ec449803e81cab9fd022445a365e49556faa8a97e2436e775a2d6f0"
+        },
+        {
+            "type": "file",
+            "name": "sass/components/template-parts/single/_single-sidebar.scss",
+            "size": 826,
+            "hash": "e418574bee6f2d628610477ff7d474d56edc4d7e2dad930dcf6a855f8efe4f54"
         },
         {
             "type": "file",
@@ -1256,8 +1328,8 @@
         {
             "type": "file",
             "name": "sass/components/template-parts/single/_single-thumbnail.scss",
-            "size": 431,
-            "hash": "a1797887a728af302974dde4e5950984033841b3a76b9804b25f727b8b181de4"
+            "size": 453,
+            "hash": "0f53f8dad826a77cdfccbe560b206c266907db7d9a4ab41db9897ff0af9a784f"
         }
     ]
 }
