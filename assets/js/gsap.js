@@ -640,27 +640,28 @@ document.addEventListener('DOMContentLoaded', () => {
 				});
 		}
 
-		// == Text offer animation
-		if (document.querySelector('.st-text-offer')) {
-			gsap.fromTo(
-				document.querySelector('.st-text-offer__offer'),
-				{
-					opacity: 0,
-					x: 20,
-				},
-				{
-					opacity: 1,
-					x: 0,
-					duration: 0.5,
-					delay: 0.25,
-					scrollTrigger: {
-						trigger: '.st-text-offer',
-						start: 'top: 80%',
-						end: 'bottom: 80%',
-						toggleActions: 'play none none none',
+		if (document.querySelector('.st-card-price')) {
+			gsap.utils.toArray('.st-card-price').forEach((card) => {
+				gsap.fromTo(
+					card,
+					{
+						opacity: 0,
+						x: 20,
 					},
-				}
-			);
+					{
+						opacity: 1,
+						x: 0,
+						duration: 0.5,
+						delay: 0.25,
+						scrollTrigger: {
+							trigger: '.st-text-offer',
+							start: 'top: 80%',
+							end: 'bottom: 80%',
+							toggleActions: 'play none none none',
+						},
+					}
+				);
+			});
 		}
 	});
 });

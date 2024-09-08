@@ -4,60 +4,6 @@
 		justify-content: center;
 		gap: 4rem;
 		margin-bottom: 3rem;
-
-		&--item {
-			background: $color__white;
-			padding: 1.5rem;
-			border-radius: $radius__md;
-			opacity: 0;
-
-			h3 {
-				margin-bottom: 0.5rem;
-			}
-
-			.price {
-				span {
-					font-weight: 600;
-
-					b {
-						color: $color__primary;
-					}
-				}
-				margin-bottom: 1rem;
-			}
-
-			ul {
-				list-style: none;
-				display: flex;
-				flex-direction: column;
-				gap: 6px;
-
-				li {
-					&.not-included {
-						opacity: 0.3;
-
-						strong {
-							color: $color__dark;
-							font-weight: 400;
-						}
-
-						&::before {
-							content: url(/wp-content/themes/studio-val/assets/svg/cross.svg);
-						}
-					}
-
-					&::before {
-						content: url(/wp-content/themes/studio-val/assets/svg/checkmark.svg);
-						margin-right: 0.5rem;
-						vertical-align: sub;
-					}
-				}
-			}
-
-			.st-button {
-				margin-top: 1.25rem;
-			}
-		}
 	}
 
 	&__bottom {

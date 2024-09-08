@@ -84,6 +84,30 @@
             ]
         },
         {
+            "key": "field_66ddbc5822dc9",
+            "label": "Type of services list",
+            "name": "type_of_list",
+            "aria-label": "",
+            "type": "button_group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "15",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "simple": "Simple",
+                "complex": "Complex"
+            },
+            "default_value": "simple",
+            "return_format": "value",
+            "allow_null": 0,
+            "allow_in_bindings": 0,
+            "layout": "horizontal"
+        },
+        {
             "key": "field_66522f6202f07",
             "label": "Included services",
             "name": "included_services",
@@ -157,7 +181,15 @@
                     "type": "textarea",
                     "instructions": "",
                     "required": 0,
-                    "conditional_logic": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_66ddbc5822dc9",
+                                "operator": "==",
+                                "value": "complex"
+                            }
+                        ]
+                    ],
                     "wrapper": {
                         "width": "45",
                         "class": "",
@@ -214,5 +246,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 1,
-    "modified": 1725797516
+    "modified": 1725807782
 }
