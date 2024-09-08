@@ -769,9 +769,6 @@ body,
 .st-text-image__image {
   display: flex;
   flex: 1;
-  position: sticky;
-  height: fit-content;
-  top: 2rem;
   opacity: 0;
 }
 .st-text-image__image img {
