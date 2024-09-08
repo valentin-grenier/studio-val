@@ -3,6 +3,12 @@
 	grid-template-columns: repeat(2, 1fr);
 	gap: 6rem;
 
+	&__text {
+		position: sticky;
+		top: 4rem;
+		height: fit-content;
+	}
+
 	&__offer {
 		background: $color__white;
 		border-radius: $radius__md;
@@ -12,6 +18,18 @@
 
 		&--title {
 			margin-bottom: 1rem;
+
+			h3 {
+				color: $color__primary;
+				margin-bottom: 0;
+			}
+
+			span {
+				display: block;
+				margin-bottom: 0.5rem;
+				font-weight: bold;
+				font-size: 20px;
+			}
 		}
 
 		&--list {
@@ -44,5 +62,22 @@
 	@media screen and (max-width: $breakpoint__md) {
 		grid-template-columns: 1fr;
 		gap: 2rem;
+
+		&__text {
+			position: relative;
+			top: 0;
+		}
+
+		&__offer {
+			padding: 1.75rem;
+
+			.st-button {
+				width: 100%;
+
+				a {
+					justify-content: center;
+				}
+			}
+		}
 	}
 }

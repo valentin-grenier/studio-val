@@ -793,6 +793,11 @@ body,
   grid-template-columns: repeat(2, 1fr);
   gap: 6rem;
 }
+.st-text-offer__text {
+  position: sticky;
+  top: 4rem;
+  height: fit-content;
+}
 .st-text-offer__offer {
   background: #ffffff;
   border-radius: 20px;
@@ -802,6 +807,16 @@ body,
 }
 .st-text-offer__offer--title {
   margin-bottom: 1rem;
+}
+.st-text-offer__offer--title h3 {
+  color: #4d65c7;
+  margin-bottom: 0;
+}
+.st-text-offer__offer--title span {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  font-size: 20px;
 }
 .st-text-offer__offer--list ul {
   margin-bottom: 1.5rem;
@@ -826,6 +841,19 @@ body,
   .st-text-offer {
     grid-template-columns: 1fr;
     gap: 2rem;
+  }
+  .st-text-offer__text {
+    position: relative;
+    top: 0;
+  }
+  .st-text-offer__offer {
+    padding: 1.75rem;
+  }
+  .st-text-offer__offer .st-button {
+    width: 100%;
+  }
+  .st-text-offer__offer .st-button a {
+    justify-content: center;
   }
 }
 
