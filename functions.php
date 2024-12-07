@@ -118,7 +118,9 @@ add_action('wp_enqueue_scripts', 'studio_scripts');
 
 
 // == Load autoload.php for dependencies
-require_once get_template_directory() . '/vendor/autoload.php';
+if (file_exists(get_template_directory() . '/vendor/autoload.php')) {
+	require_once get_template_directory() . '/vendor/autoload.php';
+}
 
 
 // == Allow Gutenberg editor on posts but not on pages, only if ACF page template is selected
