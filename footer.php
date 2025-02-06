@@ -56,7 +56,7 @@ $icon_arrow = file_get_contents(get_template_directory() . '/assets/svg/arrow.sv
       <?php endforeach; ?>
     </div>
     <div class="st-footer__bottom">
-      <?php echo "© Studio Val " . date('Y') . preg_replace('/<p>(.*?)<\/p>/i', '$1', $bottom); ?>
+      <p><?php echo "© Studio Val " . date('Y') . ' - ' . preg_replace('/<p>(.*?)<\/p>/i', '$1', $bottom); ?></p>
     </div>
   </div>
 </footer>
