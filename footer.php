@@ -56,7 +56,7 @@ $icon_arrow = file_get_contents(get_template_directory() . '/assets/svg/arrow.sv
       <?php endforeach; ?>
     </div>
     <div class="st-footer__bottom">
-      <?php echo $bottom; ?>
+      <?php echo "© Studio Val " . the_date('Y') . $bottom; ?>
     </div>
   </div>
 </footer>
