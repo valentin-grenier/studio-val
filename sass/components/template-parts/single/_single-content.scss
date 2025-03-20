@@ -52,6 +52,7 @@
 
 	.wp-block-image {
 		width: 100%;
+		margin: 2rem auto;
 
 		&.aligncenter {
 			img {
@@ -60,8 +61,11 @@
 		}
 
 		img {
-			margin: 2rem auto;
 			border-radius: $radius__sm;
+		}
+
+		figcaption {
+			font-size: 0.75rem;
 		}
 	}
 

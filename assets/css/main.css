@@ -1468,13 +1468,16 @@ span.required {
 }
 .st-single__content .wp-block-image {
   width: 100%;
+  margin: 2rem auto;
 }
 .st-single__content .wp-block-image.aligncenter img {
   margin-left: auto;
 }
 .st-single__content .wp-block-image img {
-  margin: 2rem auto;
   border-radius: 12px;
+}
+.st-single__content .wp-block-image figcaption {
+  font-size: 0.75rem;
 }
 .st-single__content .wp-block-code {
   background: #181818;
