@@ -955,6 +955,28 @@ input[type=submit]:disabled {
   }
 }
 
+.wp-block-button {
+  border-radius: 8px;
+  width: fit-content;
+  background: #232a43;
+  margin: 1rem 0;
+}
+.wp-block-button__link {
+  display: flex;
+  padding: 10px 18px;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+  position: relative;
+  color: #ffffff;
+  background-color: none;
+}
+
+.wp-block-buttons {
+  margin: 1rem 0;
+}
+
 .st-button-back {
   display: flex;
   align-items: center;

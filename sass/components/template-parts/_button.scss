@@ -122,3 +122,27 @@ input[type='submit'] {
 		right: 1rem;
 	}
 }
+
+// == Button block
+.wp-block-button {
+	border-radius: $radius__xs;
+	width: fit-content;
+	background: $color__dark;
+	margin: 1rem 0;
+
+	&__link {
+		display: flex;
+		padding: 10px 18px;
+		font-family: $font__primary;
+		text-decoration: none;
+		font-weight: 600;
+		font-size: 15px;
+		position: relative;
+		color: $color__white;
+		background-color: none;
+	}
+}
+
+.wp-block-buttons {
+	margin: 1rem 0;
+}
