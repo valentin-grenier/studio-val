@@ -280,6 +280,11 @@ body,
   height: 1rem;
   padding-top: 0.5rem;
 }
+.st-list-block__list--item a {
+  font-weight: 700;
+  color: #4d65c7;
+  text-decoration: underline;
+}
 .st-list-block__image {
   height: 100%;
   opacity: 0;
@@ -2544,11 +2549,6 @@ html main {
 }
 .st-single-portfolio__details--list .st-list-block {
   display: block;
-}
-.st-single-portfolio__details--list .st-list-block__list--item li a {
-  font-weight: 700;
-  color: #4d65c7;
-  text-decoration: underline;
 }
 .st-single-portfolio__details--technologies ul {
   list-style: none;

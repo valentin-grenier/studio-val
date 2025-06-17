@@ -19,6 +19,12 @@
 				height: 1rem;
 				padding-top: 0.5rem;
 			}
+
+			a {
+				font-weight: 700;
+				color: $color__primary;
+				text-decoration: underline;
+			}
 		}
 	}
 
