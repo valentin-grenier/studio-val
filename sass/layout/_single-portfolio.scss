@@ -151,6 +151,18 @@
 
 			.st-list-block {
 				display: block;
+
+				&__list {
+					&--item {
+						li {
+							a {
+								font-weight: 700;
+								color: $color__primary;
+								text-decoration: underline;
+							}
+						}
+					}
+				}
 			}
 		}
 

@@ -2545,6 +2545,11 @@ html main {
 .st-single-portfolio__details--list .st-list-block {
   display: block;
 }
+.st-single-portfolio__details--list .st-list-block__list--item li a {
+  font-weight: 700;
+  color: #4d65c7;
+  text-decoration: underline;
+}
 .st-single-portfolio__details--technologies ul {
   list-style: none;
   display: flex;
@@ -2914,5 +2919,3 @@ form fieldset small {
 #cmplz-manage-consent .cmplz-manage-consent {
   opacity: 1;
 }
-
-/*# sourceMappingURL=main.css.map */
