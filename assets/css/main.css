@@ -281,9 +281,10 @@ body,
   padding-top: 0.5rem;
 }
 .st-list-block__list--item a {
-  font-weight: 700;
+  font-weight: 600;
   color: #4d65c7;
   text-decoration: underline;
+  text-underline-offset: 3px;
 }
 .st-list-block__image {
   height: 100%;

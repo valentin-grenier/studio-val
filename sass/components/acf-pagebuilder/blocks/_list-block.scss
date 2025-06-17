@@ -21,9 +21,10 @@
 			}
 
 			a {
-				font-weight: 700;
+				font-weight: 600;
 				color: $color__primary;
 				text-decoration: underline;
+				text-underline-offset: 3px;
 			}
 		}
 	}
